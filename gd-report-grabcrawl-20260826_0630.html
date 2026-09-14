@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GD Report — Grab Daily Crawl FIXED</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fafafa; }
+  h1 { border-bottom: 3px solid #27ae60; padding-bottom: .5rem; color: #27ae60; }
+  h2 { color: #2c3e50; margin-top: 2rem; border-left: 4px solid #3498db; padding-left: .6rem; }
+  .meta { color: #666; font-size: .9rem; margin-bottom: 1.5rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; background: #fff; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: .9rem; }
+  th { background: #2c3e50; color: #fff; }
+  tr:nth-child(even) { background: #f5f5f5; }
+  .pass { color: #27ae60; font-weight: bold; }
+  .warn { color: #e67e22; font-weight: bold; }
+  .box { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+  code { background: #eee; padding: 2px 5px; border-radius: 3px; font-size: .85rem; }
+</style>
+</head><body>
+<h1>✅ Grab Daily Crawl (API) — FIXED + Verified</h1>
+<div class="meta">Lead: lead-w1 | Job: 34c259482b3f | Generated: 2026-08-26 06:31 +07</div>
+
+<h2>Root cause (doc log that)</h2>
+<div class="box">
+<p><b>Wrapper log 06:15:</b> <code>Login failed: No module named 'playwright'</code></p>
+<p><b>Wrapper log 06:16:</b> <code>/bin/bash: fork: Resource temporarily unavailable</code> (retry, can process)</p>
+<p><b>Phan loai:</b> SCRIPT CRASH do thieu module — KHONG phai API/DB/timeout.</p>
+<p><b>Chi tiet:</b> wrapper goi bare <code>python3</code>. Cron PATH resolve → <code>/usr/bin/python3</code> (Apple stock 3.9.6) KHONG co playwright. Script can playwright de auto-login khi cookies het han. Pitfall da biet: cron KHONG ton trong shebang, goi python3 tu PATH.</p>
+</div>
+
+<h2>Fix</h2>
+<div class="box">
+<p>Backup wrapper → <code>.bak-*</code>. Sua wrapper: <code>python3</code> → <code>/Users/tringuyen/.hermes/hermes-agent/.venv-hermes/bin/python3</code> (co playwright + requests, trung shebang script). Verified playwright + chromium installed trong venv do.</p>
+</div>
+
+<h2>Verify (chay that)</h2>
+<table>
+<tr><th>Metric</th><th>Hom nay 26/08</th><th>Hom qua 25/08</th></tr>
+<tr><td>stores_ok</td><td class="pass">12/12</td><td>14/14</td></tr>
+<tr><td>yesterday_net_sales</td><td class="pass">1,971,500₫</td><td>2,088,700₫</td></tr>
+<tr><td>yesterday_orders</td><td class="pass">45</td><td>43</td></tr>
+<tr><td>crawled_at</td><td>2026-08-26T06:28:35</td><td>2026-08-25T06:00:23</td></tr>
+</table>
+
+<h2>Luu y</h2>
+<div class="box">
+<p class="warn">3 stores login fail do network (ERR_ADDRESS_UNREACHABLE / ERR_INTERNET_DISCONNECTED) — khong phai loi script. Co the la store da dong hoac network tam thoi.</p>
+<p>DB that <code>/Volumes/MacRAID/AI_Core/grab_pipeline/grab_data.db</code> ton tai (1.99MB), khong dung stub 0 byte. Khong con process chay, lock sach.</p>
+</div>
+
+<div class="meta">Full report: /tmp/lead_w1_report_20260823.md | Wrapper log: ~/.hermes/logs/cron/grab_daily_crawl_wrapper_20260826_062031.log</div>
+</body></html>

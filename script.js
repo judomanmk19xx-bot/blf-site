@@ -1,0 +1,118 @@
+// Language switcher - persist choice in localStorage, swap nav links
+document.addEventListener('DOMContentLoaded', () => {
+  const langLinks = document.querySelectorAll('.lang-switcher a');
+  const langParam = new URLSearchParams(window.location.search).get('lang');
+  const currentLang = langParam || localStorage.getItem('blf_lang') || 'JP';
+  localStorage.setItem('blf_lang', currentLang);
+  const langCode = {JP: 'ja', VN: 'vi', EN: 'en'}[currentLang] || 'ja';
+  
+  // Update <html lang>
+  document.documentElement.lang = {JP: 'ja', VN: 'vi', EN: 'en'}[currentLang] || 'ja';
+  
+  // Mark active
+  langLinks.forEach(link => {
+    if (link.dataset.lang === currentLang) link.classList.add('active');
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const newLang = link.dataset.lang;
+      const newCode = {JP: 'ja', VN: 'vi', EN: 'en'}[newLang];
+      localStorage.setItem('blf_lang', newLang);
+      const url = new URL(window.location);
+      url.searchParams.set('lang', newLang);
+      // Swap to lang-specific file if exists
+      const path = window.location.pathname.replace(/(_ja|_vi|_en)?\.html$/, '_' + newCode + '.html');
+      url.pathname = path;
+      window.location.href = url.toString();
+    });
+  });
+  
+  // Swap data-lang-link elements based on current lang
+  document.querySelectorAll('[data-lang-link]').forEach(link => {
+    const base = link.getAttribute('href').replace(/(_ja|_vi|_en)?\.html$/, '');
+    link.setAttribute('href', base + '_' + langCode + '.html');
+  });
+  
+  // Update CTA links to lang-specific
+  document.querySelectorAll('a[href*=".html"]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('?')) return;
+    if (href.includes('_ja.') || href.includes('_vi.') || href.includes('_en.')) return;
+    const m = href.match(/^([^?#]+\.html)(\?.*)?$/);
+    if (m && !m[1].startsWith('ctg_') && !m[1].startsWith('blf_report')) {
+      // Local HTML file - swap lang
+      const newHref = m[1].replace('.html', '_' + langCode + '.html') + (m[2] || '');
+      link.setAttribute('href', newHref);
+    }
+  });
+});
+// Contact form handler
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.blf-contact-form');
+  if (!form) return;
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = {};
+    for (const [k, v] of formData.entries()) data[k] = v;
+    data.timestamp = new Date().toISOString();
+    data.lang = form.dataset.lang;
+    const submissions = JSON.parse(localStorage.getItem('blf_submissions') || '[]');
+    submissions.push(data);
+    localStorage.setItem('blf_submissions', JSON.stringify(submissions));
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+    } catch (e) {}
+    form.querySelectorAll('input, select, textarea, button').forEach(el => el.style.display = 'none');
+    form.querySelector('.form-intro').style.display = 'none';
+    form.querySelector('.form-thanks').style.display = 'block';
+  });
+});
+
+// Lazy loading for images
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('img[data-src]');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          observer.unobserve(img);
+        }
+      });
+    });
+    images.forEach(img => observer.observe(img));
+  } else {
+    // Fallback: load all immediately
+    images.forEach(img => {
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+    });
+  }
+});
+
+// WebP detection + optimization
+const supportsWebP = (() => {
+  try {
+    return document.createElement('canvas').toDataURL('image/webp').indexOf('webp') > -1;
+  } catch (e) { return false; }
+})();
+window.blfSupportsWebP = supportsWebP;
+
+// Hero slideshow - auto-rotate every 5s
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.hero-slideshow .slide');
+  if (slides.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 5000);
+  }
+});

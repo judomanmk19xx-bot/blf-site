@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTG Data Contract v2 | BLF</title>
+  <meta name="description" content="CTG Data Contract V2 specification for Bac Lieu Fisheries JSC.">
+  <meta name="keywords" content="BLF, Bac Lieu Fisheries, Vietnam, seafood, OEM, frozen foods, agarwood tea, matcha, artichoke tea, agricultural exports, B2B Vietnam Japan">
+  <meta name="author" content="Bac Lieu Fisheries Joint Stock Company">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="CTG Data Contract v2 | BLF">
+  <meta property="og:description" content="CTG Data Contract V2 specification for Bac Lieu Fisheries JSC.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.svg">
+  <meta property="og:locale" content="ja_JP,vi_VN,en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CTG Data Contract v2 | BLF">
+  <meta name="twitter:description" content="CTG Data Contract V2 specification for Bac Lieu Fisheries JSC.">
+  <meta name="twitter:image" content="logo.svg">
+  <link rel="canonical" href="http://localhost:8443/">
+  <link rel="alternate" hreflang="ja" href="http://localhost:8443/ja">
+  <link rel="alternate" hreflang="vi" href="http://localhost:8443/ja">
+  <link rel="alternate" hreflang="en" href="http://localhost:8443/ja">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bac Lieu Fisheries Joint Stock Company",
+    "alternateName": "BLF",
+    "url": "http://localhost:8443/",
+    "logo": "http://localhost:8443/images/logo.svg",
+    "foundingDate": "2016-03-15",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lot 1234, Ward 1, Bac Lieu City",
+      "addressRegion": "Bac Lieu Province",
+      "addressCountry": "VN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "areaServed": ["JP", "KR", "EU", "ASEAN"],
+      "availableLanguage": ["Japanese", "Vietnamese", "English"]
+    },
+    "numberOfEmployees": 320
+  }
+  </script>
+</head>
+<body>
+<div class="wrap">
+<div class="note"><b>TRẠNG THÁI: DRAFT v0.9 — CHỜ THẦY DUYỆT.</b> Bản gốc: PLANS/CTG_REVENUE_DATA_CONTRACT_V2.md (8,058 bytes). Nội dung bên dưới là nguyên văn file gốc, render UTF-8.</div>
+<pre># CTG REVENUE DATA CONTRACT V2 — DRAFT v0.9
+
+Status: **DRAFT — chờ sign-off**. Post theo deadline a Trí: trước 2026-08-22 00:34 UTC.
+- Owner số liệu (A): **CFO** — phải chốt 3 quyết định ở §9 trước khi doc thành FINAL.
+- Đồng tác giả: **Tâm Minh** (ethics/anti-hallucination gate, author draft này trên Contabo), **Builder** (pipeline feasibility).
+- Review bắt buộc trước code 72h: **Red Team + chị Hằng** (gate chung) → **a Trí** duyệt trong 4h.
+- Runtime note: draft viết trên Contabo — `pg_isready → no response`, không có ctg_master. Mọi số trích từ thread dẫn nguồn agent đã chạy query (Lane 5/6/3); không số nào ở đây là Tâm Minh tự verify từ DB. Red Team reproduce độc lập khi gate.
+
+Kế thừa: `RESEARCH/CTG_FINANCIAL_ACCEPTANCE_CONTRACT.md` (Gates A–D, CFO 2026-08-12) + `PLANS/CTG_RED_TEAM_GATE_CHECKLIST_P0.md` + `GUIDES/CTG_FOOD_SAFETY_GATE_CHECKLIST.md`.
+
+---
+
+## 1. Grain, nhãn, nguồn (bất biến — từ Acceptance Contract v1)
+
+| Mục | Quy tắc |
+|---|---|
+| Date grain | business date, ICT (UTC+7). Mọi query phải khai timezone bucket. |
+| Entity grain | brand × location × platform. Hub grain chỉ khi có store→hub mapping table. |
+| Source of truth | `public.revenue_daily`. **Cấm** sum `master_revenue` cho daily report. |
+| Nhãn revenue | `settlement_confirmed` (Gate A PASS) hoặc `provisional`. Không blended total. |
+| Aggregation ban | `analy` + IMAP cùng `(date, platform)` không bao giờ cộng chung (Gate B). |
+| Cap báo cáo | `MAX(date) − 1 ngày` do settlement email về hôm sau (Red Team + Lane 5 đã thống nhất). |
+| Loại trừ | 3 hubs đóng TQD/LQD/DD (gross=0 từ 01/07) + brand Unknown — loại khỏi mọi report/KPI. |
+
+## 2. P0-a — Grab net: IMAP là truth, bỏ hardcode 53.5%
+
+- Rows `source IN (&#x27;spf_imap&#x27;,&#x27;grab_imap&#x27;,&#x27;greensm_imap&#x27;)`: net = số settlement trong email. Drift IMAP vs IMAP phải = 0.
+- Rows `source = &#x27;grab_api&#x27;` (theo Lane 3/6: ~1.26k rows, raw 39.2M — số dẫn trong thread, Red Team re-check): **chỉ** nhóm này được recalc bằng ratio hardcode, và output gắn nhãn `provisional` cho đến khi IMAP settlement về thay thế.
+- Giá trị 53.5%: **[OPEN — CFO]** CFO xác nhận nguồn gốc + recalc từ IMAP thực tế trước khi khóa. Không lấy số hardcode cũ làm truth.
+- Không sum grab_api + IMAP cùng `(date, platform)` (Gate B).
+
+## 3. P0-b — Brand mapping truth (UWA / XTG / SS)
+
+- Một bảng mapping duy nhất `brand_mapping` (pipeline → brand thật), owner Builder, CFO duyệt nội dung.
+- Acceptance: `COUNT(*) WHERE brand = &#x27;UWA-hardcode&#x27;` (hoặc brand fallback) = 0 sau fix; output đủ 3 brands UWA/XTG/SS.
+- Mọi row không map được → brand = `Unknown` và bị loại khỏi report (không impute).
+
+## 4. P0-c — Zero-net backfill
+
+- Target: `COUNT(*) WHERE gross &gt; 0 AND net = 0` = 0 sau backfill (theo thread: 273 rows / 40.6M gross, dẫn từ Lane 5/6 — Red Team re-count trên clone sạch).
+- Mỗi row backfill bắt buộc lineage đủ 4 cột: `source`, `source_file`, `received_at`, `notes` (Gate A). Thiếu 1 cột = row đó `provisional`, không tính vào total.
+- Rows ngày 19/08 net=0 mà ad spend 70–140k (Lane 3 flag): ưu tiên backfill trước vì đang làm ROAS/CM sai.
+
+## 5. P0-d — Missing days + chống double-count
+
+- Target: 0 ngày missing trong chuỗi báo cáo (theo thread: 271 missing days — Red Team re-count).
+- Analy gap-fill **chỉ** qua view `v_revenue_daily_reportable`: ngày/platform nào có IMAP thì analy bị exclude (Gate B), báo riêng `provisional (excluded from total)`.
+- Cấm double-count Analy/IMAP — query overlap ở Acceptance Contract v1 §3 là acceptance test.
+
+## 6. P0-e — cogs_pct từ DB, không hardcode
+
+- Nguồn: `dish_costs` (theo Lane 5: 89 món). Cấm hardcode 30.1; cấm view cũ hardcode 28.3%.
+- **Fix bắt buộc:** `v_pnl_daily` đang tính trên `master_revenue` (sai table) → chuyển về `revenue_daily`.
+- **Quyết định CFO (open):** weighted `SUM(cost)/SUM(selling)` (Lane 5 báo 29.76%) hay `AVG` (30.52%)? Draft đề xuất: **weighted** vì phản ánh mix thực tế; nhưng phải ghi rõ giả định mix trong doc vì dish-level rate áp xuống hub×day là nội suy (Acceptance Contract v1 §5: brand-level rate không tự động interpolate xuống hub grain — thiếu hub×day COGS thực thì CM/hub/day in `[NO REAL DATA]`).
+- Analy blanket COGS: chỉ áp cho rows analy gap-fill đã exclude khỏi total, không lan sang IMAP rows.
+
+## 7. Refund — tách 2 loại (yêu cầu chị Hằng + Red Team, bắt buộc)
+
+Data contract thêm cột phân loại refund trước khi code:
+- `refund_chat_luong` — vào kill-criteria chất lượng (&gt;5% → halt hub, escalate a Trí).
+- `refund_giao_van_sai_mon` — track riêng, không cộng vào kill CL.
+- Nguồn phân loại: **[OPEN — CFO + Builder]** xác định cột/platform field nào tách được 2 loại; nếu platform không tách → quy tắc mapping thủ công + ghi lineage. Gộp chung = kill &gt;5% không đo được = HOLD (Red Team).
+- Metric tạm thời `adjustment_minus/gross` (Lane 5 template) chỉ dùng đến khi cột tách live.
+
+## 8. FB Ads ingestion (a Trí duyệt scope 2026-08-21)
+
+- Ingest Graph API insights: spend / impressions / clicks / actions, grain campaign×day.
+- Mapping `fb_campaigns → hub/brand` (hiện trạng theo Lane 3: 50 rows 9M location=ALL brand=ALL → `[NO REAL DATA]`/hub).
+- Output view `v_ads_roas_hub_day`; ROAS FB/hub chỉ publish khi mapping đủ lineage.
+- Gate: drift FB spend (API vs UI) &lt;5% — Red Team gate.
+- FB spend không chảy vào revenue_daily; chỉ join ở tầng report ROAS.
+
+## 9. Quyết định mở — CFO chốt trước khi FINAL (blocker của doc)
+
+1. cogs_pct: weighted 29.76% hay AVG 30.52% (§6) — kèm lệnh thật trên ctg_master.
+2. Nguồn gốc + giá trị thay thế hardcode 53.5% (§2).
+3. Nguồn cột refund tách CL vs giao vận (§7).
+4. Confirm baseline orders có thiếu Be/platform khác không (Red Team + a Trí flag: 24 orders/hub/day sát kill &lt;20, xa target 120–200) — nếu thiếu platform, thêm source vào whitelist trước khi khóa target pilot.
+
+Mỗi quyết định phải kèm **lệnh + output thực** (anti-hallucination mandate). Không có lệnh = `[NO REAL DATA]`, doc không thành FINAL.
+
+## 10. Công thức khóa sau khi §9 chốt
+
+```
+CM = net_settlement_confirmed − gross × cogs_pct
+Food Cost % = gross × cogs_pct / gross  (target &lt;35%)
+CM % &gt;15% | drift tổng &lt;2% | zero-net = 0 | 100% ngày có revenue
+```
+
+P&amp;L CTG **tách BLF tuyệt đối** — không query nào join BLF revenue/cost vào CTG report.
+
+## 11. Acceptance queries (Red Team chạy trên clone sạch khi gate P0)
+
+- Gate A lineage: Acceptance Contract v1 §2 query.
+- Gate B overlap: Acceptance Contract v1 §3 query.
+- Zero-net: `SELECT COUNT(*) FROM revenue_daily WHERE gross&gt;0 AND net=0 AND source IN whitelist` → phải = 0.
+- Missing days: đếm ngày không có row reportable trong [min_date, MAX(date)−1] → phải = 0.
+- Brand: `SELECT brand, COUNT(*) ... GROUP BY brand` → đủ UWA/XTG/SS, không UWA-fallback, không Unknown trong total.
+- cogs: so sánh rate trong view vs rate tính trực tiếp từ dish_costs → drift = 0.
+- Drift tổng CM: template Lane 5 vs P&amp;L view &lt;2% (Red Team gate).
+
+## 12. Sign-off block
+
+| Vai trò | Tên | Trạng thái |
+|---|---|---|
+| A số liệu | CFO | ⏳ chờ chốt §9 |
+| Pipeline | Builder | ⏳ confirm feasibility §2–§8 |
+| Ethics/anti-hallucination | Tâm Minh | ✓ draft authored — mọi số đã gắn nguồn hoặc [OPEN] |
+| Gate review | Red Team + chị Hằng | ⏳ review trước khi mở code window |
+| Approve | a Trí | ⏳ review trong 4h sau khi FINAL |
+
+Không đủ sign-off = HOLD, không code 72h (pre-condition chung Red Team + chị Hằng).
+</pre>
+</div>
+</body>
+</html>

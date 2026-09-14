@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GD Report — Phe duyet + Co che giao viec + Zalo fix</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fafafa; }
+  h1 { border-bottom: 3px solid #27ae60; padding-bottom: .5rem; color: #27ae60; }
+  h2 { color: #2c3e50; margin-top: 2rem; border-left: 4px solid #3498db; padding-left: .6rem; }
+  .meta { color: #666; font-size: .9rem; margin-bottom: 1.5rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; background: #fff; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: .9rem; }
+  th { background: #2c3e50; color: #fff; }
+  tr:nth-child(even) { background: #f5f5f5; }
+  .pass { color: #27ae60; font-weight: bold; }
+  .warn { color: #e67e22; font-weight: bold; }
+  .box { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+  code { background: #eee; padding: 2px 5px; border-radius: 3px; font-size: .85rem; }
+</style>
+</head><body>
+<h1>✅ Phe duyet + Co che giao viec + Zalo FIXED</h1>
+<div class="meta">Lead: lead-w1 | Nguon: Thay Tri (22:15) | Generated: 2026-08-26 05:14 +07 | Evidence: /tmp/lead_evidence_2145/</div>
+
+<h2>Ket qua</h2>
+<table>
+<tr><th>Task</th><th>Status</th><th>Ket qua chinh</th></tr>
+<tr><td>Phe duyet 1: Emchi Racknerd</td><td class="pass">PASS</td><td>Racknerd inactive+disabled, Contabo active (f683b46f)</td></tr>
+<tr><td>Phe duyet 2: mimo</td><td class="pass">PASS</td><td>DEAD, port 4096 free, plist disabled</td></tr>
+<tr><td>Phe duyet 3: WebUI+DSH</td><td class="pass">PASS</td><td>DEAD, scripts created</td></tr>
+<tr><td>4. Co che giao viec worker</td><td class="pass">PASS</td><td><code>gd_dispatch.py</code>: prompt tu chua + loop-goal + pre-dispatch alive check, test that</td></tr>
+<tr><td>5. Zalo bot check</td><td class="pass">PASS (FIXED)</td><td>Root cause: port 8787 conflict voi webui. Bridge+listener+gateway hoat dong tro lai</td></tr>
+</table>
+
+<h2>Viec 5 Zalo — Chi tiet</h2>
+<div class="box">
+<p><b>ROOT CAUSE:</b> hermes-webui (PID 1399) giu port 8787 → Zalo bridge launchd fail exit 1, session chet tu 11:04 (~12h truoc).</p>
+<p><b>FIX:</b> bootout webui + bootstrap zalo-bridge → loggedIn=true, ownId=781441970285576877, sseClients=1. Gateway reconnect 05:02:38.</p>
+<p><b>VI SAO CHUA CO BAO CAO:</b> bridge chet 12h do port conflict, listener khong nhan tin moi, DB chi co 1 tin pairing → khong co du lieu de tong hop.</p>
+<p><b>HIEN TAI:</b> Listener PID 1396 alive, daily summary cron 22:00 configured. Se ghi tin moi khi co inbound.</p>
+</div>
+
+<h2>Luu y</h2>
+<div class="box">
+<p>hermes-webui da bootout de giai phong 8787 cho Zalo. Neu Thay can webui tro lai, can doi port (vd 8788) de tranh conflict.</p>
+</div>
+
+<div class="meta">Full report: /tmp/lead_w1_report_20260823.md | Evidence: /tmp/lead_evidence_2145/ (07-09)</div>
+</body></html>

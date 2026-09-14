@@ -1,0 +1,122 @@
+[
+  {
+    "name": "tea_plantation_vn",
+    "id": "1048255066",
+    "rating": 9,
+    "role": "About bento / hero \u2014 VN tea picker n\u00f3n l\u00e1",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/tea_plantation_vn.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1126",
+    "size_kb": 2885.9
+  },
+  {
+    "name": "processing_line_iqf",
+    "id": "1932297077",
+    "rating": 9,
+    "role": "Processing \u2014 frozen veg line, gloved inspection",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/processing_line_iqf.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 1592.0
+  },
+  {
+    "name": "processing_intake",
+    "id": "1932297074",
+    "rating": 8,
+    "role": "Processing \u2014 raw intake, gowned worker",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/processing_intake.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 1517.8
+  },
+  {
+    "name": "qc_lab_asia",
+    "id": "1009353163",
+    "rating": 9,
+    "role": "Quality \u2014 Asian QC team hairnet+mask+gloves",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/qc_lab_asia.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1002",
+    "size_kb": 1176.1
+  },
+  {
+    "name": "worker_qc_male",
+    "id": "1859248447",
+    "rating": 9,
+    "role": "OEM/QC \u2014 Asian male worker hairnet+mask",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/worker_qc_male.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 1301.1
+  },
+  {
+    "name": "worker_qc_female",
+    "id": "1941853804",
+    "rating": 9,
+    "role": "OEM/QC \u2014 Asian female inspecting bottles",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/worker_qc_female.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 1381.7
+  },
+  {
+    "name": "cold_storage_rack",
+    "id": "158685212",
+    "rating": 9,
+    "role": "Cold chain \u2014 pallet rack warehouse",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/cold_storage_rack.jpg",
+    "asset": "preview_1500",
+    "dims": "1036x1500",
+    "size_kb": 713.2
+  },
+  {
+    "name": "freezer_forklift",
+    "id": "1548693137",
+    "rating": 8,
+    "role": "Cold chain \u2014 forklift at freezer door",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/freezer_forklift.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1002",
+    "size_kb": 1819.5
+  },
+  {
+    "name": "port_aerial",
+    "id": "1561887058",
+    "rating": 9,
+    "role": "Logistics \u2014 full port aerial cranes",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/port_aerial.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x987",
+    "size_kb": 2093.2
+  },
+  {
+    "name": "port_containers",
+    "id": "1553620877",
+    "rating": 9,
+    "role": "Logistics \u2014 top-down containers teal sea",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/port_containers.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x844",
+    "size_kb": 1944.6
+  },
+  {
+    "name": "tea_farm_walk",
+    "id": "1286581306",
+    "rating": 8,
+    "role": "Sourcing \u2014 worker walking tea rows",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/tea_farm_walk.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 2249.5
+  },
+  {
+    "name": "tea_picker_highland",
+    "id": "1888614103",
+    "rating": 7,
+    "role": "Sourcing \u2014 highland hand-pick basket",
+    "file": "/Users/tringuyen/.buzz/OUTBOX/BLF_PROFILE/images/shutterstock/best_preview/tea_picker_highland.jpg",
+    "asset": "preview_1500",
+    "dims": "1500x1000",
+    "size_kb": 1436.6
+  }
+]

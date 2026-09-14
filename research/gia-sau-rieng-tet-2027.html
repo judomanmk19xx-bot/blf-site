@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giá sầu riêng Tết 2027 — Báo cáo nghiên cứu</title>
+<style>
+body{max-width:860px;margin:40px auto;padding:0 20px;font:16px/1.65 -apple-system,'Segoe UI',Roboto,sans-serif;color:#1a1a1a}
+h1{font-size:1.7em;border-bottom:3px solid #2e7d32;padding-bottom:8px}
+h2{font-size:1.25em;margin-top:1.8em;color:#2e7d32}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.92em}
+th,td{border:1px solid #ccc;padding:7px 10px;text-align:left}
+th{background:#e8f5e9} tr:nth-child(even) td{background:#fafafa}
+p>code,li>code{background:#f0f0f0;padding:1px 4px;border-radius:3px}
+em{color:#555}
+.banner{background:#fff8e1;border-left:4px solid #f9a825;padding:10px 14px;font-size:.9em;border-radius:4px}
+a{color:#1565c0}
+</style></head><body>
+<div class="banner">Smoke-test research-harness Hermes · 27 nguồn · 10 số then chốt re-verify fulltext 11/09/2026 (8 khớp, 1 sửa cafef, 1 thay chogia→lita) · File gốc: <code>~/.hermes/research/runs/gia-sau-rieng-tet-2027-2eeaf2/final_report.md</code></div>
+<h1>Giá sầu riêng Tết 2027 (06/02/2027) — Báo cáo nghiên cứu</h1>
+<p><strong>Tier:</strong> light (27 nguồn, gate-passed) · <strong>Ngày chạy:</strong> 11/09/2026 · <strong>Nguồn:</strong> 27 notes (25 web + 2 memory đã verify URL)</p>
+<h2>TL;DR</h2>
+<p>Giá farm-gate Tết 2027 dự báo <strong>phân hóa theo chuẩn</strong>, không có một mặt bằng duy nhất: Ri6 loại A đạt chuẩn XK <strong>85–110k/kg</strong>, Monthong loại A <strong>100–135k/kg</strong>, Musang King loại đẹp <strong>130–180k/kg</strong> (base case). Bear kép (van Trung Quốc đóng + cung vượt): giảm ~30–40%. Bull (thông quan trơn + cầu Tết mạnh): +15–25%. Với band này, <strong>floor 100k/kg trong deal Khu F là hợp lý cho bán xô</strong>; điều kiện tiên quyết không đổi: verify năng suất thật của vườn (84,5 kg/cây là giả định lạc quan).</p>
+<h2>§1 Bức tranh cung 2026: thừa số lượng, thiếu hàng hợp chuẩn</h2>
+<p>Diện tích sầu riêng cả nước đã phình lên ~200 nghìn ha, diện tích cho trái ~129,5 nghìn ha, sản lượng dự kiến <strong>~2,08 triệu tấn năm 2026</strong> — Đăk Lăk vượt quy hoạch tới 7.500 ha [san-phang-2trieu-tan-2026]. Nhưng chỉ <strong>22,7/90 nghìn ha Tây Nguyên có mã vùng trồng đạt chuẩn xuất khẩu Trung Quốc</strong> [taynguyen-code-gap]. Cung vật chất thừa trong khi cung hợp pháp khan chính là cấu trúc tạo ra "hai giá":</p>
+<ul>
+<li><strong>Hàng đồng/trái sâu/rớt:</strong> Ri6 thương lái mua tại vườn đáy <strong>28–38k/kg</strong>, Monthong vườn <strong>46–68k/kg</strong>, giảm 20–30% so với cùng kỳ 2025 [vnexpress-monthong-46-68k], Ri6 từng chạm đáy lịch sử 60–65k hồi tháng 5 [ri6-thap-ky-luc-5-2026].</li>
+<li><strong>Hàng tuyển đạt chuẩn:</strong> cuối tháng 6/2026, sầu Thái loại 1 vẫn <strong>198k/kg</strong>, Ri6 đẹp <strong>148k/kg</strong> [hai-gia-198k-148k] (verify fulltext bài lita.com.vn 11/09, số khớp nguyên văn); tracker đầu tháng 9 ghi Monthong vườn phục hồi <strong>92–95k</strong>, Ri6 <strong>78–80k</strong> khi nghịch vụ cạn hàng [tet-2026-nhip-tang].</li>
+</ul>
+<p>Kim ngạch không đi cùng giá vườn: 5 tháng cuối 2026 xuất ~1,3 triệu tấn, cả năm hướng mục tiêu <strong>4 tỷ USD</strong> [mekongasean-4ty-usd][1-3-trieu-tan-5-thang-cuoi] — nhưng vietnamnet ghi nhận nghịch lý "giá giảm 30–50%, xuất khẩu vẫn tăng" vì cơ cấu: hàng đạt chuẩn vào TQ giá cao, hàng dôi dư dumped nội địa kéo mặt bằng xuống [vietnamnet-giam-30-50pct].</p>
+<h2>§2 Van chính sách Trung Quốc = biến số giá số 1</h2>
+<p>Từ sự cố cadimi/vàng O quý 4/2025–2026, GACC áp <strong>kiểm tra 100% lô</strong> sầu riêng nhập qua đường bộ [ttwto-gacc-kiem-100pct]. Hệ quả đo được: lần đầu tiên <strong>mùa nghịch mất premia</strong> — nhẽ ra giá phải gấp 2–3 lần chính vụ, cafef (bài 8/12/2025) ghi nhận nghịch vụ ĐBSCL đã "rớt mạnh" do vàng O ngay mùa 2025–2026 — Monthong loại A tháng 12/2025 chỉ 100–105k [cafef-nghich-vu-rot-manh], và chuỗi đáy kéo dài sang 2026 (Ri6 đáy lịch sử 5/2026 [ri6-thap-ky-luc-5-2026]). Nới lỏng đang diễn ra nhưng <strong>hạn chế</strong>: TQ chấp thuận thêm 50 phòng kiểm nghiệm [vninfor-50-lab] và cấp mới hàng trăm mã số đóng gói — đây là nới THỦ TỤC, không đổi CHÍNH SÁCH (100%-check vẫn nguyên).</p>
+<p>Lịch sử chứng độ nhạy của van: 7/2022 mở chính ngạch → giá bật từ ~50k lên 70–75k ngay lô đầu tiên [memory-moa-price-benchmark], 2024 đỉnh $3,3 tỷ (+7,8× 2022) [xk-2024-3ty3-usd], 2025 siết kiểm → Musang King "rẻ chưa từng có" 50–70k [mk-re-chua-tung-co-2025]. Biên độ chính sách = biên độ giá.</p>
+<h2>§3 Mùa vụ Tết: premia mùa VỤ còn, premia loại bị nén</h2>
+<p>Tết Nguyên đán luôn rơi vào cuối nghịch vụ ĐBSCL + non vụ Tây Nguyên = đỉnh giá lịch sử. Data point mới nhất — Tết 2026 (06/2/2026): <strong>MK loại 1 lẻ 220–280k/kg</strong>, vườn tăng nhịp 15–20k/tuần trước Tết do cạn hàng [mk-tet-loai1-220-280k][tet-2026-nhip-tang]. Cơ chế mùa vụ được banggianongsan mô tả rõ: nghịch vụ thương lái "săn hàng gắt hơn, đặc biệt nhóm đi xuất khẩu", nhưng mưa miền Tây vài ngày là tỷ lệ đạt chuẩn giảm ngay, hàng xô rớt mạnh [banggia-mua-chem-chuan].</p>
+<p>MoA 3-model (05/09) từng chốt band MK base <strong>130–150k farm-gate</strong> cho Tết 2027 [memory-moa-price-benchmark]; dữ liệu tháng 8–9 (giá phục hồi, lab/codes nới) cho phép nới band lên <strong>130–180k</strong> cho MK đẹp, nhưng KHÔNG quay về đỉnh 2024 (vbl: ngành bước vào giai đoạn tái cấu trúc, thị trường chuyển từ thiếu hụt sang cân bằng; báo đặt câu hỏi "thời hoàng kim liệu có tiếp diễn?" — hàm ý không nên kỳ vọng giá đột biến, không phải kết luận đã đóng) [vinhlong-tai-cau-truc-2627][vbl-thoi-hoang-kim-2026-27].</p>
+<h2>§4 Kịch bản Tết 2027 (farm-gate, VNĐ/kg)</h2>
+<p>¹ Band là <strong>projected từ data điểm + premia mùa vụ lịch sử</strong>, không phải forecast có nguồn trực tiếp cho Tết 2027.</p>
+<table>
+<thead>
+<tr>
+<th>Phân khúc</th>
+<th>Bear (van đóng + cung tràn)</th>
+<th><strong>Base (van hiện hành)</strong></th>
+<th>Bull (thông quan trơn)†</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ri6 loại A đạt chuẩn¹</td>
+<td>55–70k</td>
+<td><strong>85–110k</strong></td>
+<td>100–130k</td>
+</tr>
+<tr>
+<td>Monthong loại A</td>
+<td>65–80k</td>
+<td><strong>100–135k</strong></td>
+<td>120–165k</td>
+</tr>
+<tr>
+<td>Musang King đẹp</td>
+<td>80–110k</td>
+<td><strong>130–180k</strong></td>
+<td>160–220k</td>
+</tr>
+<tr>
+<td>Hàng xô nội địa</td>
+<td>25–40k</td>
+<td><strong>45–70k</strong></td>
+<td>55–85k</td>
+</tr>
+</tbody>
+</table>
+<p>† Bull band là judgment nội bộ MoA, không source nào định lượng +15–25%.</p>
+<p>Phản biện mạnh nhất chống lại base/bull: nếu sản lượng 2,08 triệu tấn là thật, khi 567 mã đóng gói mới go-live thì hàng ĐẠT CHUẨN cũng dư → premium co lại ở mọi mùa vụ, Tết 2027 chỉ còn +5–10% so với ngày thường. Bảng trên nghiêng về kịch bản khan-hàng-hợp-chuẩn-kéo-dài; ai tin cung hợp chuẩn bắt kịp cầu trong 5 tháng thì nên trừ 15–20% khỏi mọi ô base.</p>
+<p>Xác suất định tính người viết gán: Bear 20% · Base 55% · Bull 25% (van TQ là biến quyết, diễn biến 8–9/2026 thiên nới dần).</p>
+<p>Giả định nền: dân số TQ tiếp tục tiêu thụ, cạnh tranh Thái/Malaysia không đổi [competition-thai-malay], công suất chế biến ~40 nghìn tấn/năm ở Đăk Lăk làm buffer giảm đáy chứ không đổi chu kỳ [nha-may-40k-tan][daklak-3-kich-ban].</p>
+<h2>§5 Hàm ý với deal Khu F đã ký (HĐ v4 ký 09/09 — 500tr / 50 tấn / floor 100k)</h2>
+<p>Bán xô @ thương lái đúng vùng base Ri6-A→Monthong-A: <strong>floor 100k/kg phủ được Monthong A ở base giữa-band</strong>, an toàn ở bull, sạt ở bear. P&amp;L bán xô @50 tấn: 90k → Thầy 0,74 tỷ (ROI 148%); 100k → 0,87 tỷ (173%); 120k → 1,12 tỷ (224%) [memory-khu-f-deal]. Phương án tự bán lẻ ăn chênh 20–40% vườn→lẻ [sfarm-le-chenh-vi-trung-gian] nhưng CTG không vận hành sầu, rủi ro retail đổ vào kênh anh Chánh — hybrid 60% lẻ/40% xô chỉ khả thi nếu tỷ lệ đạt chuẩn ≥60%.</p>
+<p><strong>Gate trên mọi kịch bản giá:</strong> verify 84,5 kg/cây (điều khoản ký đã nêu). Nếu thực tế 30–40kg/cây → sản lượng 18–24 tấn thay vì 50 → ROI âm ở MỌI band giá. Không có trade nào đáng làm trước khi gate này pass.</p>
+<h2>§6 Kết luận (deal ĐÃ KÝ — chuyển thành hành động thực thi)</h2>
+<p>(1) Floor 100k nên hiểu là bảo hiểm bear-case, không phải giá kỳ vọng — kỳ vọng có căn cứ là base 100–135k cho Monthong A. (2) Kích hoạt giám sát tuần (điều khoản HĐ): đếm hoa/quả đậu trên ≥30 cây ngẫu nhiên, kết luận năng suất thật trước 15/12/2026 — gate 84,5 kg/cây là điều kiện sống còn của ROI. (3) Theo dõi van TQ hàng tuần (GACC removal-list, sự cố cadimi): nếu siết mới xuất hiện trước 12/2026, chủ động bàn lại phân bổ xô/lẻ với anh Chánh TRƯỚC khi vào vụ, đừng để tới Tết.</p>
+<h2>Gap?</h2>
+<p>Không có gap lớn về coverage. <strong>Đã verify phản biện 11/09 (re-fetch fulltext bằng module đã patch)</strong>: 8/10 số then chốt KHỚP nguyên văn trên trang gốc (46–68k/28–38k vnexpress; 220–280k MK Tết; "rẻ chưa từng có" 50–70k; 2,08 triệu tấn; 22.700ha/90.000ha tuoitre; giảm 30–50% vietnamnet; 3,3 tỷ USD; 40 nghìn tấn nhà máy). 2 nguồn đã SỬA sau audit: (a) cafef — bài thật là 8/12/2025 chứ không phải 2026, quy kết năm trong §2 đã sửa; (b) chogia — trang giá rolling tự cập nhật nên số 198/148 mất trên live page, đã thay bằng bài lita.com.vn ổn định (fulltext khớp 198+148). Remaining limitation: body Exa cắt ~3k ký tự nên số nằm sâu trong bài dài có thể không thấy (không phải không tồn tại — đã đối chiếu quote gốc từ snippet).</p>
+
+</body></html>

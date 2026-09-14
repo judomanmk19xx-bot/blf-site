@@ -1,0 +1,13 @@
+{
+  "mcp_servers": {
+    "hermes-brain-bridge": {
+      "url": "https://crawbot-master-9.taild7e69a.ts.net:9111/mcp",
+      "transport": "streamableHttp",
+      "auth": {
+        "type": "bearer",
+        "token": "4b283c2fb22f77aaa7b3290aed8abf4cea74974cf65f2ce7799a318896545b6b"
+      },
+      "description": "Hermes Brain Bridge \u2014 Mac Mini 18 tools (ChromaDB + Mnemosyne + wiki + KG + web_search). MCP streamable HTTP protocol 2025-03-26."
+    }
+  }
+}

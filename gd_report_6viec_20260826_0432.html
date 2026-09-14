@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GD Report — 6 viec toi uu RAM + failover + Emchi + Redmi</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fafafa; }
+  h1 { border-bottom: 3px solid #27ae60; padding-bottom: .5rem; color: #27ae60; }
+  h2 { color: #2c3e50; margin-top: 2rem; border-left: 4px solid #3498db; padding-left: .6rem; }
+  .meta { color: #666; font-size: .9rem; margin-bottom: 1.5rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; background: #fff; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: .9rem; }
+  th { background: #2c3e50; color: #fff; }
+  tr:nth-child(even) { background: #f5f5f5; }
+  .pass { color: #27ae60; font-weight: bold; }
+  .warn { color: #e67e22; font-weight: bold; }
+  .box { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+  code { background: #eee; padding: 2px 5px; border-radius: 3px; font-size: .85rem; }
+</style>
+</head><body>
+<h1>✅ 6 Viec hoan tat — Toi uu RAM + Failover + Emchi + Redmi</h1>
+<div class="meta">Lead: lead-w1 | Nguon: Thay Tri (21:45 + 22:00) | Generated: 2026-08-26 04:34 +07 | Evidence: /tmp/lead_evidence_2145/</div>
+
+<h2>Ket qua 6 viec</h2>
+<table>
+<tr><th>#</th><th>Task</th><th>Status</th><th>Ket qua chinh</th></tr>
+<tr><td>1</td><td>Co che failover worker</td><td class="pass">PASS</td><td><code>~/gd_failover.py</code> + <code>~/gd_state/</code>. Test that: detect fail → failover vps-contabo-1→ctb-2 (cung loai vps) → recover block dung khi worker goc chet</td></tr>
+<tr><td>2</td><td>Huy mimo serve</td><td class="pass">PASS</td><td>PID 1387 DEAD, port 4096 free, plist disabled, ~201MB freed</td></tr>
+<tr><td>3</td><td>Tat Open WebUI + DSH</td><td class="pass">PASS</td><td>~935MB freed, <code>~/start_openwebui.sh</code> + <code>~/start_dsh.sh</code> created, free 65→505MB</td></tr>
+<tr><td>4</td><td>Audit processes &gt;50MB</td><td class="pass">PASS</td><td>Phan loai 35 procs. De xuat tat Bugler+Obsidian (~241MB). WebKit respawn khong kill duoc</td></tr>
+<tr><td>5</td><td>Emchi Racknerd</td><td class="warn">PASS (escalate)</td><td>PHAT HIEN: service DANG CHAY 1.3GB/2.4GB + dung OWNER KEY Thay (khong phai Emchi key f683b46f) → de xuat STOP, cho Thay duyet</td></tr>
+<tr><td>6</td><td>Redmi provider/API/fallback</td><td class="pass">PASS</td><td>VILAO_CTG_KEY thieu → da fix. 3 models test PASS. Pending: gateway restart</td></tr>
+</table>
+
+<h2>RAM truoc/sau</h2>
+<table>
+<tr><th>Metric</th><th>Truoc</th><th>Sau viec 2+3</th><th>Final</th></tr>
+<tr><td>Free RAM</td><td>65MB</td><td class="pass">505MB (+440MB)</td><td>364MB</td></tr>
+<tr><td>Swap used</td><td>1447MB</td><td>1447MB</td><td class="warn">3072MB FULL (Time Machine backup 418MB dang chay)</td></tr>
+<tr><td>RAM freed</td><td colspan="3">~1136MB (mimo 201 + openwebui 56 + WebKit ~750 + DSH 132)</td></tr>
+</table>
+
+<h2>Escalate — can Thay duyet</h2>
+<div class="box">
+<ol>
+<li><b>STOP buzz-agent@emchi Racknerd</b> — OOM risk (1.3GB/2.4GB, peak 2.0GB) + dung OWNER KEY Thay thay vi Emchi key. Emchi that da o Contabo (f683b46f).</li>
+<li><b>Restart gateway Redmi</b> de nap VILAO_CTG_KEY vao env (API test PASS nhung gateway process chua co key).</li>
+<li><b>Tat them Bugler (172MB) + Obsidian (69MB)</b> neu Thay khong dung → ~241MB.</li>
+</ol>
+</div>
+
+<div class="meta">Full report: /tmp/lead_w1_report_20260823.md | Evidence: /tmp/lead_evidence_2145/ (00-06)</div>
+</body></html>

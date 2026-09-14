@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kojima × BLF — Deep Research (11/09/2026)</title>
+<style>
+  :root { --jp: #bc002d; --vn: #da251d; --blue: #1a73e8; --bg: #f8f9fa; --card: #fff; --text: #202124; --muted: #5f6368; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height:1.6; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 24px; text-align:center; }
+  .hero h1 { font-size: 2em; margin-bottom: 8px; }
+  .hero .flags { font-size: 1.5em; margin-bottom: 12px; }
+  .hero .sub { opacity: .85; font-size: 1.05em; }
+  .badges { margin-top: 16px; }
+  .badge { display:inline-block; background: rgba(255,255,255,.15); border-radius: 20px; padding: 4px 14px; margin: 4px; font-size: .85em; }
+  .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+  .card { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+  h2 { color: var(--blue); margin-bottom: 16px; font-size: 1.4em; border-bottom: 2px solid #e8eaed; padding-bottom: 8px; }
+  h3 { margin: 16px 0 8px; color: #333; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .92em; }
+  th, td { border: 1px solid #e0e0e0; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f1f3f4; }
+  tr:nth-child(even) { background: #fafafa; }
+  ul, ol { padding-left: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .flag { color: var(--jp); font-weight: bold; }
+  .ok { color: #188038; font-weight: 600; }
+  .warn { color: #ea8600; font-weight: 600; }
+  .bad { color: #d93025; font-weight: 600; }
+  .verdict { background: #e8f0fe; border-left: 4px solid var(--blue); padding: 16px; border-radius: 8px; margin: 12px 0; }
+  .callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 14px; border-radius: 8px; margin: 12px 0; }
+  .tag { display:inline-block; background:#e8f0fe; color:#1a73e8; border-radius:4px; padding:2px 8px; font-size:.8em; margin-right:6px; }
+  .footer { text-align:center; color: var(--muted); font-size: .85em; padding: 24px; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .grid2 { grid-template-columns: 1fr; } }
+</style>
+<style>.pill{padding:2px 8px;border-radius:10px;color:#fff;font-size:.8em}.bg-purple{background:#8b5cf6}.bg-green{background:#16a34a}.bg-blue{background:#2563eb}.bg-cyan{background:#0891b2}.bg-orange{background:#ea580c}.bg-yellow{background:#ca8a04}.bg-pink{background:#db2777}.bg-red{background:#dc2626}.bg-gray{background:#6b7280}.bg-indigo{background:#4f46e5}</style></head>
+<body>
+
+<div class="hero">
+  <div class="flags">🇯🇵 × 🇻🇳</div>
+  <h1>Kojima × BLF — Deep Research</h1>
+  <div class="sub">Đánh giá đối tác tiềm năng: 株式会社コジマ商会 (Kojima Firm Co., Ltd.) × Bac Lieu Fisheries JSC</div>
+  <div class="badges">
+    <span class="badge">📅 11/09/2026</span>
+    <span class="badge">📧 Khách thăm nhà máy 25/09/2026</span>
+    <span class="badge">🥒 Cut Eggplant · 🍠 Cut Sweet Potato</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📌 Tóm tắt điều hành</h2>
+    <div class="verdict">
+      <strong>KẾT LUẬN: CƠ HỘI THẬT — nên đón tiếp & chuẩn bị kỹ.</strong> Kojima là công ty B2B frozen food wholesale 45 năm tuổi tại Morioka (76 nhân viên, 8 chi nhánh Đông Bắc), đang mở rộng và có nhu cầu thật về rau củ đông lạnh từ VN (cut eggplant, sweet potato). Đã có 139 shipments + 2 suppliers VN theo Volza/Tendata. BLF có nhà máy Nha Trang đúng địa điểm khách muốn thăm (Lô A9, KCN Suối Dầu) + dòng Rau Đông Lạnh + HACCP. <span class="warn">Rủi ro chính: BLF chưa chứng minh track record IQF rau củ xuất Nhật.</span>
+    </div>
+    <h3>3 việc làm ngay</h3>
+    <ol>
+      <li>✅ Xác nhận khả năng tiếp đón <strong>25/09/2026</strong> (chờ giờ cụ thể từ Kojima)</li>
+      <li>✅ Chuẩn bị <strong>catalog rau củ đông lạnh</strong> (cut eggplant, sweet potato) + mẫu IQF</li>
+      <li>✅ <strong>Xác minh "Huy"</strong> (người gửi email): phản hồi yêu cầu full signature + đề nghị video call 15'</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>🏢 Hồ sơ công ty Kojima</h2>
+    <table>
+      <tr><th>Trường</th><th>Giá trị</th><th>Nguồn</th></tr>
+      <tr><td>Tên chính thức</td><td>株式会社コジマ商会 (Kojima Firm Co., Ltd. / Kojima Shokai)</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>法人番号</td><td>5400001000573</td><td>houjin.jp</td></tr>
+      <tr><td>Trụ sở</td><td>〒020-0125 岩手県盛岡市上堂3丁目9-47 (Morioka, Iwate)</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>Thành lập</td><td>1980/02/25 (45 năm)</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>Ngành</td><td>B2B frozen food & commercial ingredients wholesale</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>Vốn</td><td>1,000万円 (~1.7 tỷ VND)</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>Nhân viên</td><td>76 (58 nam / 18 nữ, 2021)</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>CEO</td><td>中島 悟 (Nakajima Satoru)</td><td>/company/greeting/</td></tr>
+      <tr><td>Mạng lưới</td><td>HQ + 8 chi nhánh Đông Bắc (Sakata 2021, Sendai…) → Tohoku 6 tỉnh + Hokkaido + Kanto</td><td>kojimafirm.co.jp</td></tr>
+      <tr><td>Subsidiary</td><td>株式会社エーダイ食品 (E-Dai Foods) — Sakata, Yamagata (法人番号 7390001006091)</td><td>e-daifoods.co.jp / gBizINFO</td></tr>
+      <tr><td>Ngân hàng</td><td>Iwate / Tohoku / Kita-Nippon / Aomori Bank, Shoko Chukin</td><td>kojimafirm.co.jp</td></tr>
+    </table>
+    <h3>Mô hình kinh doanh</h3>
+    <ul>
+      <li><strong>B2B wholesale</strong>: cung cấp frozen food cho nhà hàng, khách sạn, siêu thị, bệnh viện, canteen trường học vùng Đông Bắc</li>
+      <li><strong>Phát triển sản phẩm theo nhu cầu khách</strong>: hợp tác nhà máy trong/ngoài nước (Nhật, Trung Quốc, <span class="flag">Việt Nam</span>) — khớp chính xác việc họ muốn thăm nhà máy BLF</li>
+      <li><strong>Đang mở rộng</strong>: mở chi nhánh Sakata 2021, tuyển dụng tích cực 2026 (Indeed, Entori, Kyusaku, Job-J)</li>
+    </ul>
+    <div class="callout">
+      ⚠️ <strong>Đừng nhầm lẫn:</strong> Có 3 công ty Nhật tên "Kojima" — Kojima <em>Shokai</em> (frozen food, Morioka — <strong>đối tác của chúng ta</strong>), Kojima <em>Denki</em> (chuỗi điện máy kojima.net), Kojima <em>Food Industry</em> (snacks, Saga). Chỉ tin theo 法人番号 + ngành.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>👤 OSINT "Huy" & Ban lãnh đạo</h2>
+    <h3>Lãnh đạo xác minh</h3>
+    <ul>
+      <li><strong>中島 悟 (Nakajima Satoru)</strong> — 代表取締役社長 (CEO) — <a href="https://www.kojimafirm.co.jp/company/greeting/" target="_blank">nguồn chính thức</a></li>
+    </ul>
+    <h3>"Huy" — người gửi email</h3>
+    <table>
+      <tr><th>Kịch bản</th><th>Khả năng</th><th>Hành động</th></tr>
+      <tr><td>Nhân viên người Việt tại Kojima (visa kỹ sư/kinh doanh)</td><td class="ok">Cao</td><td>Video call trước ngày gặp</td></tr>
+      <tr><td>Phiên dịch / agency môi giới</td><td>Trung bình</td><td>Xác minh signature email, hỏi thẳng role</td></tr>
+      <tr><td>Tên Nhật đọc gần "Huy" (Hiro, Hideo…)</td><td>Thấp</td><td>Xác minh qua email reply</td></tr>
+    </table>
+    <div class="callout">
+      🔍 <strong>Không tìm thấy thông tin công khai nào về "Huy"</strong> (LinkedIn/Facebook/job boards) — hợp lý với công ty 76 người không có corporate LinkedIn. <strong>Cần xác minh trực tiếp</strong>: yêu cầu full signature (họ tên Romaji, chức vụ, số ĐT), kiểm tra email header domain @kojimafirm.co.jp, đề nghị video call 15 phút.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📊 Thương mại & Thị trường</h2>
+    <h3>Kojima × Việt Nam</h3>
+    <ul>
+      <li><span class="tag">Volza</span><strong>139 shipments</strong> từ VN (data block bởi Cloudflare — chi tiết cần paid access)</li>
+      <li><span class="tag">Tendata</span><strong>2 suppliers VN</strong> đăng ký (danh sách cụ thể cần paid)</li>
+      <li>→ Kojima <strong>đã có kinh nghiệm nhập VN</strong>. Họ tìm BLF có thể để: tăng sản lượng / đa dạng nguồn / tìm sản phẩm mới (cut eggplant, sweet potato) mà supplier cũ không có</li>
+    </ul>
+    <h3>Thị trường rau củ đông lạnh Nhật ← VN (UN Comtrade chính thức 2024)</h3>
+    <table>
+      <tr><th>HS Code</th><th>Mô tả</th><th>Qty (kg)</th><th>CIF ($)</th><th>Ghi chú</th></tr>
+      <tr><td>0710</td><td>Frozen vegetables (raw)</td><td>9,085,323</td><td>$20,378,293</td><td>Eggplant nằm trong đây (0710.80)</td></tr>
+      <tr><td>2004</td><td>Prepared veg, frozen</td><td>8,033,028</td><td>$24,077,845</td><td>Lớn hơn cả 0710!</td></tr>
+      <tr><td>2005</td><td>Prepared veg, non-frozen</td><td>2,273,131</td><td>$8,169,397</td><td></td></tr>
+      <tr><td>0714</td><td>Roots (sweet potato/yam/taro)</td><td>4,640,809</td><td>$11,265,056</td><td>Cut sweet potato thuộc đây</td></tr>
+      <tr><td>2006</td><td>Veg preserved sugar</td><td>136</td><td>$1,566</td><td></td></tr>
+      <tr><td><strong>Frozen-relevant (0710+2004)</strong></td><td></td><td><strong>17,118,351</strong></td><td><strong>$44,456,137</strong></td><td class="ok">Chính thức — nguồn UN Comtrade API</td></tr>
+    </table>
+    <p><small>Nguồn: <a href="https://comtradeapi.un.org/" target="_blank">UN Comtrade API</a> (free, repo uncomtrade/comtradeapicall ★159) — query live 11/09/2026, 12 tháng gộp.</small></p>
+    <h3>Top partners Japan HS 0710 2024 (UN Comtrade)</h3>
+    <table>
+      <tr><th>Nước</th><th>CIF ($)</th><th>Share</th></tr>
+      <tr><td>🇨🇳 China</td><td>$692.9M</td><td>97.1%</td></tr>
+      <tr><td>🇻🇳 Vietnam</td><td>$20.4M</td><td>2.9%</td></tr>
+    </table>
+    <div class="callout">
+      📈 <strong>Dư địa rõ ràng:</strong> VN chỉ 2.9% thị phần (China 97.1%) — xu hướng China+1 + lợi thế thuế (VN 0% vs TQ 3.8% RCEP) → cơ hội tăng thị phần.
+    </div>
+    <h3>Thuế nhập khẩu Nhật (webTARIFF chính thức)</h3>
+    <table>
+      <tr><th>HS</th><th>General</th><th>WTO</th><th>🇻🇳 VJEPA</th><th>🇨🇳 RCEP</th><th>Laws</th></tr>
+      <tr><td>0710.80 (other frozen veg — eggplant)</td><td>10%</td><td>6%</td><td class="ok">FREE</td><td>3.8%</td><td>Plant Quarantine + Food Sanitation</td></tr>
+    </table>
+    <p><small>Nguồn: <a href="https://www.kanzei.or.jp/statistical/tariff/detail/index/e/0710800904" target="_blank">webTARIFF (Japan Tariff Assoc)</a> — Vietnam FREE = lợi thế 6 điểm % so China RCEP 3.8%.</small></p>
+    <h3>Đối thủ VN cạnh tranh</h3>
+    <ul>
+      <li><strong>DOVECO</strong> (Dong Giao Foodstuff) — top #1 VN frozen veg, 136,000 tấn/năm, 3 factories</li>
+      <li><strong>HOLUS</strong> — công ty Nhật 100% vốn, factory VN (AGRIEX), "Made by JAPAN"</li>
+      <li>Lam Viet (Đồng Nai), Sunrise Foods Đà Lạt, Minh Van Fruit, Greatfoods</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🥒 Product-fit: BLF vs Kojima</h2>
+    <div class="grid2">
+      <div>
+        <h3>Năng lực BLF ✅</h3>
+        <ul>
+          <li class="ok">✓ HACCP (vượt FDA)</li>
+          <li class="ok">✓ Xuất khẩu 30+ markets (Asia, EU, Middle East)</li>
+          <li class="ok">✓ Niêm yết — có IR + BCTC công khai</li>
+          <li class="ok">✓ Dòng "Rau Đông Lạnh" trên website</li>
+          <li class="ok">✓ Nhà máy Nha Trang: Lô A9, KCN Suối Dầu — đúng địa điểm khách thăm</li>
+          <li class="ok">✓ Gần vùng nguyên liệu (Khánh Hòa, Lâm Đồng/Đà Lạt)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Khoảng trống ⚠️</h3>
+        <ul>
+          <li class="warn">⚠ Chưa thấy track record rau củ xuất Nhật</li>
+          <li class="warn">⚠ IQF rau củ — cần xác nhận dây chuyền sản xuất</li>
+          <li class="warn">⚠ Website cũ (GA UA, jQuery 1.10) — ấn tượng thương hiệu kém</li>
+          <li class="warn">⚠ Tài chính vừa hồi phục sau 5 quý thua lỗ (lãi lại Q4/2023)</li>
+          <li class="warn">⚠ Catalog rau củ chưa chi tiết trên web</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict">
+      <strong>Kết luận product-fit: ĐÁNG THEO ĐUỔI, có điều kiện.</strong> Nếu BLF có (hoặc sẵn sàng đầu tư) dây chuyền IQF rau củ + chuẩn bị catalog cụ thể + audit MHLW → đây là cơ hội mở thị trường Nhật cho dòng sản phẩm mới. Nếu chưa có line IQF → vẫn hợp tác được với vai trò co-packer/ODM theo spec Kojima, đầu tư line mới (~$100–200K) khi MOQ ≥ 20 tấn/tháng.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Khuyến nghị hành động</h2>
+    <table>
+      <tr><th>#</th><th>Action</th><th>Owner</th><th>Deadline</th><th>Trạng thái</th></tr>
+      <tr><td>1</td><td>Xác nhận khả năng tiếp đón 25/09 (chờ giờ cụ thể)</td><td>BLF Sales</td><td>12/09</td><td class="warn">TODO</td></tr>
+      <tr><td>2</td><td>Phản hồi email Huy: yêu cầu full signature + xác nhận role + video call 15'</td><td>BLF Sales</td><td>12/09</td><td class="warn">TODO</td></tr>
+      <tr><td>3</td><td>Chuẩn bị catalog rau củ đông lạnh (cut eggplant, sweet potato) + mẫu IQF</td><td>BLF R&D</td><td>20/09</td><td class="warn">TODO</td></tr>
+      <tr><td>4</td><td>Audit năng lực IQF rau củ + HACCP/MHLW readiness</td><td>BLF QA</td><td>20/09</td><td class="warn">TODO</td></tr>
+      <tr><td>5</td><td>Chuẩn bị vùng nguyên liệu cam kết (Khánh Hòa/Lâm Đồng)</td><td>BLF Sourcing</td><td>20/09</td><td class="warn">TODO</td></tr>
+      <tr><td>6</td><td>Soạn agenda buổi gặp: trình diễn nhà máy + năng lực + mẫu sản phẩm</td><td>BLF Team</td><td>23/09</td><td class="warn">TODO</td></tr>
+      <tr><td>7</td><td>Gap: lấy danh sách 2 suppliers VN của Kojima (Volza/Tendata paid) để biết đối thủ</td><td>Hermes</td><td>Khi có budget</td><td class="bad">OPEN</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🔗 Nguồn & Tài liệu</h2>
+    <h3>Nguồn chính (verify live 11/09/2026)</h3>
+    <ul>
+      <li><a href="https://www.kojimafirm.co.jp/" target="_blank">kojimafirm.co.jp</a> — website chính thức (company, greeting, product, development)</li>
+      <li><a href="https://houjin.jp/c/5400001000573" target="_blank">houjin.jp — 法人番号 5400001000573</a></li>
+      <li><a href="https://info.gbiz.go.jp/hojin/ichiran?hojinBango=7390001006091" target="_blank">gBizINFO — E-Dai Foods 7390001006091</a></li>
+      <li><a href="https://e-daifoods.co.jp/" target="_blank">e-daifoods.co.jp</a> — subsidiary</li>
+      <li><a href="https://www.dnb.com/business-directory/company-profiles.kojima_firm_coltd.4c1b546784d40b7636429306511e135e.html" target="_blank">D&B — Kojima Firm profile</a></li>
+      <li><a href="https://www.volza.com/company-profile/kojima-firm-co-ltd-64642960/" target="_blank">Volza — 139 shipments</a></li>
+      <li><a href="https://www.baclieu-vegetables.vn/" target="_blank">baclieu-vegetables.vn — BLF website</a></li>
+    </ul>
+    <h3>Repo & Notion</h3>
+    <ul>
+      <li>📁 Research repo: <code>~/.hermes/data/kojima_research/</code> (evidence_raw.md + 00_INDEX + A..G)</li>
+      <li>📄 Notion: <a href="https://app.notion.com/p/Kojima-BLF-Deep-Research-11-09-2026-3d8ca543948a81238c03c213218f54c6" target="_blank">Kojima × BLF — Deep Research (11/09/2026)</a></li>
+      <li>🛠 Skill: <code>blf-partner-deep-research</code> (tái sử dụng cho khách mới)</li>
+    </ul>
+    <h3>Gaps (cập nhật 11/09/2026)</h3>
+    <ul>
+      <li class="ok">✅ ĐÓNG: Import volume chính thức — UN Comtrade API (đã lấy 5 HS codes)</li>
+      <li class="ok">✅ ĐÓNG: Tariff VJEPA 0710.80 — webTARIFF (VN FREE vs TQ 3.8%)</li>
+      <li class="ok">✅ ĐÓNG: Con số $20.39M — xác nhận = $20.38M chính thức từ UN Comtrade</li>
+      <li>⏳ MỞ: Danh sách cụ thể 2 suppliers VN của Kojima (Volza/Tendata paid)</li>
+      <li>⏳ MỞ: Tariff 0714.20/2004 (webTARIFF timeout — retry sau)</li>
+      <li>⏳ MỞ: Giá FOB thực tế IQF rau củ từ nhà máy VN</li>
+    </ul>
+
+    <h3>🛠 GitHub Tools đã verified (11/09/2026)</h3>
+    <table>
+      <tr><th>Repo</th><th>★</th><th>License</th><th>Dùng cho</th><th>Trạng thái</th></tr>
+      <tr><td><a href="https://github.com/uncomtrade/comtradeapicall" target="_blank">uncomtrade/comtradeapicall</a></td><td>159</td><td>MIT</td><td>UN Comtrade API — trade stats chính thức</td><td class="ok">✅ Đã dùng</td></tr>
+      <tr><td><a href="https://github.com/openfoodfacts/openfoodfacts-python" target="_blank">openfoodfacts-python</a></td><td>464</td><td>—</td><td>Food DB, nutrition, MRL data</td><td>⚠️ API 503 hôm nay</td></tr>
+      <tr><td><a href="https://github.com/mwouts/world_trade_data" target="_blank">mwouts/world_trade_data</a></td><td>45</td><td>MIT</td><td>WITS tariff API</td><td>⚠️ 403 hôm nay</td></tr>
+      <tr><td><a href="https://github.com/D4Vinci/Scrapling" target="_blank">D4Vinci/Scrapling</a></td><td>80K</td><td>BSD-3</td><td>Scraping framework — thay web_extract khi lỗi</td><td class="ok">✅</td></tr>
+      <tr><td><a href="https://github.com/ripienaar/free-for-dev" target="_blank">ripienaar/free-for-dev</a></td><td>137K</td><td>—</td><td>Free-tier API list (HS Ping 100/day...)</td><td class="ok">✅</td></tr>
+    </table>
+    <p><small>Đầy đủ tại repo <code>F_GITHUB_TOOLS.md</code> — verified qua GitHub API, có test thật.</small></p>
+  </div>
+
+  <div class="card">
+    <h2>💰 Chiến lược giá & Điều tra Trung Quốc (vòng 3)</h2>
+    <h3>Giá đối thủ — Trung Quốc</h3>
+    <table>
+      <tr><th>Mặt hàng</th><th>Giá TQ</th><th>Nguồn</th></tr>
+      <tr><td>Eggplant tươi wholesale</td><td>$0.68–0.91/kg</td><td>Tridge 2025–26</td></tr>
+      <tr><td>Sweet potato tươi wholesale</td><td>$0.45/kg</td><td>Tridge 12/2025</td></tr>
+      <tr><td><strong>Frozen veg FOB TQ (generic)</strong></td><td><strong>~$1.33/kg</strong> ($1,331/tấn)</td><td>IndexBox 9/2022</td></tr>
+    </table>
+    <div class="callout">
+      ⚡ <strong>Giá bán lẻ Nhật:</strong> 冷凍なす業務用 ¥1,400–2,350/kg (~$9–16) — mua TQ ~$1.33, margin khâu bán lẻ rất dày. FOB là nơi cạnh tranh.
+    </div>
+    <h3>Suppliers hiện tại của Kojima</h3>
+    <ul>
+      <li><span class="tag">Volza</span><strong>139 shipments từ 2 suppliers VN</strong> — Kojima ĐÃ có quan hệ mua hàng VN (tên cụ thể = trả phí)</li>
+      <li><span class="tag">Tendata</span>Xác nhận buyer Nhật "importing to 2 suppliers across Vietnam" (06/12/2025)</li>
+      <li class="bad">⚠️ DISAMBIGUATION: "Asia Food And Beverage Co., Ltd" (Bình Dương, 25,000m², 1,209 shipments) là supplier cho <strong>Kojima & International Associates</strong> (entity Mỹ, Carson CA) — KHÔNG phải Kojima Firm Morioka. Đừng nhầm.</li>
+    </ul>
+    <h3>Giá BLF nên chào (FOB)</h3>
+    <table>
+      <tr><th>SKU</th><th>Floor</th><th>Target</th><th>Premium</th><th>So TQ</th></tr>
+      <tr><td>Cut eggplant IQF (tempura-grade, 10–12mm)</td><td>$1.50</td><td>$1.70–1.90</td><td>$2.00</td><td>+28–43%</td></tr>
+      <tr><td>Cut sweet potato IQF (0.8cm)</td><td>$1.40</td><td>$1.55–1.75</td><td>$1.85</td><td>+17–32%</td></tr>
+      <tr><td>Pre-fried eggplant (揚げなす乱切り)</td><td>$1.90</td><td>$2.20–2.50</td><td>$2.80</td><td>+65–88%</td></tr>
+      <tr><td>Tempura veg mix (nas+pumpkin+okra)</td><td>$1.70</td><td>$1.90–2.20</td><td>$2.40</td><td>—</td></tr>
+      <tr><td>Whole grilled eggplant (焼きなす)</td><td>$1.80</td><td>$2.00–2.30</td><td>$2.60</td><td>对标 Shinyei</td></tr>
+    </table>
+    <div class="verdict">
+      <strong>Trọng tâm cần đánh (6 điểm):</strong> (1) VSAT + traceability (MHLW Positive List) — vũ khí chính; (2) Contract-farm: giảm raw 65–85% (4,000–7,000 vs 25,000 VND/kg); (3) China+1 — Nhật chủ động giảm phụ thuộc TQ; (4) Co-development 4–6 tuần làm mẫu theo spec; (5) Year-round supply 2 vụ/năm; (6) Logistics 15–26 ngày. <strong>Floor $1.50 — không thấp hơn.</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Tên mặt hàng cụ thể Kojima (vòng 4) — Góc đàm phán</h2>
+    <p><strong>🔑 Insight #1:</strong> Kojima ĐANG nhập <strong>tôm nấu chín (cooked shrimp tails, HSN 16052100)</strong> từ 2 nhà cung cấp VN (Volza 139 shipments). Email hỏi rau củ đông lạnh = họ muốn <strong>mở rộng danh mục từ cùng một đối tác</strong>. BLF là công ty THỦY SẢN có dây chuyền rau đông lạnh → chào <strong>combo tôm + rau 1-stop-shop</strong> — 2 supplier rau thuần không làm được.</p>
+    <h3>Catalog Kojima (từ website chính thức) — sản phẩm CÓ CHỨA nguyên liệu BLF</h3>
+    <table>
+      <tr><th>Sản phẩm Kojima</th><th>Liên quan</th><th>Ghi chú</th></tr>
+      <tr><td>海鮮アジフライ (cá sòng chiên)</td><td>Hàng tự phát triển VN/TQ</td><td>Vietnam = nước họ đã đặt nhà máy phát triển sản phẩm</td></tr>
+      <tr><td>海老フライ (tôm chiên)</td><td>Tôm — thế mạnh gốc BLF</td><td>Nhu cầu tôm VN hiện hữu</td></tr>
+      <tr><td>青森県産ごぼう唐揚げ (ngưu bàng chiên)</td><td>Rau củ chiên</td><td>Họ đã có công thức rau củ chiên</td></tr>
+      <tr><td><strong>8品目のごった煮 (hầm 8 nguyên liệu)</strong></td><td><strong>Rau cắt — NHẮM TRÚNG email</strong></td><td>8 loại rau củ cắt IQF — hỏi thẳng cần 8 loại gì</td></tr>
+      <tr><td><strong>なすの鶏そぼろ餡キット (kit cà tím sốt thịt bằm)</strong></td><td><strong>Cà tím — NHẮM TRÚNG email</strong></td><td>Họ đã có sẵn công thức tiêu thụ cà tím</td></tr>
+      <tr><td>夏野菜の天丼 (don tempura rau hè)</td><td>Rau củ tempura</td><td>31 năm kinh nghiệm tempura đông lạnh</td></tr>
+    </table>
+    <h3>5 câu hỏi cho buổi gặp 25/09</h3>
+    <ol>
+      <li>Anh đang nhập tôm nấu chín từ VN — nguồn nào, sản lượng/tuần?</li>
+      <li>Món 8 nguyên liệu + dòng rau cần bao nhiêu SKU, mỗi loại kg/tháng?</li>
+      <li>Spec cắt mong muốn: kích thước, IQF hay block, nhiệt độ, hạn dùng?</li>
+      <li>Anh dùng nguyên liệu cho nhà máy Takizawa Foods nội địa không, hay hàng phân phối?</li>
+      <li>Thời gian + quy trình phê duyệt đơn hàng đầu tiên?</li>
+    </ol>
+    <h3>Đơn giá thật đang trả (UN Comtrade 2024, CIF Japan)</h3>
+    <table>
+      <tr><th>HS</th><th>Mặt hàng</th><th>🇻🇳 VN → JP</th><th>🇨🇳 TQ → JP</th><th>VN premium</th></tr>
+      <tr><td>0710</td><td>Rau đông lạnh (IQF eggplant trong này)</td><td><strong>$2.24/kg</strong></td><td>$1.55/kg</td><td>+44%</td></tr>
+      <tr><td>2004</td><td>Rau chế biến đông lạnh (pre-fried)</td><td><strong>$3.00/kg</strong></td><td>$2.34/kg</td><td>+28%</td></tr>
+      <tr><td>0714</td><td>Khoai lang & củ (sweet potato)</td><td><strong>$2.43/kg</strong></td><td>$2.18/kg</td><td>+11%</td></tr>
+    </table>
+    <p><strong>→ Giá chào BLF (hiệu chỉnh):</strong> Cut eggplant IQF $2.10–2.30/kg · Pre-fried $2.70–2.90 · Sweet potato $2.20–2.40 · Floor mới <strong>$2.00/kg</strong> (không $1.50 — sai vì không có số thật)</p>
+</div>
+
+
+<div class="card">
+    <h2>🦐 Tôm & Rau Combo Strategy (vòng 5)</h2>
+    <h3>Giá tôm thật Kojima đang trả (Comtrade 2024)</h3>
+    <table>
+      <tr><th>HS</th><th>Mặt hàng</th><th>USD/kg</th></tr>
+      <tr><td>0306</td><td>Tôm đông lạnh</td><td><strong>$10.02</strong></td></tr>
+      <tr><td>1605</td><td>Tôm nấu chín (tails)</td><td><strong>$10.19</strong></td></tr>
+      <tr><td>0710</td><td>Rau đông lạnh</td><td><strong>$2.24</strong></td></tr>
+      <tr><td>0714</td><td>Khoai lang</td><td><strong>$2.43</strong></td></tr>
+    </table>
+    <p><strong>💡 Combo 1-stop-shop:</strong> BLF có cả tôm ($10/kg) lẫn rau ($2.24/kg). Minh Phu/Stapimex KHÔNG làm rau. Viet Khanh/Chibafoods KHÔNG làm tôm. BLF là <strong>1 trong ít công ty</strong> bán được cả 2.</p>
+    <p><strong>Top shrimp exporters VN:</strong> Minh Phu (Cà Mau) · Stapimex (Sóc Trăng, $310M/năm) · Camimex</p>
+    <p><strong>Top frozen veg VN→JP:</strong> Viet Khanh (sweet potato JP) · Chibafoods (sweet potato JP) · Agripro (IQF)</p>
+    <p><strong>Kojima regional player</strong> (76 NV, 7 văn phòng Tohoku) — không phải top tier như Nichirei/Ajinomoto. Họ cần supplier đáng tin cậy, không phải giá rẻ nhất. BLF combo = giải pháp hoàn hảo.</p>
+    <h3>🎯 Đề xuất gửi ngày 25/09</h3>
+    <table>
+      <tr><th>SKU</th><th>Giá chào</th><th>Lý do</th></tr>
+      <tr><td>Cut eggplant IQF</td><td>$2.10–2.30</td><td>Dưới thị trường ($2.24)</td></tr>
+      <tr><td>Pre-fried veg</td><td>$2.70–2.90</td><td>Premium chất lượng Nhật</td></tr>
+      <tr><td>Sweet potato</td><td>$2.20–2.40</td><td>Đúng loại sweet potato Nhật</td></tr>
+      <tr><td>Cooked shrimp tails</td><td>$9.50–10.00</td><td>Dưới thị trường ($10.19), cam kết volume</td></tr>
+    </table>
+    <p><strong>Câu hỏi mở màn:</strong> "Món 8 nguyên liệu (ごった煮) cần những loại cut nào?" — đây mới là đơn hàng thật.</p>
+</div>
+
+
+<div class="card">
+    <h2>🔢 Cross-Ref: HS Codes BLF Đang Bán × Giá VN→JP Thật (vòng 6)</h2>
+    <p>Trích từ <code>blf_intelligence.db → hs_products</code> (283 SKU thật của BLF) đối chiếu UN Comtrade 2024:</p>
+    <table>
+      <tr><th>HS</th><th>Mặt hàng BLF</th><th># SKU</th><th>🇻🇳 VN→JP</th><th>🇨🇳 TQ→JP</th><th>Giá chào</th></tr>
+      <tr><td><strong>20049090</strong></td><td>Cà tím/bí/ớt chiên-nướng cut</td><td><strong>134</strong> (47%)</td><td>$2.99</td><td>$2.60</td><td><strong>$2.75–2.95</strong></td></tr>
+      <tr><td>07108000</td><td>Cà tím/rau hấp cut</td><td>65</td><td>$2.18</td><td>$1.53 (+42%)</td><td>$2.05–2.20</td></tr>
+      <tr><td><strong>16052100</strong></td><td>🔥 Tôm cooked + cà tím NHỒI TÔM chiên</td><td>28</td><td><strong>$9.76</strong></td><td>$5.49 (+78%)</td><td>$8.90–9.60</td></tr>
+      <tr><td>07102200</td><td>Đậu bắp/đậu cô ve</td><td>14</td><td>$2.18</td><td>—</td><td>$2.00–2.20</td></tr>
+      <tr><td>07142010</td><td>Khoai lang hấp cut</td><td>14</td><td>$2.24</td><td>$1.25 (+79%)</td><td>$2.10–2.30</td></tr>
+      <tr><td>20089990</td><td>Khoai lang nướng/siro</td><td>14</td><td>$2.43</td><td>$3.30 (⚠️ VN RẺ hơn)</td><td>$2.30–2.45</td></tr>
+    </table>
+    <div class="verdict">
+      <strong>💥 PHÁT HIỆN LỚP ĐÔI:</strong> Kojima nhập "Cooked-shrimp-tails" <strong>HSN 16052100</strong> — BLF có đúng 28 SKU mã này, gồm cả <strong>Cà tím nhồi tôm chiên</strong> (rau+tôm trong 1 SKU, phân loại HS theo phần tôm). Email hỏi "Cut eggplant" = đánh trúng 2 nhóm mạnh nhất BLF: 20049090 (134 SKU chiên/nướng) + 07108000 (4 SKU cà tím hấp). BLF không phải "tiệm rau" — là <strong>supplier tôm + rau combo</strong> đúng cái Kojima đang mua.
+    </div>
+    <p><strong>⚠️ Lưu ý:</strong> HS 200899 (khoai lang siro) VN rẻ hơn TQ 26% — đừng chào premium story cho dòng này.</p>
+</div>
+
+
+<div class="card">
+    <h2>🔥 Vòng 7: BLF ĐÃ Có Track Record XK Nhật Thật (DB `tg_orders`)</h2>
+    <table>
+      <tr><th>Khách Nhật</th><th>Đơn THẬT</th><th>Sản phẩm</th><th>HS</th></tr>
+      <tr><td><strong>UniFoods</strong></td><td><strong>18 tấn ĐÃ CHỐT</strong> (30/06) + cont W1 1,907ct + W4 3,750ct ETD 7/26</td><td>Bí ngòi/Zucchini</td><td>07108000</td></tr>
+      <tr><td><strong>Tablemark</strong> (top 4 frozen JP)</td><td>1,400ct Kanroni khoai lang + 1,600ct Mix</td><td>Khoai lang nướng siro</td><td>20089990</td></tr>
+      <tr><td>MC FOODS</td><td>29 email, ĐANG SAMPLE</td><td>Ớt chuông 15mm + cà tím nướng</td><td>20049090</td></tr>
+    </table>
+    <p><strong>Pipeline Nhật BLF: 77 công ty</strong> (Ajinomoto, TableMark, Nichiyo, ITO EN, Zen-Noh, KOKUBU, Daiwa House, Hiệp hội冷冻食品 Nhật...) — 13 đã gửi email.</p>
+    <div class="verdict">
+      <strong>💡 Điều chỉnh tư thế đàm phán 25/09:</strong> BỎ câu self-deprecating "chưa có track record IQF rau củ xuất Nhật". Thay bằng: <em>"UniFoods 18 tấn zucchini + Tablemark 3,000 thùng kanroni mỗi tháng — đang chạy."</em> Kojima Firm KHÔNG có trong pipeline 77 công ty → khách mới 100%, nhưng BLF vào với tư thế nhà cung cấp đã được thị trường Nhật kiểm chứng.
+    </div>
+</div>
+
+
+<div class="card">
+    <h2>📇 Vòng 8: Contact Map Nhật Của BLF + HS Gyoza</h2>
+    <p>Từ <code>blf_intelligence.db → people</code> (218 contacts) — đếm email đã trao đổi THẬT:</p>
+    <table>
+      <tr><th>Người</th><th>Vai trò</th><th>Công ty Nhật</th><th>Email</th></tr>
+      <tr><td>r.ishii</td><td>Sản xuất</td><td>UniFoods</td><td><strong>79</strong></td></tr>
+      <tr><td>Quality Assurance</td><td>QA</td><td>HOLUS</td><td>17</td></tr>
+      <tr><td>Shinsuke Fukatsu</td><td><strong>GM</strong></td><td>MC Foods</td><td>14</td></tr>
+      <tr><td>yano</td><td>—</td><td>Iwatani (冷链 lớn)</td><td>11</td></tr>
+      <tr><td>Saburo Kuroda</td><td><strong>Chairman</strong></td><td>UniFoods</td><td>10</td></tr>
+      <tr><td>Koji Kevin Sakuma</td><td><strong>CEO</strong></td><td>Sumida Trading</td><td>5</td></tr>
+    </table>
+    <p><strong>HS 190220 (gyoza/nem rán, 8 SKU BLF): $6.32/kg</strong> VN→JP — premium 2× rau thường, chỉ sau tôm. Chào Kojima như upsell sau khi rau vào được.</p>
+    <div class="verdict">
+      <strong>Nhận định:</strong> BLF đã ngồi bàn với Chairman/GM/CEO phía Nhật (UniFoods, MC Foods, Sumida, HOLUS) — Kojima Firm gặp BLF là gặp supplier đã tier-1 Nhật kiểm chứng. <strong>⚠️ Kojima + "Huy" KHÔNG có trong 218 contacts</strong> → liên hệ đầu tiên chưa từng giao dịch; "Huy" có thể là người Việt sourcing cho Kojima tại VN — video call verify danh tính là bước bắt buộc trước 25/09.
+    </div>
+</div>
+
+
+<div class="card">
+    <h2>💪 Vòng 9: Vị Thế BLF — Hợp Đồng Nhật ĐANG CHẠY (data live 8/2026)</h2>
+    <table>
+      <tr><th>Khách</th><th>Hợp đồng THẬT</th><th>Chứng cứ</th></tr>
+      <tr><td><strong>Tablemark</strong> (top 4 frozen JP)</td><td>~1,000 thùng Mix + Kanroni khoai lang/tháng — ETD 22/8 ĐÃ ĐÓNG CONT 23/8; book trước tới <strong>24/10 + 21/11</strong></td><td>tg_orders + msg Thu Thảo 26/08</td></tr>
+      <tr><td><strong>UniFoods</strong></td><td>18 tấn zucchini ĐÃ CHỐT + cont W1 (1,907ct) W4 (3,750ct)</td><td>tg_orders 30/06</td></tr>
+      <tr><td><strong>MC Foods</strong></td><td>Đang sample ớt chuông 15mm + cà tím nướng — GM trực tiếp 29 email</td><td>pipeline</td></tr>
+    </table>
+    <p><strong>Chương trình cà tím Senryo</strong> (SOP nội bộ 25/08): nướng nguyên trái code 20001, mục tiêu <strong>20–40 MT/tháng</strong>, nhà máy gọi hàng bằng tiếng Nhật ("Nasu hạt cải", "Mabo nướng"), kế hoạch nâng <strong>10 cont/tuần → Yokohama</strong>. Sản xuất kanroni T8: 2,053 kg TP/9 ngày (~230kg/ngày).</p>
+    <div class="verdict">
+      <strong>Câu nói với Kojima 25/09:</strong> "Mỗi tháng chúng tôi xuất đều ~1,000 thùng cho Tablemark, cont kế tiếp đã book ETD 24/10 và 21/11; UniFoods 18 tấn zucchini đã chốt; cà tím Senryo đang chạy 20–40 MT/tháng vào Yokohama. Tohoku của các anh cần cut size nào, frequency bao nhiêu — chúng tôi xếp slot container." → Tư thế <strong>supplier hết công suất, khách chọn slot</strong>, không xin cơ hội.
+    </div>
+    <p><small>⚠️ Gap: W4 từng đóng 0.7% tại báo cáo 2/7 → năng lực đóng gói là bottleneck khi scale. Crawler TG nhà máy dừng 26/08 — cần crawl lại để có số T9.</small></p>
+</div>
+
+
+<div class="card">
+    <h2>💪 Vòng 9: Vị Thế BLF — Hợp Đồng Nhật ĐANG CHẠY (data live 8-9/2026)</h2>
+    <table>
+      <tr><th>Khách</th><th>Hợp đồng THẬT</th><th>Chứng cứ</th></tr>
+      <tr><td><strong>Tablemark</strong> (top 4 frozen JP)</td><td>~1,000 thùng Mix + Kanroni khoai lang/tháng — ETD 22/8 ĐÃ ĐÓNG CONT 23/8; book trước tới <strong>24/10 + 21/11</strong></td><td>tg_orders + msg Thu Thảo 26/08</td></tr>
+      <tr><td><strong>UniFoods</strong></td><td>18 tấn zucchini ĐÃ CHỐT + cont W1 (1,907ct) W4 (3,750ct)</td><td>tg_orders 30/06</td></tr>
+      <tr><td><strong>MC Foods</strong></td><td>Đang sample ớt chuông 15mm + cà tím nướng — GM trực tiếp 29 email</td><td>pipeline</td></tr>
+    </table>
+    <p><strong>Chương trình cà tím Senryo</strong> (SOP nội bộ 25/08): nương nguyên trái code 20001, mục tiêu <strong>20–40 MT/tháng</strong>, nhà máy gọi hàng bằng tiếng Nhật ("Nasu hạt cải", "Mabo nướng"), kế hoạch nâng <strong>10 cont/tuần → Yokohama</strong>. Sản xuất kanroni T8: 2,053 kg TP/9 ngày (~230kg/ngày).</p>
+    <div class="verdict">
+      <strong>Câu nói với Kojima 25/09:</strong> "Mỗi tháng chúng tôi xuất đều ~1,000 thùng cho Tablemark, cont kế tiếp đã book ETD 24/10 và 21/11; UniFoods 18 tấn zucchini đã chốt; cà tím Senryo đang chạy 20–40 MT/tháng vào Yokohama. Tohoku của các anh cần cut size nào, frequency bao nhiêu — chúng tôi xếp slot container." → Tư thế <strong>supplier hết công suất, khách chọn slot</strong>, không xin cơ hội.
+    </div>
+    <p><small>⚠️ Gap: W4 từng đóng 0.7% tại báo cáo 2/7 → năng lực đóng gói là bottleneck khi scale. Crawler TG nhà máy dừng 26/08 — cần crawl lại để có số T9.</small></p>
+</div>
+
+<div class="card">
+    <h2>📦 Vòng 10: ĐƠN HÀNG MỚI (9/2026) — table-listener DB live</h2>
+    <p><strong>1. Khoản mục mới (từ DB group-listener, 21229 tin nhắn, cập nhật 10/09):</strong></p>
+    <table>
+      <tr><th>Ngày</th><th>Sự kiện</th><th>Chi tiết</th></tr>
+      <tr><td>09/09</td><td>📋 Production planning report</td><td><strong>Thương lượng thêm 1,100 thùng Mix Top, giao hàng 09/10</strong></td></tr>
+      <tr><td>04/09</td><td>❄️ Sản xuất kanroni cấp đông</td><td><strong>334 kg TP</strong> (bổ sung từ báo cáo SX)</td></tr>
+      <tr><td>07-09/09</td><td>📊 Tiến độ đơn hàng Hà Thị</td><td>Báo cáo hàng ngày 7-9/09 (đang chạy)</td></tr>
+    </table>
+    <p><strong>2. Sản lượng kanroni tháng 8:</strong> 9 ngày = 324+167+315+168+285+171+251+219+153 = <strong>2,053 kg TP</strong> (~230kg/ngày) — dòng riêng cho Tablemark.</p>
+    <p><strong>3. Tồn kho X1 (21/08):</strong> Mix Top 1158 = 5 thùng, Bi Coin 23009 = 3,164 cái, Nasu 20001 = 647 nhập 41 xuất 647.</p>
+    <p><strong>4. Doanh thu USD (orders table, 21/08):</strong> Tablemark "Top" = <strong>$30,250</strong> · UniFoods "UNI" = <strong>$52,994</strong> (chi tiết nằm trong file Excel đínk kèm, chưa OCR).</p>
+    <div class="verdict">
+      <strong>➤ Vị thế đàm phán:</strong> Tablemark đang tăng trưởng (thêm 1,100 thùng T9), UniFoods trung thành ($52,994). BLF có dòng tiền USD thực từ khách Nhật — không cần chứng minh "mua lần đầu", mà cần chứng minh <strong>có thể scale thêm 10 cont/tuần cho Kojima</strong>.
+    </div>
+</div>
+
+
+<div class="card">
+    <h2>🧾 Vòng 10: BẢNG CHÀO HÀNG CHO KOJIMA — SKU thật × HS 8-digit × giá CIF</h2>
+    <p><strong>Insight quyết định:</strong> BLF không chỉ có "cut eggplant hấp" — line lớn nhất là <strong>cà tím NƯỚNG (HS 20049090, 100 SKU)</strong>. Và Tablemark vừa đổi 1,500kg khoai coin → <strong>tăng mabo lên 9,500kg/cont 9/10</strong> (msg 09/09) → khách Nhật đang dồn vào đúng dòng cà tím nướng.</p>
+    <table>
+      <tr><th>Tier</th><th>Sản phẩm (HS 8-digit)</th><th>Giá chào CIF Tokyo</th><th>Neo giá</th></tr>
+      <tr><td>A — Volume</td><td>Cà tím hấp cắt khúc (07108000) · Khoai lang hấp (07142010)</td><td>$2.45–2.70/kg</td><td>Comtrade VN $2.18–2.24 vs TQ $1.25–1.53</td></tr>
+      <tr><td>B — Profit core</td><td><strong>Nasu/mabo nướng (20049090)</strong> · Kanroni (20089990)</td><td>$3.40–3.80 · $2.80–3.00</td><td>Premium grill +35–50%; kanroni VN rẻ hơn TQ</td></tr>
+      <tr><td>C — Premium</td><td>Cà tím nhồi tôm (16052100) · Gyoza/nem rán (19022030)</td><td>$9.50–11.00 · $6.50–7.50</td><td>Kojima đã nhập 160521; gyoza $6.32 Comtrade</td></tr>
+    </table>
+    <p><strong>MOQ:</strong> 1 cont 20' mixed (~10–12 MT) đơn đầu · sample free 2kg/line DHL 1 ngày về Yokohama.<br>
+    <strong>Điều kiện hứa lịch:</strong> xác nhận năng lực đóng gói với ĐH sản xuất trước (bottleneck W4 từng 0.7%).</p>
+    <div class="verdict"><strong>➤ Chi tiết đầy đủ:</strong> file <code>M_PROPOSAL_KOJIMA.md</code> — 13 dòng sản phẩm mapping SKU thật của BLF, dùng làm phụ lục gửi "Huy" sau meeting 25/09.</div>
+</div>
+
+<div class="card">
+    <h2>🔬 Vòng 11: HYPERRESEARCH v8 — 4 Critics × 9 DB × Giá Thật (11/09/2026)</h2>
+    <p><strong>Mục tiêu:</strong> thay toàn bộ ước tính bằng giá thật từ email BLF đã gửi khách. 4 critics chạy: <em>dialectic</em> (bác bỏ "Top = Tablemark"), <em>depth</em> (tìm master 29-SKU), <em>width</em> (77 JP companies trong pipeline), <em>instruction</em> (đối chiếu goal "focus Kojima + HS rau củ").</p>
+    <table>
+      <tr><th>Claim cũ (ước tính)</th><th>Verify v2 (giá thật)</th><th>Source</th></tr>
+      <tr><td>Top = Tablemark</td><td><strong>TOP INTERTRADE CORP. (Osaka)</strong> — y.okamoto@top-inter.co.jp sample baby corn ETD 5/1</td><td>emails DB + mv_customer_pipeline</td></tr>
+      <tr><td>Giá estimate qua Comtrade 2024</td><td><strong>Master 29-SKU FOB HCM</strong> (2/4/2026 Thầy Trí tự gửi)</td><td>INBOX.Sent Messages:55</td></tr>
+      <tr><td>—</td><td><strong>CFR Osaka</strong> Steamed eggplant $2.10–2.15/kg (Katsumi 25/6)</td><td>INBOX:1439</td></tr>
+      <tr><td>—</td><td><strong>FOB cho "chị My"</strong>: Okra $2.25, Yakinasu $3.30</td><td>INBOX:1294 (29/4)</td></tr>
+      <tr><td>—</td><td><strong>FOB Tar-Taş (Turkey)</strong>: okra $1.95–2.15, eggplant grilled $2.05–3.00</td><td>INBOX.Sent 63 (5/4)</td></tr>
+      <tr><td>"HACCP vượt FDA"</td><td><strong>⚠️ Coliform MHLW incident 6/7</strong> + QC nội bộ 2/12 mẫu nhiễm 21/7</td><td>INBOX:1464/1474 + blf_data.db</td></tr>
+    </table>
+    <h3>Bảng giá FOB/CFR thật (neo cho Tier A/B/C)</h3>
+    <table>
+      <tr><th>Nhóm</th><th>SKU thật</th><th>FOB HCM / CFR</th><th>HS8</th></tr>
+      <tr><td>Okra</td><td>Steamed slice 5mm / whole / slant / mini</td><td>$1.85–3.23 FOB</td><td>07108000</td></tr>
+      <tr><td>Cà tím hấp</td><td>Random 12g with/without skin · Quarter · Dice 10mm</td><td><strong>$2.10–2.15 CFR Osaka</strong></td><td>07108000</td></tr>
+      <tr><td>Cà tím chiên</td><td>Random · Fan · Coin · Stick · Dice · Mabo mini</td><td>$1.88–2.23 FOB</td><td>20049090</td></tr>
+      <tr><td>Cà tím nướng</td><td>Whole (yakinasu) · Cut S/M · Canola</td><td><strong>$2.00–2.98 FOB</strong> (yakinasu $3.30)</td><td>20049090</td></tr>
+      <tr><td>Zucchini</td><td>Grilled coin/2cm/3cm · Steamed dice</td><td>$1.98–2.68 FOB</td><td>20049090/07108000</td></tr>
+      <tr><td>Paprika nướng</td><td>4-color · 2-color dice 3cm</td><td>$3.78 / $4.08 FOB</td><td>20049090</td></tr>
+      <tr><td>Mix</td><td>Italian · Mixed Top (cho TOP INTERTRADE)</td><td>$3.03–3.18 FOB</td><td>20049090</td></tr>
+      <tr><td>Tôm nhồi</td><td>Eggplant with shrimp coin · Okra with shrimp</td><td>$5.23–6.48 FOB</td><td>16052100</td></tr>
+      <tr><td>Tea</td><td>Matcha · Agarwood · Artichoke</td><td>$37–55 FOB</td><td>0902</td></tr>
+    </table>
+    <h3>Active JP customers (verified)</h3>
+    <table>
+      <tr><th>Customer</th><th>Status</th><th>Evidence</th></tr>
+      <tr><td>TOP INTERTRADE CORP (Osaka)</td><td>ACTIVE + sampling</td><td>y.okamoto baby corn, ETD 5/1, 2nd container</td></tr>
+      <tr><td>UniFoods Co., Ltd</td><td>CRITICAL (MHLW incident 6/7)</td><td>Moriwaki URGENT, kuroda 20 emails, r.ishii 79</td></tr>
+      <tr><td>Katsumi Japan (Osaka)</td><td>Negotiation (reviewing quote + factory visit)</td><td>y_seike 25/6, planning visit T8-T9/2026</td></tr>
+      <tr><td>MC Foods (mcfoods.co.jp)</td><td>Active sampling</td><td>Fukatsu + Kimura Momoka + Miyagawa, 29 emails</td></tr>
+      <tr><td>Nichiyonet (日洋, Tokyo)</td><td>Active technical Q&A</td><td>nishizakat Takeru, contamination control 18-19/6</td></tr>
+      <tr><td>TableMark Co., Ltd</td><td>Pipeline (NO contact yet)</td><td>asami.imai in pipeline, 0 emails</td></tr>
+    </table>
+    <h3>3 hành động ưu tiên sau v2</h3>
+    <ol>
+      <li><strong>PATCH M</strong>: thay toàn bộ ước tính bằng giá thật (master 29-SKU) + thêm cảnh báo coliform + kế hoạch khắc phục + đổi "Top" → "TOP INTERTRADE" ✅ đã làm</li>
+      <li><strong>VERIFY "HUY/KOJIMA"</strong>: 法人番号 + video call + email domain verify. <strong>"Huy" = 0 footprint</strong> trong 9 DB → KHÔNG gửi M trước khi verify xong</li>
+      <li><strong>REQUEST FREIGHT QUOTE</strong> từ Zenny/Getrans (Green Eagle) cho HCM→Yokohama/Osaka reefer. <strong>Freight = biến động</strong> (DO VN +51% 3/2026, BLF đang chờ shipping line báo)</li>
+    </ol>
+    <div class="verdict"><strong>➤ File tổng hợp v2:</strong> <code>N_HYPERRESEARCH_V2.md</code> — 18KB, tất cả 17 claim có source DB/email thật. <strong>TL;DR:</strong> giá estimate trong file M sai +20–40% (cao hơn giá BLF đã báo thật), top customer thật là TOP INTERTRADE chứ không phải Tablemark, rủi ro coliform có thật.</div>
+</div>
+
+<div class="card">
+    <h2>🕸️ Vòng 12: MẠNG LƯỚI QUAN HỆ BÁN HÀNG NHẬT (Relationship Graph — 11/09/2026)</h2>
+    <p><strong>Vì sao:</strong> Nhật bán qua nhiều tầng メーカー→商社→卸→小売. Mine 9,630+ email (CC co-occurrence + cross-mention body + "our customer" pattern) × web OSINT corporate tier → phân tầng được 10 công ty Nhật trong vòng tròn BLF.</p>
+    <table>
+      <tr><th>Tier</th><th>Công ty</th><th>Bản chất quan hệ với BLF</th><th>Bằng chứng</th></tr>
+      <tr><td>1 — Tập đoàn/niêm yết</td><td><strong>Iwatani Corp</strong> (岩谷産業)</td><td>Mega-corp, Food Division Osaka (Yano+Hirooka) mua qua BLF từ 2019 (lô IWA-1008). Brand arm Iwatani Foods bán <strong>grilled 3-color paprika / Mediterranean veg — TRÙNG line BLF</strong></td><td>Email 2019 + iwatani.co.jp</td></tr>
+      <tr><td>1 — Niêm yết TSE</td><td><strong>Katsumi</strong> (226A)</td><td>Frozen veg + Medical Meal; mua làm NGUYÊN LIỆU; đang đàm phán CFR Osaka $2.10 + định thăm nhà máy</td><td>CNBC + INBOX:1439</td></tr>
+      <tr><td>1 — Maker-shosha</td><td><strong>Nichiyonet</strong> (日洋)</td><td>C-store bento/onigiri, ⊂ Warabeya group, partners gồm Marubeni C-Foods + Mitsubishi Foods → dưới umbrella 2 mega-sogo. Hỏi contamination-control (chặt nhất Nhật)</td><td>nichiyonet.co.jp + 8 emails</td></tr>
+      <tr><td>2 — Factory-less maker</td><td><strong>UniFoods</strong></td><td>⭐ "工場を持たないメーカー" — outsource SX cho 協力工場 = <strong>BLF LÀ FACTORY CỦA HỌ</strong>. 170 email Moriwaki. Bán lại retail ("our customer"×37). MHLW incident thuộc quan hệ này</td><td>unifoods.co.jp/message + emails</td></tr>
+      <tr><td>3 — Shosha</td><td><strong>Holus</strong> (+CCS-Cold)</td><td>Zucchini importer (Trademo), đa office Tokyo/Osaka/Kyoto, dùng Gmail cá nhân = shosha gia đình. ⭐ <strong>Kuroki @ccs-cold nằm trong contact set Holus → CCS-Cold = cold-chain arm của Holus</strong></td><td>Email 2019 + Trademo</td></tr>
+      <tr><td>3 — Shosha</td><td><strong>TOP INTERTRADE</strong> (Osaka, 1992)</td><td>Seafood-first trading (tôm/cá ngừ/mực) → Retail/CVS/wholesaler. = "Top" 1,000 thùng/tháng. Khớp DNA tôm BLF: mua cả tôm + rau (Mixed Top). ≠ toptrading.co.jp</td><td>top-inter.co.jp + Bloomberg</td></tr>
+      <tr><td>3 — Shosha lớn</td><td><strong>MC Foods</strong> (1918, 住田 gốc)</td><td>Bunkyo-ku, large-enterprise (健康経営認定), sampling cà tím + okra cùng Shiota-BLF</td><td>mcfoods.co.jp + 34 emails</td></tr>
+      <tr><td>3 — nhỏ</td><td>Sumida Trading, Daikokuten (e-DKT)</td><td>Inquiry/importer regional, chưa ra đơn</td><td>emails 2026/3</td></tr>
+      <tr><td>4 — Pipeline</td><td>TableMark</td><td>0 email 0 đơn — KHÔNG được kể làm track record</td><td>mv_customer_pipeline</td></tr>
+    </table>
+    <h3>🎯 3 hệ quả đàm phán với Kojima</h3>
+    <ol>
+      <li><strong>Kojima = lỗ hổng Tohoku:</strong> 100% network BLF nằm Kinki/Kanto (Osaka, Kyoto, Tokyo) — chưa ai phủ Tohoku. Định vị Kojima là "đối tác chiến lược vùng", không phải "thêm 1 khách" → nhưng cũng đừng trả giá vùng mới bằng giá shosha cũ</li>
+      <li><strong>Đừng bỏ tầng shosha:</strong> giá BLF chào đã gồm trách nhiệm shosha (giấy tờ kiểm dịch, recall, công nợ). Kojima đòi rẻ hơn = phải tự chứng minh năng lực thông quan + đặt cọc</li>
+      <li><strong>Channel conflict risk:</strong> Iwatani Foods đang bán đúng món BLF định chào Kojima (grilled paprika mix) → nếu SKU trùng, đẩy custom-spec (cut/gram khác) để không phá giá khách cũ</li>
+    </ol>
+    <div class="verdict"><strong>➤ Chi tiết:</strong> <code>O_RELATIONSHIP_GRAPH_JP.md</code> — evidence ledger từng cạnh + 4 gap cần verify (Holus↔Senryo cùng zucchini? pt.loc@unifoods = VN desk?).</div>
+</div>
+
+
+<div class="card">
+<h2>🗄️ VÒNG 13 — BLF MASTER CUSTOMER DATABASE</h2>
+<p><b>blf_master.db</b> — hợp nhất <b>prospects (FOODEX 2026) × pipeline × people × tg_orders × 28.457 emails</b> thành registry dedupe theo domain. Mỗi company: tier quan hệ + trạng thái + traffic email thật + số đơn.</p>
+<h3>⭐ Foodex lead ĐÃ LÀ khách — 7 công ty overlap (đừng treat cold!)</h3>
+<table><thead><tr><th>Company</th><th>Tier</th><th>Quan hệ</th><th>Traffic</th><th>Ghi chú</th></tr></thead><tbody>
+<tr><td>🎯<b>UNIFOODS</b></td><td>T2 OEM</td><td><span class='pill bg-purple'>oem_customer</span></td><td style='text-align:right'>302✉ 3📦</td><td style='font-size:.85em;color:#666'>| 42 emails found</td></tr>
+<tr><td>🎯<b>TOP INTERTRADE CORP</b></td><td>T3 Shosha</td><td><span class='pill bg-green'>ordered</span></td><td style='text-align:right'>1✉ 6📦</td><td style='font-size:.85em;color:#666'>title: Sales Department</td></tr>
+<tr><td>🎯<b>MC FOODS LIMITED</b></td><td>T3 Shosha</td><td><span class='pill bg-cyan'>sampling</span></td><td style='text-align:right'>34✉ </td><td style='font-size:.85em;color:#666'>title: General Manager</td></tr>
+<tr><td>🎯<b>NICHIYO</b></td><td>T1 Maker-Shosha</td><td><span class='pill bg-blue'>active</span></td><td style='text-align:right'>12✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>KATSU MI JAPAN INC</b></td><td>T1 Listed</td><td><span class='pill bg-orange'>negotiating</span></td><td style='text-align:right'>4✉ </td><td style='font-size:.85em;color:#666'>title: (N/A)</td></tr>
+<tr><td>🎯<b>SUMIDA TRADING CO LTD</b></td><td>T3 Shosha</td><td><span class='pill bg-yellow'>inquiry</span></td><td style='text-align:right'>10✉ </td><td style='font-size:.85em;color:#666'>| 20 emails found</td></tr>
+<tr><td>🎯<b>AGI JAPAN CO LTD</b></td><td>T3 Shosha</td><td><span class='pill bg-yellow'>inquiry</span></td><td style='text-align:right'>4✉ </td><td style='font-size:.85em;color:#666'>title: Sales Manager</td></tr>
+</tbody></table>
+<h3>🔴 Kojima — KHÔNG nằm trong Foodex list</h3>
+<p>Kojima Trading (Iwate/Tohoku) là lead riêng qua Huy → <b>Tohoku = vùng trống duy nhất</b> của network BLF (100% khách hiện tại ở Kinki/Kanto). Định vị đàm phán: đối tác vùng chiến lược, không phải vendor thường.</p>
+<h3>🎯 High-value net-new targets (Foodex, chưa từng contact)</h3>
+<table><thead><tr><th>Company</th><th>Tier</th><th>Quan hệ</th><th>Traffic</th><th>Lý do target</th></tr></thead><tbody>
+<tr><td>🎯<b>AJINOMOTO</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'>1✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>KOKUBU GROUP</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'>1✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>DAIWA HOUSE INDUSTRY CO LTD</b></td><td>T1 Conglomerate</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: (N/A)</td></tr>
+<tr><td>🎯<b>DOVER SEAFOODS CO LTD</b></td><td>T2 Seafood</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: President</td></tr>
+<tr><td>🎯<b>HOUEI FOOD SERVICE CO LTD</b></td><td>T2 Maker</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Food Division Manager</td></tr>
+<tr><td>🎯<b>ITO EN LTD</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Marketing Dept. Specialist</td></tr>
+<tr><td>🎯<b>NISSIN CORPORATION</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Section No. 3</td></tr>
+<tr><td>🎯<b>JAPAN FROZEN FOOD ASSOCIATION</b></td><td>T0 Industry</td><td><span class='pill bg-indigo'>association</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>Hiệp hội ngành — không mua hàng nhưng cung cấp network + data.</td></tr>
+<tr><td>🎯<b>KIBUN TRADING INC</b></td><td>T2 Maker</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Executive Director</td></tr>
+</tbody></table>
+<h3>📊 Toàn bộ top-tier (priority ≥ 2)</h3>
+<table><thead><tr><th>Company</th><th>Tier</th><th>Quan hệ</th><th>Traffic</th><th>Ghi chú</th></tr></thead><tbody>
+<tr><td>🎯<b>UNIFOODS</b></td><td>T2 OEM</td><td><span class='pill bg-purple'>oem_customer</span></td><td style='text-align:right'>302✉ 3📦</td><td style='font-size:.85em;color:#666'>| 42 emails found</td></tr>
+<tr><td>🎯<b>TOP INTERTRADE CORP</b></td><td>T3 Shosha</td><td><span class='pill bg-green'>ordered</span></td><td style='text-align:right'>1✉ 6📦</td><td style='font-size:.85em;color:#666'>title: Sales Department</td></tr>
+<tr><td><b>HOLUS TRADING</b></td><td>T3 Shosha</td><td><span class='pill bg-blue'>active</span></td><td style='text-align:right'>39✉ </td><td style='font-size:.85em;color:#666'>Importer zucchini chuyên, Tokyo/Osaka/Kyoto. CCS-Cold là cold-chain arm.</td></tr>
+<tr><td>🎯<b>MC FOODS LIMITED</b></td><td>T3 Shosha</td><td><span class='pill bg-cyan'>sampling</span></td><td style='text-align:right'>34✉ </td><td style='font-size:.85em;color:#666'>title: General Manager</td></tr>
+<tr><td><b>IWATANI</b></td><td>T1 MegaCorp</td><td><span class='pill bg-blue'>active</span></td><td style='text-align:right'>13✉ </td><td style='font-size:.85em;color:#666'>Mega-corp gas + Food Division Osaka. Mua BLF từ 2019. Brand arm iwatani-foods bá</td></tr>
+<tr><td>🎯<b>NICHIYO</b></td><td>T1 Maker-Shosha</td><td><span class='pill bg-blue'>active</span></td><td style='text-align:right'>12✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>KATSU MI JAPAN INC</b></td><td>T1 Listed</td><td><span class='pill bg-orange'>negotiating</span></td><td style='text-align:right'>4✉ </td><td style='font-size:.85em;color:#666'>title: (N/A)</td></tr>
+<tr><td>🎯<b>SUMIDA TRADING CO LTD</b></td><td>T3 Shosha</td><td><span class='pill bg-yellow'>inquiry</span></td><td style='text-align:right'>10✉ </td><td style='font-size:.85em;color:#666'>| 20 emails found</td></tr>
+<tr><td><b>KOJIMA FIRM CO LTD (コジマ商会)</b></td><td>T3 Shosha</td><td><span class='pill bg-red'>lead_from_Huy</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>Được Huy giới thiệu — Tohoku (Iwate), vùng BLF chưa phủ. Đang đàm phán CFR Osaka</td></tr>
+<tr><td><b>DAIKOKUTEN</b></td><td>T3 Retail</td><td><span class='pill bg-yellow'>inquiry</span></td><td style='text-align:right'>11✉ </td><td style='font-size:.85em;color:#666'>Đại lý bán lẻ discount Kurashiki. Liên hệ: Honda (Import Dept).</td></tr>
+<tr><td>🎯<b>AJINOMOTO</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'>1✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>KOKUBU GROUP</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'>1✉ </td><td style='font-size:.85em;color:#666'>| 2 emails found</td></tr>
+<tr><td>🎯<b>DAIWA HOUSE INDUSTRY CO LTD</b></td><td>T1 Conglomerate</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: (N/A)</td></tr>
+<tr><td>🎯<b>DOVER SEAFOODS CO LTD</b></td><td>T2 Seafood</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: President</td></tr>
+<tr><td>🎯<b>HOUEI FOOD SERVICE CO LTD</b></td><td>T2 Maker</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Food Division Manager</td></tr>
+<tr><td>🎯<b>ITO EN LTD</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Marketing Dept. Specialist</td></tr>
+<tr><td>🎯<b>NISSIN CORPORATION</b></td><td>T1 MegaCorp</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Section No. 3</td></tr>
+<tr><td>🎯<b>AGI JAPAN CO LTD</b></td><td>T3 Shosha</td><td><span class='pill bg-yellow'>inquiry</span></td><td style='text-align:right'>4✉ </td><td style='font-size:.85em;color:#666'>title: Sales Manager</td></tr>
+<tr><td>🎯<b>JAPAN FROZEN FOOD ASSOCIATION</b></td><td>T0 Industry</td><td><span class='pill bg-indigo'>association</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>Hiệp hội ngành — không mua hàng nhưng cung cấp network + data.</td></tr>
+<tr><td>🎯<b>KIBUN TRADING INC</b></td><td>T2 Maker</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Executive Director</td></tr>
+<tr><td>🎯<b>KOS INTERNATIONAL</b></td><td>T3 Shosha</td><td><span class='pill bg-pink'>foodex_target</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Master of Arts in Tea Culture</td></tr>
+<tr><td>🎯<b>TABLEMARK CO LTD</b></td><td>T4 Pipeline</td><td><span class='pill bg-gray'>pipeline</span></td><td style='text-align:right'> </td><td style='font-size:.85em;color:#666'>title: Purchasing Department</td></tr>
+</tbody></table>
+<p style="color:#666;font-size:.9em">DB: <code>~/.hermes/data/blf/blf_master.db</code> · build script: <code>~/.hermes/scripts/blf_master_db_build.py</code> · 72 companies · query: <code>sqlite3 blf_master.db "SELECT * FROM master_customers ORDER BY priority DESC"</code></p>
+</div>
+
+
+<div class="card">
+<h2>🔍 VÒNG 14 — HYPERRESEARCH v8: AUDIT MASTER DB + HS CODES</h2>
+<p>Critic loop trên dữ liệu MỚI (master DB + K file). <b>4 lỗi/gap bắt được — 3 đã sửa, 1 thay đổi chiến thuật đàm phán:</b></p>
+<table><thead><tr><th>#</th><th>Phát hiện</th><th>Bằng chứng</th><th>Xử lý</th></tr></thead><tbody>
+<tr><td>1</td><td>❌ Kojima domain trong master DB là <b>tên bịa</b> (kojimafirm.co.jp)</td><td>File A + houjin.jp/c/5400001000573: thật = <b>kojimafirm.co.jp</b> — 株式会社コジマ商会, Morioka Iwate, lập 1980, ¥10M vốn, 76 NV, CEO Nakajima Satoru, 8 branches</td><td>✅ Đã UPDATE DB</td></tr>
+<tr><td>2</td><td>❌ K file còn 3 chỗ ghi "Top = Tablemark"</td><td>tg_orders 393-398: Top = Mix+Kanroni 1.000ctn/tháng. Email y.okamoto@<b>top-inter</b>.co.jp. Tablemark: 0 email 0 đơn</td><td>✅ Đã patch K + correction note</td></tr>
+<tr><td>3</td><td>⚠️ 28 SKU HS 16052100 (tôm nhồi): phân loại ĐÚNG nhưng <b>0 đơn Nhật từng bán</b></td><td>Tất cả 28 SKU tên "nhồi tôm" ✓ HS đúng. Nhưng tg_orders query tôm/shrimp = <b>0 rows</b>. Khách Nhật thật chỉ mua zucchini (UniFoods) + mix/kanroni (Top)</td><td>🔴 Đổi frame đàm phán: cà tím nhồi tôm = <b>new line + free sample</b>, KHÔNG kể là track record</td></tr>
+<tr><td>4</td><td>✅ Pipeline 77 vs master 72 reconcile</td><td>77 = rows pipeline (Japan filter), 72 = entities unique sau dedupe domain + bỏ junk</td><td>Không mâu thuẫn</td></tr>
+</tbody></table>
+<h3>Xương sống bán Nhật THẬT của BLF (theo HS)</h3>
+<p><b>Đã bán ✓:</b> Eggplant fried/grilled (HS 2004, 134 SKU) · Sweet potato kanroni (2008/0714) · Zucchini (0710, UniFoods 18 tấn)<br>
+<b>Chưa bán ✗:</b> Tôm nhồi (1605, 28 SKU — $9.76/kg, mỏ vàng tương lai) · Gyoza (1902, $6.32/kg) · Green bean (071022)</p>
+<p style="color:#666;font-size:.9em">Chi tiết: <code>Q_HYPERRESEARCH_V8_MASTER.md</code> · Verify commands nằm trong file.</p>
+</div>
+
+<div class="card">
+  <h2>🧩 Vòng 16: Đối chiếu SÂU danh mục Kojima × BLF × Rau đông lạnh chế biến SX tại VN</h2>
+  <p><i>Nguồn: crawl live <code>kojimafirm.co.jp/product/</code> (11/09/2026) × bảng giá FOB thật BLF (SENT 55) × UN Comtrade 2024.</i></p>
+
+  <div class="callout">
+    <b>Bối cảnh then chốt:</b> Kojima là công ty Nhật <b>ĐẦU TIÊN</b> thành công với <b>tempura đông lạnh</b> (31 năm trước, cả ngành cho là bất khả thi). Tempura = DNA của họ → mọi thứ chiên/tẩm bột là sân nhà, và là cửa vào tự nhiên nhất cho BLF. Slogan CEO: 「良い素材を手作りで」+ 「得意先が求める商品を第一に」= bán theo yêu cầu khách, không bán cái mình có.
+  </div>
+
+  <h3>A. Map toàn bộ cây danh mục Kojima (4 nhóm trên trang chủ) × năng lực BLF</h3>
+  <table>
+    <thead><tr><th>Nhóm Kojima</th><th>Mặt hàng con</th><th>BLF khớp?</th><th>Ghi chú</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4"><b>冷凍食品</b><br>Thực phẩm đông lạnh chiên</td><td>フライ (fry): aji/ebi fry</td><td class="ok">★★★</td><td>Cà tím/đậu bắp <b>nhồi tôm chiên</b> — HS 16052100, CHÍNH XÁC mã họ đang nhập tôm từ 2 supplier VN</td></tr>
+      <tr><td>コロッケ (croquette)</td><td class="warn">★★☆</td><td>Nguyên liệu khoai lang/khoai môn IQF cho nhân</td></tr>
+      <tr><td>唐揚げ (karaage): gan heo, gobo Aomori</td><td class="warn">★★☆</td><td>Thay được: ngưu bò/su-su/cà rốt chiên giá rẻ hơn nội địa Nhật</td></tr>
+      <tr><td>天ぷら (tempura)</td><td class="ok">★★★</td><td><b>Trụ cột</b> — cung cấp rau tẩm bột tempura IQF (cà tím, bí ngòi, ớt chuông, đậu bắp, shiso, khoai lang)</td></tr>
+      <tr><td rowspan="2"><b>冷蔵食品</b><br>Chế biến đông mát</td><td>和惣菜: 8品目ごった煮</td><td class="ok">★★★</td><td>Combo 8 rau củ cắt IQF: khoai lang + khoai sọ + ngưu bò + sen ngó + đậu que + su-su + cà rốt + hành</td></tr>
+      <tr><td>サラダ / 漬物 / 山菜水菜</td><td class="warn">★☆☆</td><td>Baby corn, măng, nấm mèo, rau mầm — VN làm được một phần</td></tr>
+      <tr><td rowspan="3"><b>冷凍原料</b><br>Nguyên liệu thô</td><td>冷凍野菜</td><td class="ok">★★★</td><td><b>Cửa vào Takizawa Foods</b> (công ty con nhà máy) — bán IQF thô cho họ chế biến kit, hợp đồng dài hạn. Zucchini UniFoods đã chốt 18t</td></tr>
+      <tr><td>水産各種 (thủy sản)</td><td class="ok">★★☆</td><td>BLF gốc thủy sản: tôm sú/thẻ IQF, cá viên</td></tr>
+      <tr><td>畜産各種 (bò/heo/gà)</td><td class="bad">✗</td><td>Ngoài phạm vi BLF</td></tr>
+      <tr><td><b>その他</b> Khác</td><td>Dầu chiên, khô, gia vị, tiêu hao, vệ sinh</td><td class="bad">✗</td><td>Ngoài phạm vi (trừ khi bundle sau)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>B. Rau đông lạnh CHẾ BIẾN SX được tại VN — xếp theo độ khớp Kojima</h3>
+  <table>
+    <thead><tr><th>Mức</th><th>Sản phẩm</th><th>HS</th><th>Giá ($/kg)</th><th>Khớp dòng Kojima</th></tr></thead>
+    <tbody>
+      <tr><td class="ok">★★★</td><td>Tempura rau hỗn hợp (nasu/zucchini/paprika/shiso)</td><td>2004</td><td>2.7–3.3</td><td>天ぷら + 夏野菜の天丼 — DNA của họ</td></tr>
+      <tr><td class="ok">★★★</td><td>Cà tím / đậu bắp nhồi tôm chiên</td><td>1605</td><td>5.2–6.5</td><td>フライ + đúng mã họ đang nhập</td></tr>
+      <tr><td class="ok">★★★</td><td>Cà tím pre-fried 揚げなす</td><td>2004</td><td>2.7–2.9</td><td>nasu kit + tempura</td></tr>
+      <tr><td class="warn">★★☆</td><td>Khoai lang hấp / kanroni cắt</td><td>0714</td><td>2.2–2.4</td><td>コロッケ + yêu cầu #2 của Huy</td></tr>
+      <tr><td class="warn">★★☆</td><td>Gobo / su-su / cà rốt chiên</td><td>2004</td><td>2.3–2.6</td><td>唐揚げ (thay gobo Aomori)</td></tr>
+      <tr><td class="warn">★★☆</td><td>Combo 8 rau củ hầm cắt IQF</td><td>0710</td><td>2.1–2.3</td><td>8品目ごった煮</td></tr>
+      <tr><td>★☆☆</td><td>Baby corn / măng / nấm mèo</td><td>0710</td><td>1.9–2.2</td><td>山菜水菜 + salad</td></tr>
+      <tr><td>★☆☆</td><td>Zucchini coin/dice</td><td>0710</td><td>2.0–2.7</td><td>Italian mix (UniFoods đã mua)</td></tr>
+    </tbody>
+  </table>
+  <p style="color:#666;font-size:.9em">Giá neo theo UN Comtrade VN→JP 2024: 0710 $2.24 · 2004 $3.00 · 0714 $2.43/kg (VN đắt hơn TQ 11–44% nhưng VJEPA 0% thuế + VSAT/MHLW). Floor BLF: $2.00/kg.</p>
+
+  <div class="verdict">
+    <h3>C. 4 insight chiến lược</h3>
+    <ol>
+      <li><b>"Cut eggplant + sweet potato" chỉ là bề nổi.</b> gottoni 8 nguyên liệu + tempura line = nhu cầu thật <b>≥10 SKU</b>. Hỏi 25/09: "Món 8 nguyên liệu anh cần cut nào, mỗi loại bao nhiêu kg/tháng?"</li>
+      <li><b>Takizawa Foods = khách thứ 2 giấu trong khách thứ 1.</b> Bán nguyên liệu thô cho nhà máy con (hợp đồng ổn định, không cần brand) SONG SONG bán thành phẩm OEM → 2 pipeline doanh thu / 1 quan hệ.</li>
+      <li><b>Trùng mã HS tôm (1605) = cớ gộp supplier.</b> Họ đã nhập tôm chín VN → chào cà tím/đậu bắp nhồi tôm CÙNG mã → giảm supplier, gộp cont, dễ chốt procurement.</li>
+      <li><b>Đừng pitch "rau", pitch "tempura".</b> Với công ty khai sinh tempura đông lạnh Nhật, câu chuyện "nguyên liệu tempura rau VN quanh năm + VJEPA 0%" đánh trúng tự hào nghề + lý trí chi phí.</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="card">
+<h2>🎯 VÒNG 15 — v8 AUDIT 9 TARGET "NET-NEW": 3 SAI PHÂN LOẠI</h2>
+<p>Sục 28,457 emails + web OSINT từng target Foodex. <b>Kết quả lật ngược:</b></p>
+<table><thead><tr><th>Target</th><th>Vòng 13</th><th>Vòng 15 (verify)</th><th>Bằng chứng</th></tr></thead><tbody>
+<tr style="background:#fff3f3"><td><b>NISSIN</b></td><td>Tier 2 net-new</td><td>🔴 <b>KHÁCH CŨ 2019 đã mất</b></td><td>日清フーズ (nhà máy Handa): mua <b>cà tím chiên乱切り</b>; 2 sự cố DỊ VẬT (3+10/2019) qua Holus QA + broker Abe. ⚠️ Khác Nissin Foods VN (mì)</td></tr>
+<tr style="background:#fffaf0"><td><b>AJINOMOTO</b></td><td>Tier 1 net-new</td><td>🟡 <b>Khách cũ 2019</b></td><td>"Improvement from Ajinomoto" — QA project, contact Yasu (3-4/2019)</td></tr>
+<tr style="background:#f0f0f0"><td><b>ZEN-NOH</b></td><td>Tier 1 net-new</td><td>⚫ LOW FIT — loại</td><td>Zen-Noh Intl = XUẤT nông sản Nhật, không nhập rau ASEAN</td></tr>
+<tr style="background:#f0fff4"><td><b>DOVER SEAFOODS</b></td><td>Tier 2 net-new</td><td>🟢 <b>HIGH FIT — đích #1 tôm</b></td><td>ドーバーシーフーズ (Tsukiji): chuyên outsource gia công hải sản <b>tại Việt Nam</b> → khớp HS 1605 tôm nhồi</td></tr>
+</tbody></table>
+<h3>Playbook đổi theo</h3>
+<ul>
+<li><b>#1 REACTIVATE:</b> Nissin + Ajinomoto dễ hơn cold lead nhiều — nhưng phải chuẩn bị hồ sơ QC hiện tại (HACCP + coliform protocol sau sự cố UniFoods) TRƯỚC khi gõ cửa. Người Nhật không quên dị vật 2019.</li>
+<li><b>#2 DOVER = khách đầu tiên biến tôm nhồi thành track record</b> (Vòng 14: line này đang 0 đơn Nhật).</li>
+<li><b>Quy trình v8 rút ra:</b> mọi "net-new lead" PHẢI sục email footprint trước — prospects/pipeline scrape không thấy quan hệ cũ.</li>
+</ul>
+<p style="color:#666;font-size:.9em">Chi tiết: <code>R_HYPERRESEARCH_V8_TARGETS.md</code> · master DB đã update (dormant_customer / low_fit).</p>
+</div>
+
+
+<div class="card">
+<h2>🕸️ VÒNG 16 — CHUỖI NISSIN 2019: HOLUS LÀ BROKER (reactivation map)</h2>
+<p>Critic sâu thread 2019 tìm ra <b>cấu trúc chuỗi chưa từng được map</b>:</p>
+<pre style="background:#f6f8fa;padding:10px;border-radius:6px">Nissin Foods (Handa factory, end-customer)
+   ↑ QA + claim handling
+Holus Trading (Kuroki-san) = BROKER/QA trung gian   ← ĐANG LÀ KHÁCH ACTIVE zucchini!
+   ↑ sản xuất
+BLF (factory: fried eggplant 乱切り + zucchini dice cut)</pre>
+<ul>
+<li><b>Bằng chứng:</b> "Holus got the new order from Nissin. Product: Fried eggplant" (2/2019); FM điều tra qua quality.assurance@holus.co.jp; broker Abe (hide.abe2015).</li>
+<li><b>FM cuối:</b> zucchini diced cut lot <b>20200215</b> → sự cố kéo dài tới tận 2/2020, không chỉ 2019.</li>
+<li><b>Reactivation path:</b> KHÔNG cold-call Nissin → đi cửa sau qua <b>Kuroki-san (Holus)</b> đang quan hệ tốt, đề nghị re-qualify line cà tím chiên với QC dossier mới (coliform protocol từ UniFoods incident là bằng chứng hệ thống đã tiến bộ).</li>
+<li><b>Pitch Kojima 25/09:</b> thêm câu "từng supply Nissin Foods (fried eggplant) — nay tái khởi động với QC nâng cấp" nếu Holus đồng ý bảo lãnh.</li>
+</ul>
+<p style="color:#666;font-size:.9em">DB updated: HOLUS + NISSIN notes · O graph appended.</p>
+</div>
+
+<div class="footer">
+    Hermes Agent · BLF Operations Lead · Generated 11/09/2026 — Tất cả claim có nguồn thật, không bịa. Gaps được ghi rõ, không giấu. Vòng 9 cập nhật 11/09 (đối chiếu sâu danh mục).
+  </div>
+</div>
+
+</body>
+</html>

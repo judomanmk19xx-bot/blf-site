@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BLF — Chọn hình ảnh website (48 ảnh)</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:24px}
+h1{font-size:20px;margin:0 0 4px} .sub{color:#94a3b8;font-size:13px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.card{background:#1e293b;border-radius:10px;overflow:hidden;border:2px solid transparent;cursor:pointer;transition:.2s}
+.card:hover{border-color:#38bdf8}
+.card.selected{border-color:#22c55e;background:#14532d}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.meta{padding:10px}
+.name{font-size:12px;font-weight:600;word-break:break-all}
+.src{font-size:10px;color:#94a3b8;margin-top:4px;word-break:break-all}
+.sz{font-size:10px;color:#38bdf8;margin-top:2px}
+#sel{position:fixed;bottom:16px;right:16px;background:#22c55e;color:#052e16;padding:10px 18px;border-radius:8px;font-weight:700;font-size:13px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+</style></head><body>
+<h1>BLF — Chọn hình ảnh website (48 ảnh)</h1>
+<div class="sub">Bấm vào ảnh để chọn/đổi. Nút xanh dưới góc phải hiện số ảnh đã chọn. Ảnh đang dùng trong website 3 ngôn ngữ.</div>
+<div class="grid"><div class="card">
+  <img src="01_hero_nha_may_tea_plantation.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">01_hero_nha_may_tea_plantation.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/hero_tea_plantation.jpg</div>
+    <div class="sz">615 KB</div>
+  </div>
+</div><div class="card">
+  <img src="02_day_chuyen_iqf.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">02_day_chuyen_iqf.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/processing_line_iqf.jpg</div>
+    <div class="sz">471 KB</div>
+  </div>
+</div><div class="card">
+  <img src="03_kho_lanh.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">03_kho_lanh.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/cold_storage_rack.jpg</div>
+    <div class="sz">476 KB</div>
+  </div>
+</div><div class="card">
+  <img src="04_tiep_nhan_nguyen_lieu.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">04_tiep_nhan_nguyen_lieu.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/process_intake.jpg</div>
+    <div class="sz">431 KB</div>
+  </div>
+</div><div class="card">
+  <img src="05_oem_containers.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">05_oem_containers.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/port_containers.jpg</div>
+    <div class="sz">516 KB</div>
+  </div>
+</div><div class="card">
+  <img src="06_logistics_cang.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">06_logistics_cang.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/port_aerial_omp.jpg</div>
+    <div class="sz">679 KB</div>
+  </div>
+</div><div class="card">
+  <img src="07_phong_thi_nghiem_qc.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">07_phong_thi_nghiem_qc.jpg</div>
+    <div class="src">Nguồn: images/thay_chon/qc_lab_asia.jpg</div>
+    <div class="sz">333 KB</div>
+  </div>
+</div><div class="card">
+  <img src="08_matcha.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">08_matcha.jpg</div>
+    <div class="src">Nguồn: images/slides/p2.jpg</div>
+    <div class="sz">263 KB</div>
+  </div>
+</div><div class="card">
+  <img src="09_tra_tram_huong.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">09_tra_tram_huong.jpg</div>
+    <div class="src">Nguồn: images/slides/p3.jpg</div>
+    <div class="sz">245 KB</div>
+  </div>
+</div><div class="card">
+  <img src="10_tra_atiso.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">10_tra_atiso.jpg</div>
+    <div class="src">Nguồn: images/slides/p4.jpg</div>
+    <div class="sz">312 KB</div>
+  </div>
+</div><div class="card">
+  <img src="11_thuc_pham_dong_lanh.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">11_thuc_pham_dong_lanh.jpg</div>
+    <div class="src">Nguồn: images/products/b54ab755-058c-4d49-a6c7-95fd6fea74c7.jpg</div>
+    <div class="sz">23 KB</div>
+  </div>
+</div><div class="card">
+  <img src="12_dau_que_chan.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">12_dau_que_chan.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/517c8699-c030-43ab-adda-bde77736b05d_2x.jpg</div>
+    <div class="sz">177 KB</div>
+  </div>
+</div><div class="card">
+  <img src="13_dau_bap_chan.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">13_dau_bap_chan.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/caf0b9a0-e8fb-4f31-8d68-63920cdae3b9_2x.jpg</div>
+    <div class="sz">173 KB</div>
+  </div>
+</div><div class="card">
+  <img src="14_bi_ngoi_nuong.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">14_bi_ngoi_nuong.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/55e3cbe3-01de-4c54-adb6-67d82b102b0d_2x.jpg</div>
+    <div class="sz">129 KB</div>
+  </div>
+</div><div class="card">
+  <img src="15_ot_ngot_cat_soi.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">15_ot_ngot_cat_soi.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/d8447e39-8c49-4234-9405-8984abe70367_2x.jpg</div>
+    <div class="sz">163 KB</div>
+  </div>
+</div><div class="card">
+  <img src="16_ca_tim_nuong.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">16_ca_tim_nuong.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/de11d064-22f8-46f3-86fc-9854cae19060_2x.jpg</div>
+    <div class="sz">216 KB</div>
+  </div>
+</div><div class="card">
+  <img src="17_rau_cu_nuong_hon_hop.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">17_rau_cu_nuong_hon_hop.jpg</div>
+    <div class="src">Nguồn: images/blf_products2/b6a836d6-690d-4f92-8c1c-26c1c01139db_2x.jpg</div>
+    <div class="sz">132 KB</div>
+  </div>
+</div><div class="card">
+  <img src="18_iqf_production_line.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">18_iqf_production_line.jpg</div>
+    <div class="src">Nguồn: images/factory/0d092df8-6fea-4118-b505-3c2acc63ed03.jpg</div>
+    <div class="sz">30 KB</div>
+  </div>
+</div><div class="card">
+  <img src="19_kho_lanh_warehouse.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">19_kho_lanh_warehouse.jpg</div>
+    <div class="src">Nguồn: images/factory/13671ff4-fe31-4f52-98be-2cf7a56e0559.jpg</div>
+    <div class="sz">28 KB</div>
+  </div>
+</div><div class="card">
+  <img src="20_phong_thi_nghiem_qc_lab.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">20_phong_thi_nghiem_qc_lab.jpg</div>
+    <div class="src">Nguồn: images/factory/14cf90f6-c8e8-4a9b-8d85-2f721933faea.jpg</div>
+    <div class="sz">39 KB</div>
+  </div>
+</div><div class="card">
+  <img src="21_dong_goi_thanh_pham.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">21_dong_goi_thanh_pham.jpg</div>
+    <div class="src">Nguồn: images/factory/17647771-fc05-4e75-8c62-c706c6c569f9.jpg</div>
+    <div class="sz">29 KB</div>
+  </div>
+</div><div class="card">
+  <img src="22_xuat_khau_container.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">22_xuat_khau_container.jpg</div>
+    <div class="src">Nguồn: images/factory/28acdbd9-fe26-4de4-8167-262236885808.jpg</div>
+    <div class="sz">18 KB</div>
+  </div>
+</div><div class="card">
+  <img src="23_xe_nang_kho_lanh.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">23_xe_nang_kho_lanh.jpg</div>
+    <div class="src">Nguồn: images/shutterstock_vn/freezer_forklift.jpg</div>
+    <div class="sz">175 KB</div>
+  </div>
+</div><div class="card">
+  <img src="24_tiep_nhan_nguyen_lieu_2.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">24_tiep_nhan_nguyen_lieu_2.jpg</div>
+    <div class="src">Nguồn: images/shutterstock_vn/processing_intake.jpg</div>
+    <div class="sz">154 KB</div>
+  </div>
+</div><div class="card">
+  <img src="25_dong_che_cao_nguyen.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">25_dong_che_cao_nguyen.jpg</div>
+    <div class="src">Nguồn: images/shutterstock_vn/tea_farm_walk.jpg</div>
+    <div class="sz">241 KB</div>
+  </div>
+</div><div class="card">
+  <img src="26_nha_may_chi_tiet_1.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">26_nha_may_chi_tiet_1.jpg</div>
+    <div class="src">Nguồn: images/factory/2c2b5bf9-26e0-4e13-a1d0-22b6871b908c.jpg</div>
+    <div class="sz">10 KB</div>
+  </div>
+</div><div class="card">
+  <img src="27_nha_may_chi_tiet_2.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">27_nha_may_chi_tiet_2.jpg</div>
+    <div class="src">Nguồn: images/factory/345b7dbb-1e1d-4b54-ba9d-1d3378913cf6.jpg</div>
+    <div class="sz">19 KB</div>
+  </div>
+</div><div class="card">
+  <img src="28_nha_may_chi_tiet_3.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">28_nha_may_chi_tiet_3.jpg</div>
+    <div class="src">Nguồn: images/factory/45bd4076-614f-4114-972e-be82d99e7530.jpg</div>
+    <div class="sz">14 KB</div>
+  </div>
+</div><div class="card">
+  <img src="29_pexels_service_1.jpeg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">29_pexels_service_1.jpeg</div>
+    <div class="src">Nguồn: images/pexels/_pexels-photo-11589239.jpeg</div>
+    <div class="sz">1494 KB</div>
+  </div>
+</div><div class="card">
+  <img src="30_pexels_service_2.jpeg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">30_pexels_service_2.jpeg</div>
+    <div class="src">Nguồn: images/pexels/_pexels-photo-24394699.jpeg</div>
+    <div class="sz">7060 KB</div>
+  </div>
+</div><div class="card">
+  <img src="31_pexels_service_3.jpeg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">31_pexels_service_3.jpeg</div>
+    <div class="src">Nguồn: images/pexels/_pexels-photo-33790175.jpeg</div>
+    <div class="sz">950 KB</div>
+  </div>
+</div><div class="card">
+  <img src="32_pexels_service_4.jpeg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">32_pexels_service_4.jpeg</div>
+    <div class="src">Nguồn: images/pexels/_pexels-photo-35041648.jpeg</div>
+    <div class="sz">924 KB</div>
+  </div>
+</div><div class="card">
+  <img src="33_nha_may_hero_2x.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">33_nha_may_hero_2x.jpg</div>
+    <div class="src">Nguồn: images/baclieu_img_9255_2x.jpg</div>
+    <div class="sz">1094 KB</div>
+  </div>
+</div><div class="card">
+  <img src="34_xe_tai_lanh_2x.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">34_xe_tai_lanh_2x.jpg</div>
+    <div class="src">Nguồn: images/baclieu_img_9256_2x.jpg</div>
+    <div class="sz">806 KB</div>
+  </div>
+</div><div class="card">
+  <img src="33_nha_may_hero_webp.webp" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">33_nha_may_hero_webp.webp</div>
+    <div class="src">Nguồn: images/baclieu_img_9255_1600.webp</div>
+    <div class="sz">212 KB</div>
+  </div>
+</div><div class="card">
+  <img src="34_xe_tai_lanh_webp.webp" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">34_xe_tai_lanh_webp.webp</div>
+    <div class="src">Nguồn: images/baclieu_img_9256_1600.webp</div>
+    <div class="sz">141 KB</div>
+  </div>
+</div><div class="card">
+  <img src="35_sp_1.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">35_sp_1.jpg</div>
+    <div class="src">Nguồn: images/products/13c64e15-6a9b-48fd-a50b-1fa964ffce7e.jpg</div>
+    <div class="sz">14 KB</div>
+  </div>
+</div><div class="card">
+  <img src="36_sp_2.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">36_sp_2.jpg</div>
+    <div class="src">Nguồn: images/products/1eef42f3-0cae-4739-9652-2da41236ee37.jpg</div>
+    <div class="sz">21 KB</div>
+  </div>
+</div><div class="card">
+  <img src="37_sp_3.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">37_sp_3.jpg</div>
+    <div class="src">Nguồn: images/products/20d6a71c-fe4a-4cdb-a4af-6070d047c03d.jpg</div>
+    <div class="sz">14 KB</div>
+  </div>
+</div><div class="card">
+  <img src="38_sp_4.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">38_sp_4.jpg</div>
+    <div class="src">Nguồn: images/products/243391e0-6e4c-4bb7-9435-4f2db0f764dd.jpg</div>
+    <div class="sz">32 KB</div>
+  </div>
+</div><div class="card">
+  <img src="39_sp_5.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">39_sp_5.jpg</div>
+    <div class="src">Nguồn: images/products/286783da-fb9d-404d-a389-6400462bd8a2.jpg</div>
+    <div class="sz">13 KB</div>
+  </div>
+</div><div class="card">
+  <img src="40_sp_6.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">40_sp_6.jpg</div>
+    <div class="src">Nguồn: images/products/2f78e7cc-0d9b-4ab8-9e19-fb7adb19030a.jpg</div>
+    <div class="sz">17 KB</div>
+  </div>
+</div><div class="card">
+  <img src="41_sp_7.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">41_sp_7.jpg</div>
+    <div class="src">Nguồn: images/products/347f3aa7-bfbc-466c-bbeb-15f6fbe96817.jpg</div>
+    <div class="sz">16 KB</div>
+  </div>
+</div><div class="card">
+  <img src="42_sp_8.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">42_sp_8.jpg</div>
+    <div class="src">Nguồn: images/products/46f3e53a-a312-4b60-a20a-a66c23ec0560.jpg</div>
+    <div class="sz">12 KB</div>
+  </div>
+</div><div class="card">
+  <img src="43_sp_9.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">43_sp_9.jpg</div>
+    <div class="src">Nguồn: images/products/4c04b5c7-e9a8-4d19-848b-1a5fa931b7c7.jpg</div>
+    <div class="sz">19 KB</div>
+  </div>
+</div><div class="card">
+  <img src="44_sp_10.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">44_sp_10.jpg</div>
+    <div class="src">Nguồn: images/products/6306b2ff-3eef-48ee-ab98-3d7fb038bc50.jpg</div>
+    <div class="sz">47 KB</div>
+  </div>
+</div><div class="card">
+  <img src="45_sp_11.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">45_sp_11.jpg</div>
+    <div class="src">Nguồn: images/products/659d2eab-eb38-498b-9064-b23d70f4bcf6.jpg</div>
+    <div class="sz">14 KB</div>
+  </div>
+</div><div class="card">
+  <img src="46_sp_12.jpg" loading="lazy" onclick="toggle(this)">
+  <div class="meta">
+    <div class="name">46_sp_12.jpg</div>
+    <div class="src">Nguồn: images/products/65dac609-6d36-45dc-bf03-2aa27b9697b3.jpg</div>
+    <div class="sz">48 KB</div>
+  </div>
+</div></div>
+<div id="sel">0 đã chọn</div>
+<script>
+let sel=new Set();
+function toggle(img){const c=img.closest('.card');const f=c.querySelector('.name').textContent;
+if(sel.has(f)){sel.delete(f);c.classList.remove('selected')}else{sel.add(f);c.classList.add('selected')}
+document.getElementById('sel').textContent=sel.size+' đã chọn';}
+</script></body></html>

@@ -1,0 +1,123 @@
+{
+  "processing_line": {
+    "selected": [
+      {
+        "id": "1586691571",
+        "why": "hairnet+gloves, stainless line, bright hygienic hall"
+      },
+      {
+        "id": "1586691832",
+        "why": "full PPE, modern equipment, active sorting"
+      },
+      {
+        "id": "1866104710",
+        "why": "smiling hairnetted worker, immaculate facility"
+      },
+      {
+        "id": "1586691826",
+        "why": "two PPE workers sorting into crates"
+      },
+      {
+        "id": "1586691847",
+        "why": "workers inspecting tomatoes, QC vibe"
+      }
+    ],
+    "avoid": [
+      "681831877 (bare hands dirty shrimp)",
+      "1202782378 (no PPE rustic)",
+      "1291768627 (dark blurry)",
+      "1814128961 (goofy chef)",
+      "292934105 (home cooking)",
+      "1907122855 (grow-light lab)",
+      "56942191 (outdoor waste)",
+      "475232527 (vector icon)"
+    ]
+  },
+  "qc_lab": {
+    "selected": [
+      {
+        "id": "733849495",
+        "why": "two techs white coats/hairnets/gloves, stainless container, clean room"
+      },
+      {
+        "id": "1586690959",
+        "why": "lab coat inspector + tablet, sealed packaged food line"
+      },
+      {
+        "id": "1904978017",
+        "why": "two scientists examining produce sample + tablet"
+      }
+    ],
+    "avoid": [
+      "1728506842/1726716868/1726716880/1726716865/1493042540 (BOTULISM labels)",
+      "275608868 (hazmat)",
+      "1673906110 (biohazard symbol)"
+    ]
+  },
+  "cold_storage": {
+    "selected": [
+      {
+        "id": "158685212",
+        "why": "cool white lighting, uniform shrink-wrapped pallets, pristine floor"
+      },
+      {
+        "id": "1099760036",
+        "why": "smiling worker in insulated puffer vest + helmet"
+      },
+      {
+        "id": "389226142",
+        "why": "worker layered clothing by wrapped pallets, tidy racking"
+      }
+    ],
+    "avoid": [
+      "1075549739/1075549742/348665396/2127622937 (vector illustrations)",
+      "1548693113/1504815686 (wooden crates)",
+      "558283726 (warm flare overexposed)"
+    ]
+  },
+  "matcha_tea": {
+    "selected": [
+      {
+        "id": "390544690",
+        "why": "ceremonial flat-lay, chasen/chashaku, bamboo mat, orchid"
+      },
+      {
+        "id": "390544648",
+        "why": "hand dosing matcha with chashaku, ritual moment"
+      },
+      {
+        "id": "709501564",
+        "why": "dark moody luxury styling, vibrant matcha"
+      }
+    ],
+    "avoid": [
+      "642040249 (tobacco drying)",
+      "337229540/386551381/641543947 (black tea)",
+      "1434470516 (vector)",
+      "619506962 (vintage European)",
+      "1816235219 (abstract texture)",
+      "334508957 (herbal blend)"
+    ]
+  },
+  "hero_factory": {
+    "selected": [
+      {
+        "id": "1866104743",
+        "why": "wide interior, stainless lines, orderly floor, uniformed staff"
+      },
+      {
+        "id": "1586690986",
+        "why": "bright white packaging hall, sealed product on conveyors"
+      },
+      {
+        "id": "1866104755",
+        "why": "vertical crop same facility, hands-on stainless line"
+      }
+    ],
+    "avoid": [
+      "461667449/454667449/1090078448/1259068192/654998689/614792672/1434626639/1362527363 (vector/cartoon)",
+      "1869278809 (cluttered logistics)",
+      "243974017 (dated exterior)"
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "file": "01_hero_nha_may_tea_plantation.jpg",
+    "source": "images/thay_chon/hero_tea_plantation.jpg",
+    "size_bytes": 629745,
+    "size_kb": 615
+  },
+  {
+    "file": "02_day_chuyen_iqf.jpg",
+    "source": "images/thay_chon/processing_line_iqf.jpg",
+    "size_bytes": 482560,
+    "size_kb": 471
+  },
+  {
+    "file": "03_kho_lanh.jpg",
+    "source": "images/thay_chon/cold_storage_rack.jpg",
+    "size_bytes": 487024,
+    "size_kb": 476
+  },
+  {
+    "file": "04_tiep_nhan_nguyen_lieu.jpg",
+    "source": "images/thay_chon/process_intake.jpg",
+    "size_bytes": 441716,
+    "size_kb": 431
+  },
+  {
+    "file": "05_oem_containers.jpg",
+    "source": "images/thay_chon/port_containers.jpg",
+    "size_bytes": 528616,
+    "size_kb": 516
+  },
+  {
+    "file": "06_logistics_cang.jpg",
+    "source": "images/thay_chon/port_aerial_omp.jpg",
+    "size_bytes": 695636,
+    "size_kb": 679
+  },
+  {
+    "file": "07_phong_thi_nghiem_qc.jpg",
+    "source": "images/thay_chon/qc_lab_asia.jpg",
+    "size_bytes": 341124,
+    "size_kb": 333
+  },
+  {
+    "file": "08_matcha.jpg",
+    "source": "images/slides/p2.jpg",
+    "size_bytes": 269363,
+    "size_kb": 263
+  },
+  {
+    "file": "09_tra_tram_huong.jpg",
+    "source": "images/slides/p3.jpg",
+    "size_bytes": 250990,
+    "size_kb": 245
+  },
+  {
+    "file": "10_tra_atiso.jpg",
+    "source": "images/slides/p4.jpg",
+    "size_bytes": 319679,
+    "size_kb": 312
+  },
+  {
+    "file": "11_thuc_pham_dong_lanh.jpg",
+    "source": "images/products/b54ab755-058c-4d49-a6c7-95fd6fea74c7.jpg",
+    "size_bytes": 23221,
+    "size_kb": 23
+  },
+  {
+    "file": "12_dau_que_chan.jpg",
+    "source": "images/blf_products2/517c8699-c030-43ab-adda-bde77736b05d_2x.jpg",
+    "size_bytes": 181052,
+    "size_kb": 177
+  },
+  {
+    "file": "13_dau_bap_chan.jpg",
+    "source": "images/blf_products2/caf0b9a0-e8fb-4f31-8d68-63920cdae3b9_2x.jpg",
+    "size_bytes": 176813,
+    "size_kb": 173
+  },
+  {
+    "file": "14_bi_ngoi_nuong.jpg",
+    "source": "images/blf_products2/55e3cbe3-01de-4c54-adb6-67d82b102b0d_2x.jpg",
+    "size_bytes": 132191,
+    "size_kb": 129
+  },
+  {
+    "file": "15_ot_ngot_cat_soi.jpg",
+    "source": "images/blf_products2/d8447e39-8c49-4234-9405-8984abe70367_2x.jpg",
+    "size_bytes": 166858,
+    "size_kb": 163
+  },
+  {
+    "file": "16_ca_tim_nuong.jpg",
+    "source": "images/blf_products2/de11d064-22f8-46f3-86fc-9854cae19060_2x.jpg",
+    "size_bytes": 221375,
+    "size_kb": 216
+  },
+  {
+    "file": "17_rau_cu_nuong_hon_hop.jpg",
+    "source": "images/blf_products2/b6a836d6-690d-4f92-8c1c-26c1c01139db_2x.jpg",
+    "size_bytes": 134975,
+    "size_kb": 132
+  },
+  {
+    "file": "18_iqf_production_line.jpg",
+    "source": "images/factory/0d092df8-6fea-4118-b505-3c2acc63ed03.jpg",
+    "size_bytes": 30298,
+    "size_kb": 30
+  },
+  {
+    "file": "19_kho_lanh_warehouse.jpg",
+    "source": "images/factory/13671ff4-fe31-4f52-98be-2cf7a56e0559.jpg",
+    "size_bytes": 28452,
+    "size_kb": 28
+  },
+  {
+    "file": "20_phong_thi_nghiem_qc_lab.jpg",
+    "source": "images/factory/14cf90f6-c8e8-4a9b-8d85-2f721933faea.jpg",
+    "size_bytes": 40039,
+    "size_kb": 39
+  },
+  {
+    "file": "21_dong_goi_thanh_pham.jpg",
+    "source": "images/factory/17647771-fc05-4e75-8c62-c706c6c569f9.jpg",
+    "size_bytes": 29190,
+    "size_kb": 29
+  },
+  {
+    "file": "22_xuat_khau_container.jpg",
+    "source": "images/factory/28acdbd9-fe26-4de4-8167-262236885808.jpg",
+    "size_bytes": 17990,
+    "size_kb": 18
+  },
+  {
+    "file": "23_xe_nang_kho_lanh.jpg",
+    "source": "images/shutterstock_vn/freezer_forklift.jpg",
+    "size_bytes": 179020,
+    "size_kb": 175
+  },
+  {
+    "file": "24_tiep_nhan_nguyen_lieu_2.jpg",
+    "source": "images/shutterstock_vn/processing_intake.jpg",
+    "size_bytes": 157494,
+    "size_kb": 154
+  },
+  {
+    "file": "25_dong_che_cao_nguyen.jpg",
+    "source": "images/shutterstock_vn/tea_farm_walk.jpg",
+    "size_bytes": 247295,
+    "size_kb": 241
+  },
+  {
+    "file": "26_nha_may_chi_tiet_1.jpg",
+    "source": "images/factory/2c2b5bf9-26e0-4e13-a1d0-22b6871b908c.jpg",
+    "size_bytes": 9939,
+    "size_kb": 10
+  },
+  {
+    "file": "27_nha_may_chi_tiet_2.jpg",
+    "source": "images/factory/345b7dbb-1e1d-4b54-ba9d-1d3378913cf6.jpg",
+    "size_bytes": 19521,
+    "size_kb": 19
+  },
+  {
+    "file": "28_nha_may_chi_tiet_3.jpg",
+    "source": "images/factory/45bd4076-614f-4114-972e-be82d99e7530.jpg",
+    "size_bytes": 14291,
+    "size_kb": 14
+  },
+  {
+    "file": "29_pexels_service_1.jpeg",
+    "source": "images/pexels/_pexels-photo-11589239.jpeg",
+    "size_bytes": 1529397,
+    "size_kb": 1494
+  },
+  {
+    "file": "30_pexels_service_2.jpeg",
+    "source": "images/pexels/_pexels-photo-24394699.jpeg",
+    "size_bytes": 7229106,
+    "size_kb": 7060
+  },
+  {
+    "file": "31_pexels_service_3.jpeg",
+    "source": "images/pexels/_pexels-photo-33790175.jpeg",
+    "size_bytes": 972898,
+    "size_kb": 950
+  },
+  {
+    "file": "32_pexels_service_4.jpeg",
+    "source": "images/pexels/_pexels-photo-35041648.jpeg",
+    "size_bytes": 946126,
+    "size_kb": 924
+  },
+  {
+    "file": "33_nha_may_hero_2x.jpg",
+    "source": "images/baclieu_img_9255_2x.jpg",
+    "size_bytes": 1119867,
+    "size_kb": 1094
+  },
+  {
+    "file": "34_xe_tai_lanh_2x.jpg",
+    "source": "images/baclieu_img_9256_2x.jpg",
+    "size_bytes": 825198,
+    "size_kb": 806
+  },
+  {
+    "file": "33_nha_may_hero_webp.webp",
+    "source": "images/baclieu_img_9255_1600.webp",
+    "size_bytes": 217204,
+    "size_kb": 212
+  },
+  {
+    "file": "34_xe_tai_lanh_webp.webp",
+    "source": "images/baclieu_img_9256_1600.webp",
+    "size_bytes": 144520,
+    "size_kb": 141
+  },
+  {
+    "file": "35_sp_1.jpg",
+    "source": "images/products/13c64e15-6a9b-48fd-a50b-1fa964ffce7e.jpg",
+    "size_bytes": 14526,
+    "size_kb": 14
+  },
+  {
+    "file": "36_sp_2.jpg",
+    "source": "images/products/1eef42f3-0cae-4739-9652-2da41236ee37.jpg",
+    "size_bytes": 21329,
+    "size_kb": 21
+  },
+  {
+    "file": "37_sp_3.jpg",
+    "source": "images/products/20d6a71c-fe4a-4cdb-a4af-6070d047c03d.jpg",
+    "size_bytes": 14705,
+    "size_kb": 14
+  },
+  {
+    "file": "38_sp_4.jpg",
+    "source": "images/products/243391e0-6e4c-4bb7-9435-4f2db0f764dd.jpg",
+    "size_bytes": 32699,
+    "size_kb": 32
+  },
+  {
+    "file": "39_sp_5.jpg",
+    "source": "images/products/286783da-fb9d-404d-a389-6400462bd8a2.jpg",
+    "size_bytes": 13813,
+    "size_kb": 13
+  },
+  {
+    "file": "40_sp_6.jpg",
+    "source": "images/products/2f78e7cc-0d9b-4ab8-9e19-fb7adb19030a.jpg",
+    "size_bytes": 17435,
+    "size_kb": 17
+  },
+  {
+    "file": "41_sp_7.jpg",
+    "source": "images/products/347f3aa7-bfbc-466c-bbeb-15f6fbe96817.jpg",
+    "size_bytes": 16579,
+    "size_kb": 16
+  },
+  {
+    "file": "42_sp_8.jpg",
+    "source": "images/products/46f3e53a-a312-4b60-a20a-a66c23ec0560.jpg",
+    "size_bytes": 12161,
+    "size_kb": 12
+  },
+  {
+    "file": "43_sp_9.jpg",
+    "source": "images/products/4c04b5c7-e9a8-4d19-848b-1a5fa931b7c7.jpg",
+    "size_bytes": 19392,
+    "size_kb": 19
+  },
+  {
+    "file": "44_sp_10.jpg",
+    "source": "images/products/6306b2ff-3eef-48ee-ab98-3d7fb038bc50.jpg",
+    "size_bytes": 48004,
+    "size_kb": 47
+  },
+  {
+    "file": "45_sp_11.jpg",
+    "source": "images/products/659d2eab-eb38-498b-9064-b23d70f4bcf6.jpg",
+    "size_bytes": 14593,
+    "size_kb": 14
+  },
+  {
+    "file": "46_sp_12.jpg",
+    "source": "images/products/65dac609-6d36-45dc-bf03-2aa27b9697b3.jpg",
+    "size_bytes": 49441,
+    "size_kb": 48
+  }
+]
