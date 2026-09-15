@@ -1,123 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:8443/index.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>1.0</priority>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/index.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/vn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/en.html"/>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://localhost:8443/en.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.5</priority>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/about_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/about_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/about_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/about_en.html"/>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/vn.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/about_ja.html</loc>
-    <lastmod>2026-08-24</lastmod>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/about_vi.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/about_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/about_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/about_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/about_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/about_en.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/about_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/about_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/about_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/about_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/services_ja.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/services_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/services_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/services_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/services_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/services_vi.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/services_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/services_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/services_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/services_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/services_en.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/services_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/services_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/services_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/services_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/products_ja.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/products_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/products_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/products_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/products_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/products_vi.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/products_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/products_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/products_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/products_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/products_en.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/products_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/products_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/products_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/products_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/faq_ja.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/faq_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/faq_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/faq_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/faq_en.html"/>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/faq_vi.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/faq_en.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/contact_ja.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/contact_vi.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/contact_en.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://localhost:8443/ctg_data.html</loc>
-    <lastmod>2026-08-24</lastmod>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://localhost:8443/blf_report_20260824.html</loc>
-    <lastmod>2026-08-24</lastmod>
-    <priority>0.6</priority>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/faq_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/faq_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/faq_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/faq_en.html"/>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/faq_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/faq_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/faq_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/faq_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/contact_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/contact_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/contact_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/contact_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/contact_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/contact_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/contact_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/contact_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/contact_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/contact_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/contact_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/contact_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/catalog_ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/catalog_vi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

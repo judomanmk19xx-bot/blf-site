@@ -1,3 +1,36 @@
+# BLF (Bac Lieu Fisheries) GitHub Pages
 User-agent: *
 Allow: /
-Sitemap: /sitemap.xml
+Disallow: /ctg_data.html
+Disallow: /blf_report_*.html
+Disallow: /cay_trong_*.html
+Disallow: /kojima_*.html
+Disallow: /nnhc_*.html
+Disallow: /fukuoka_*.html
+Disallow: /gd-report-*.html
+Disallow: /lead-report-*.html
+Disallow: /gioi_thieu_*.html
+Disallow: /truong_phai_*.html
+Disallow: /vietlott_*.html
+Disallow: /obsidian_*.html
+Disallow: /osint-skill-*.html
+Disallow: /buzz-org-*.html
+Disallow: /buzz-roles-*.html
+Disallow: /huong_dan_*.html
+Disallow: /cay_xk_*.html
+
+# Allow core B2B pages
+Allow: /index.html
+Allow: /vn.html
+Allow: /en.html
+Allow: /about_*.html
+Allow: /services_*.html
+Allow: /products_*.html
+Allow: /faq_*.html
+Allow: /contact_*.html
+Allow: /catalog_*.html
+Allow: /images/
+Allow: /styles.css
+Allow: /sitemap.xml
+
+Sitemap: https://judomanmk19xx-bot.github.io/blf-site/sitemap.xml
