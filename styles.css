@@ -692,3 +692,83 @@ body { font-family: 'Noto Sans JP','Noto Sans',system-ui,-apple-system,sans-seri
   display: block;
   margin-top: 2px;
 }
+
+
+/* ========================================
+   IMAGE FOCAL POINTS (2026-09-15) - fix mobile crop focus
+   Each image has a focal point set so when cropped to 390px mobile,
+   the subject stays in frame (not just ceiling/edges).
+   ======================================== */
+
+/* Hero - factory_hero on right side */
+.hero {
+  background-position: 60% 50% !important;
+}
+
+/* About - line_sorting subject center */
+.about-photos .photo1,
+.about-photos .photo2,
+.about-photos .photo3 {
+  background-size: cover !important;
+  background-position: center 40% !important;
+}
+.about-photos .photo1 { background-position: 52% 45% !important; }
+.about-photos .photo2 { background-position: 50% 50% !important; }
+.about-photos .photo3 { background-position: 45% 50% !important; }
+
+/* Services - 3 cards, focus on subject not ceiling */
+.services-grid .photo {
+  background-size: cover !important;
+  background-position: center 35% !important;
+  background-repeat: no-repeat !important;
+  height: 200px !important;
+}
+/* Per-image focal points based on subject location */
+.services-grid .service-card:nth-child(1) .photo {
+  background-position: 50% 50% !important; /* intake_raw - center */
+}
+.services-grid .service-card:nth-child(2) .photo {
+  background-position: 50% 40% !important; /* packing_oem - center */
+}
+.services-grid .service-card:nth-child(3) .photo {
+  background-position: 50% 50% !important; /* export_truck - center */
+}
+
+/* Products - center subject */
+.products-grid .photo {
+  background-size: cover !important;
+  background-position: center 50% !important;
+}
+
+/* ========================================
+   MOBILE: Better image cropping (less ceiling/floor)
+   Mobile crops only center 50% of width, but we want to keep
+   the upper 60% of vertical (so subject is in frame, not just floor)
+   ======================================== */
+@media (max-width: 900px) {
+  .hero {
+    background-position: 65% 35% !important;
+    background-size: cover !important;
+  }
+  .about-photos .photo1,
+  .about-photos .photo2,
+  .about-photos .photo3 {
+    background-position: center 35% !important;
+  }
+  .services-grid .photo {
+    height: 180px !important;
+    background-position: center 40% !important;
+  }
+  .services-grid .service-card:nth-child(1) .photo { background-position: 50% 45% !important; }
+  .services-grid .service-card:nth-child(2) .photo { background-position: 50% 35% !important; }
+  .services-grid .service-card:nth-child(3) .photo { background-position: 50% 50% !important; }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position: 70% 30% !important;
+  }
+  .services-grid .photo {
+    height: 160px !important;
+  }
+}
