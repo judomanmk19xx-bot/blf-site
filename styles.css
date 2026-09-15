@@ -286,3 +286,18 @@ main { max-width: 700px; margin: 0 auto; padding: 48px 24px; }
   outline: 2px solid #15697a;
   outline-offset: 2px;
 }
+
+/* Mobile backdrop overlay */
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 43, 72, 0.45);
+  z-index: 98;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s;
+}
+.mobile-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}

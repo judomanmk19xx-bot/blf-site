@@ -1,6 +1,5 @@
 /* BLF Mobile Menu Toggle
-   Adds hamburger menu + drawer on mobile.
-   Works on all 21 pages with <button class="menu-toggle">
+   Adds hamburger menu + drawer + backdrop on mobile.
 */
 (function() {
   'use strict';
@@ -10,41 +9,64 @@
     var menu = document.querySelector('.mobile-menu');
     if (!btn || !menu) return;
 
+    // Create backdrop if not exists
+    var backdrop = document.querySelector('.mobile-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'mobile-backdrop';
+      document.body.appendChild(backdrop);
+    }
+
+    function openMenu() {
+      menu.classList.add('open');
+      backdrop.classList.add('open');
+      btn.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'メニューを閉じる');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      menu.classList.remove('open');
+      backdrop.classList.remove('open');
+      btn.classList.remove('active');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'メニューを開く');
+      document.body.style.overflow = '';
+    }
+    function toggleMenu() {
+      if (menu.classList.contains('open')) closeMenu();
+      else openMenu();
+    }
+
     // Toggle drawer
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      var isOpen = menu.classList.toggle('open');
-      btn.classList.toggle('active', isOpen);
-      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+      toggleMenu();
     });
 
-    // Close drawer when clicking a nav link (smooth scroll stays on page)
-    var links = menu.querySelectorAll('a[href^="#"]');
+    // Close drawer on backdrop click
+    backdrop.addEventListener('click', closeMenu);
+
+    // Close drawer when clicking a nav link (smooth scroll)
+    var links = menu.querySelectorAll('a');
     links.forEach(function(link) {
       link.addEventListener('click', function() {
-        menu.classList.remove('open');
-        btn.classList.remove('active');
-        btn.setAttribute('aria-expanded', 'false');
+        closeMenu();
       });
     });
 
-    // Close drawer when clicking outside
+    // Close drawer when clicking anywhere else on document
     document.addEventListener('click', function(e) {
       if (!menu.classList.contains('open')) return;
       if (menu.contains(e.target) || btn.contains(e.target)) return;
-      menu.classList.remove('open');
-      btn.classList.remove('active');
-      btn.setAttribute('aria-expanded', 'false');
+      closeMenu();
     });
 
-    // Close on Escape
+    // Close drawer on Escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape' && menu.classList.contains('open')) {
-        menu.classList.remove('open');
-        btn.classList.remove('active');
-        btn.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     });
 
@@ -52,15 +74,12 @@
     var mediaQuery = window.matchMedia('(min-width: 901px)');
     function handleMQ(e) {
       if (e.matches && menu.classList.contains('open')) {
-        menu.classList.remove('open');
-        btn.classList.remove('active');
-        btn.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     }
     if (mediaQuery.addEventListener) {
       mediaQuery.addEventListener('change', handleMQ);
     } else {
-      // fallback for old browsers
       mediaQuery.addListener(handleMQ);
     }
   }
