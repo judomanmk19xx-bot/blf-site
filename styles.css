@@ -576,3 +576,23 @@ body { font-family: 'Noto Sans JP','Noto Sans',system-ui,-apple-system,sans-seri
   .tile { transition: transform 0.2s; }
   .tile:hover, .tile:focus-within { transform: scale(1.02); z-index: 2; }
 }
+
+/* Empty tiles (text-only - no img) - render as gradient-styled label cards */
+.tile:not(:has(img)):not(:has(.ph img)) {
+  aspect-ratio: auto;
+  min-height: 100px;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--navy, #0F2B48), var(--teal, #15697a));
+  border-color: transparent;
+}
+.tile:not(:has(img)) .cap {
+  position: relative;
+  background: none;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
