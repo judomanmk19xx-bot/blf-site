@@ -59,13 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const submissions = JSON.parse(localStorage.getItem('blf_submissions') || '[]');
     submissions.push(data);
     localStorage.setItem('blf_submissions', JSON.stringify(submissions));
-    try {
-      await fetch('/api/contact', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
-      });
-    } catch (e) {}
+    // Static site (GitHub Pages): hand off to email client (spec 5.4 mailto fallback)
+    const body = Object.entries(data)
+      .filter(([k]) => !['timestamp', 'lang'].includes(k))
+      .map(([k, v]) => `${k}: ${v}`).join('\n');
+    const subject = `[BLF Website] ${data.company || data.name || 'Inquiry'} (${data.lang || 'ja'})`;
+    window.location.href = 'mailto:dam.nt@baclieu-vegetables.vn?subject=' +
+      encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     form.querySelectorAll('input, select, textarea, button').forEach(el => el.style.display = 'none');
     form.querySelector('.form-intro').style.display = 'none';
     form.querySelector('.form-thanks').style.display = 'block';
