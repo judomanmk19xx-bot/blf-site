@@ -135,3 +135,10 @@ main { max-width: 700px; margin: 0 auto; padding: 48px 24px; }
 .section-figure { margin: 24px 0; }
 .section-figure img { border-radius: 8px; }
 .section-figure figcaption { font-size: 13px; color: var(--text-sub); margin-top: 6px; text-align: center; }
+
+/* --- Hero CTA buttons (added 2026-09-15) --- */
+.hero-cta { display: flex; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
+.hero-cta .btn-primary { background: #fff; color: var(--navy); padding: 14px 28px; font-weight: 700; font-size: 15px; border-radius: 6px; text-decoration: none; transition: background .2s; }
+.hero-cta .btn-primary:hover { background: #f4f7ef; }
+.hero-cta .btn-secondary { background: rgba(255,255,255,.1); color: #fff; border: 1.5px solid #fff; padding: 14px 28px; font-weight: 600; font-size: 15px; border-radius: 6px; text-decoration: none; transition: all .2s; }
+.hero-cta .btn-secondary:hover { background: rgba(255,255,255,.2); }
