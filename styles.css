@@ -559,3 +559,20 @@ body { font-family: 'Noto Sans JP','Noto Sans',system-ui,-apple-system,sans-seri
   .tile .cap { font-size: 10px; }
   .tile .cap small { font-size: 8px; }
 }
+
+/* Tile caption visibility boost - mobile only */
+@media (max-width: 600px) {
+  .tile .cap {
+    background: linear-gradient(transparent 20%, rgba(15,43,72,0.96));
+    padding: 28px 10px 10px;
+    font-size: 12px;
+  }
+  .tile .cap small {
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.95;
+  }
+  /* Hover/tap tiles - slight scale */
+  .tile { transition: transform 0.2s; }
+  .tile:hover, .tile:focus-within { transform: scale(1.02); z-index: 2; }
+}
