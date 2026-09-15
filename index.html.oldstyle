@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLF — Bac Lieu Fisheries | Frozen food & tea export partner</title>
-<meta name="description" content="BLF delivers frozen foods and teas to Japan and global markets with rigorous quality control and a stable supply system.">
+<title>BLF — Bạc Liêu Fisheries | 冷凍食品・お茶の輸出パートナー</title>
+<meta name="description" content="BLF（バクリウ・フィッシャリーズ）は、徹底した品質管理と安定供給体制により、冷凍食品とお茶製品を日本・世界中の市場へお届けします。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -152,23 +152,23 @@ details.faq-item .faq-answer { padding: 0 0 18px; font-size: 13px; color: var(--
 <header class="site-header">
   <div class="header-inner">
     <a href="#" class="logo"><div class="logo-diamond"><span>BLF</span></div><div class="logo-text">Bac Lieu Fisheries<small>JSC</small></div></a>
-    <nav class="main-nav"><a href="#about">About us</a><a href="#services">Services</a><a href="#products">Products</a><a href="#news">News</a><a href="#finance">Investor info</a><a href="#faq">FAQ</a></nav>
-    <div class="header-right"><a href="#contact" class="btn-contact">Contact us</a><div class="lang-switch"><a class="inactive" href="index.html">JP</a><span class="sep">|</span><a class="inactive" href="vn.html">VN</a><span class="sep">|</span><span class="active">EN</span></div></div>
+    <nav class="main-nav"><a href="#about">私たちについて</a><a href="#services">サービス</a><a href="#products">製品紹介</a><a href="#news">ニュース</a><a href="#finance">財務報告</a><a href="#faq">よくある質問</a></nav>
+    <div class="header-right"><a href="#contact" class="btn-contact">お問い合わせ</a><div class="lang-switch"><span class="active">JP</span><span class="sep">|</span><a class="inactive" href="vn.html">VN</a><span class="sep">|</span><a class="inactive" href="en.html">EN</a></div></div>
   </div>
 </header>
 
 <section class="hero" style="background-image:url('images/thay_chon/hero_tea_plantation.jpg')">
-  <div class="hero-content"><h1>The best of Vietnam,<br>to Japanese tables.</h1><h2>A trusted export partner for frozen foods & tea</h2><p>BLF delivers frozen foods and teas to Japan and global markets with rigorous quality control and a stable supply system.</p></div>
+  <div class="hero-content"><h1>ベトナムの恵を、日本の食卓へ。</h1><h2>品質と信頼で選ばれる、冷凍食品・お茶の輸出パートナー</h2><p>BLF（バクリウ・フィッシャリーズ）は、徹底した品質管理と安定供給体制により、冷凍食品とお茶製品を日本・世界中の市場へお届けします。</p></div>
 </section>
 
-<section class="features"><div class="features-grid"><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M12 2l9 9-9 9-9-9 9-9z"/></svg></div><h3>Premium raw materials</h3><p>Only selected ingredients from trusted Vietnamese sources</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Japan-oriented service</h3><p>Japanese-speaking support aligned with Japanese standards</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7l9-4 9 4M5 21V11M19 21V11M9 21V11M15 21V11"/></svg></div><h3>Hygienic production</h3><p>Manufactured on modern lines certified to HACCP & ISO 22000</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Export & QC</h3><p>Fast, reliable worldwide delivery via an international logistics network</p></div></div></section>
+<section class="features"><div class="features-grid"><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M12 2l9 9-9 9-9-9 9-9z"/></svg></div><h3>高品質な原材料</h3><p>ベトナムの信頼できる生産者から厳選された原材料のみを使用</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>日本企業向け対応</h3><p>日本語対応スタッフと日本基準に合わせたサービス体制</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7l9-4 9 4M5 21V11M19 21V11M9 21V11M15 21V11"/></svg></div><h3>衛生的な製造体制</h3><p>HACCP・ISO22000 認証取得の最新設備で製造</p></div><div class="feature-card"><div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>輸出・品質管理</h3><p>国際物流ネットワークで世界中へ迅速かつ確実にお届け</p></div></div></section>
 
 <section class="about" id="about"><div class="about-inner">
   <div>
-    <div class="section-heading"><h2>About us</h2></div>
-    <div class="about-sub">A Vietnamese food processing & export company</div>
-    <p>Bac Lieu Fisheries JSC (BLF) is a comprehensive food company based in Bac Lieu, Vietnam, processing and exporting frozen foods, tea products and agricultural & aquatic produce. For years we have supplied high-quality products to the Japanese market.</p><p>Our end-to-end quality management system — from sourcing to production and shipment — earns our customers' trust and peace of mind.</p>
-    <a href="#services" class="btn-more">Learn more ›</a>
+    <div class="section-heading"><h2>私たちについて</h2></div>
+    <div class="about-sub">ベトナム発の食品加工・輸出企業として</div>
+    <p>Bac Lieu Fisheries JSC（BLF）は、ベトナム・バクリウ省に本拠を置き、冷凍食品・茶製品・農水産物の加工・輸出を行う総合食品企業です。長年にわたり日本市場向けの高品質な商品を提供し続けています。</p><p>原材料の選定から製造、出荷まで一貫した品質管理体制により、お客様の安心と信頼にお応えします。</p>
+    <a href="#services" class="btn-more">詳しく見る ›</a>
   </div>
   <div class="about-photos">
     <div class="photo1" style="background-image:url('images/generated_v3/hero_factory.jpg')"></div>
@@ -178,54 +178,54 @@ details.faq-item .faq-answer { padding: 0 0 18px; font-size: 13px; color: var(--
 </div></section>
 
 <section class="services" id="services"><div class="services-inner">
-  <div class="section-heading"><h2>Services</h2></div>
-  <p class="services-intro">From raw-material supply and OEM manufacturing to export logistics — one integrated partner.</p>
-  <div class="services-grid"><div class="service-card"><div class="photo" style="background-image:url('images/thay_chon/process_intake.jpg')"></div><div class="body"><h3>Raw material supply</h3><p>Stable supply of high-quality Vietnamese agricultural and aquatic products</p><a href="#contact" class="btn-more">Learn more ›</a></div></div><div class="service-card"><div class="photo" style="background-image:url('images/generated_v3/processing_line.jpg')"></div><div class="body"><h3>OEM manufacturing</h3><p>Contract production tailored to your formula and packaging specifications</p><a href="#contact" class="btn-more">Learn more ›</a></div></div><div class="service-card"><div class="photo" style="background-image:url('images/thay_chon/port_containers.jpg')"></div><div class="body"><h3>Logistics & export</h3><p>Reefer-container shipping plus customs and documentation support</p><a href="#contact" class="btn-more">Learn more ›</a></div></div></div>
+  <div class="section-heading"><h2>サービス</h2></div>
+  <p class="services-intro">BLF は原料供給から OEM、物流まで一貫したサービスを提供します。</p>
+  <div class="services-grid"><div class="service-card"><div class="photo" style="background-image:url('images/thay_chon/process_intake.jpg')"></div><div class="body"><h3>原材料供給</h3><p>ベトナム産の高品質な農産物・水産物を安定的に供給</p><a href="#contact" class="btn-more">詳しく見る ›</a></div></div><div class="service-card"><div class="photo" style="background-image:url('images/generated_v3/processing_line.jpg')"></div><div class="body"><h3>OEM 製造受託</h3><p>ご要望に応じた配合・パッケージでの製造受託サービス</p><a href="#contact" class="btn-more">詳しく見る ›</a></div></div><div class="service-card"><div class="photo" style="background-image:url('images/thay_chon/port_containers.jpg')"></div><div class="body"><h3>国際物流・輸出手続き</h3><p>冷蔵コンテナ輸送と通関・証憑手続きを一括支援</p><a href="#contact" class="btn-more">詳しく見る ›</a></div></div></div>
 </div></section>
 
 <section class="products" id="products"><div class="products-inner">
-  <div class="section-heading"><h2>Products</h2></div>
-  <div class="products-grid"><div class="product-card"><div class="photo" style="background-image:url('images/blf_iqf/iqf_mix_fruit_slices.jpg')"></div><div class="body"><div class="name-en">FROZEN FOODS</div><div class="name-loc">Frozen Foods</div><p>A full lineup of IQF frozen vegetables, fruits and seafood</p><a href="catalog_en.html#frozen" class="btn-more">Learn more ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/blf_agarwood/agarwood_tea_box.jpg')"></div><div class="body"><div class="name-en">AGARWOOD LEAF TEA</div><div class="name-loc">Agarwood Tea</div><p>A uniquely aromatic tea made from Vietnamese agarwood</p><a href="catalog_en.html#agarwood" class="btn-more">Learn more ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/blf_artichoke/artichoke_tea_lineup.jpg')"></div><div class="body"><div class="name-en">ARTICHOKE TEA</div><div class="name-loc">Artichoke Tea</div><p>A herbal tea popular with health-conscious consumers — from Da Lat plateau</p><a href="catalog_en.html#artichoke" class="btn-more">Learn more ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/blf_matcha/flatlay.webp')"></div><div class="body"><div class="name-en">MATCHA</div><div class="name-loc">Matcha</div><p>Produced from Vietnamese tea leaves for traditional Japanese uses</p><a href="catalog_en.html#matcha" class="btn-more">Learn more ›</a></div></div></div>
+  <div class="section-heading"><h2>製品紹介</h2></div>
+  <div class="products-grid"><div class="product-card"><div class="photo" style="background-image:url('images/blf_iqf/iqf_mix_fruit_slices.jpg')"></div><div class="body"><div class="name-en">FROZEN FOODS</div><div class="name-loc">冷凍食品</div><p>野菜・果物・海産物の冷凍IQF食品を各種ラインナップ</p><a href="catalog_ja.html#frozen" class="btn-more">詳しく見る ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/blf_agarwood/agarwood_tea_box.jpg')"></div><div class="body"><div class="name-en">AGARWOOD LEAF TEA</div><div class="name-loc">沈香茶</div><p>ベトナムの銘木から作られる特別な香りのお茶</p><a href="catalog_ja.html#agarwood" class="btn-more">詳しく見る ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/blf_artichoke/artichoke_tea_lineup.jpg')"></div><div class="body"><div class="name-en">ARTICHOKE TEA</div><div class="name-loc">アーティチョーク茶</div><p>健康志向の高い方に人気のハーブティー。ダラット高原産</p><a href="catalog_ja.html#artichoke" class="btn-more">詳しく見る ›</a></div></div><div class="product-card"><div class="photo" style="background-image:url('images/generated_v3/matcha_tea.jpg')"></div><div class="body"><div class="name-en">MATCHA</div><div class="name-loc">抹茶</div><p>ベトナム産茶葉から製造、日本の伝統的な用途に対応</p><a href="catalog_ja.html#matcha" class="btn-more">詳しく見る ›</a></div></div></div>
 </div></section>
 
 <section class="quality"><div class="quality-inner">
   <div class="quality-photo"></div>
   <div>
-    <div class="section-heading"><h2>Quality & safety commitment</h2></div>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:8px">BLF holds international certifications to bring you safe food.</p>
-    <div class="quality-list"><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg></div><div><h4>Quality control</h4><p>Strict quality checks at every production stage</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div><h4>Stable supply</h4><p>Optimized production sites and logistics network</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 4 9 8 10"/></svg></div><div><h4>Hygiene (HACCP · ISO)</h4><p>Internationally certified hygiene management</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></div><div><h4>Traceability</h4><p>Full history management from raw material to product</p></div></div></div>
+    <div class="section-heading"><h2>品質・安心への取り組み</h2></div>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:8px">BLF は国際基準の認証を取得し、安心安全な食品をお届けします。</p>
+    <div class="quality-list"><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg></div><div><h4>品質管理</h4><p>製造工程ごとの厳格な品質チェック体制</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div><h4>安定供給</h4><p>生産拠点と物流ネットワークの最適化</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 4 9 8 10"/></svg></div><div><h4>衛生管理（HACCP・ISO）</h4><p>国際認証を取得した衛生管理体制</p></div></div><div class="quality-item"><div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></div><div><h4>トレーサビリティ</h4><p>原材料から製品までの完全な履歴管理</p></div></div></div>
   </div>
 </div></section>
 
 <section class="faq" id="faq"><div class="faq-inner">
-  <div class="section-heading"><h2>FAQ</h2></div>
-  <div class="faq-grid"><details class="faq-item"><summary>Is there a minimum order quantity (MOQ)?</summary><div class="faq-answer">It varies by product — please contact us. Small orders are welcome.</div></details><details class="faq-item"><summary>Can you provide samples?</summary><div class="faq-answer">Yes, free and paid samples are available. Please let us know which product you need.</div></details><details class="faq-item"><summary>What is the OEM lead time?</summary><div class="faq-answer">Depending on specification and quantity, typically 4–8 weeks from order to delivery.</div></details><details class="faq-item"><summary>Do you have quality certifications?</summary><div class="faq-answer">We hold international HACCP, ISO 22000 and food-safety certificates. Contact us for details.</div></details><details class="faq-item"><summary>Which export documents do you provide?</summary><div class="faq-answer">We support the full document set: CO, phytosanitary certificate, health certificate and more.</div></details><details class="faq-item"><summary>Do you support Japanese labels & packaging?</summary><div class="faq-answer">Yes — OEM production with label design compliant with Japanese labeling regulations.</div></details></div>
+  <div class="section-heading"><h2>よくある質問</h2></div>
+  <div class="faq-grid"><details class="faq-item"><summary>最小発注数量（MOQ）はどのくらいですか？</summary><div class="faq-answer">製品によって異なりますので、詳しくはお問い合わせください。小ロットのご注文にも対応いたします。</div></details><details class="faq-item"><summary>サンプルの提供は可能ですか？</summary><div class="faq-answer">はい、無料・有償のサンプルをご用意しています。ご希望の製品をお知らせください。</div></details><details class="faq-item"><summary>OEM の製造リードタイムは？</summary><div class="faq-answer">仕様と数量にもよりますが、通常はご注文から納品まで4〜8週間が目安です。</div></details><details class="faq-item"><summary>品質の認証はありますか？</summary><div class="faq-answer">HACCP・ISO 22000・食品安全の国際認証を取得しています。詳細はお問い合わせください。</div></details><details class="faq-item"><summary>輸出手続きの書類は提供してもらえますか？</summary><div class="faq-answer">CO（原産地証憑）、フィトサニタリー（植物検疫）、衛生証書など、輸出品に必要な書類の準備をサポートいたします。</div></details><details class="faq-item"><summary>日本語ラベル・パッケージには対応しますか？</summary><div class="faq-answer">はい。日本向け表示基準に合わせたラベルデザイン・パッケージ仕様でのOEM製造に対応します。</div></details></div>
 </div></section>
 
 <section class="news" id="news"><div class="news-inner">
-  <div class="section-heading"><h2>News</h2></div>
-  <div class="news-list"><div class="news-item"><span class="news-date">2026.09.15</span><span>Published unified catalog in three languages (JP · VN · EN)</span></div><div class="news-item"><span class="news-date">2026.09.15</span><span>Official website relaunched with a new design</span></div><div class="news-item"><span class="news-date">2026.09.14</span><span>Added real product photos for IQF frozen fruit & vegetable lines</span></div><div class="news-item"><span class="news-date">2026.09.14</span><span>Added new packaging photos for agarwood & artichoke tea lines</span></div></div>
+  <div class="section-heading"><h2>ニュース</h2></div>
+  <div class="news-list"><div class="news-item"><span class="news-date">2026.09.15</span><span>3言語（日本語・ベトナム語・英語）統合カタログを公開しました</span></div><div class="news-item"><span class="news-date">2026.09.15</span><span>公式サイトを全面リニューアルしました</span></div><div class="news-item"><span class="news-date">2026.09.14</span><span>冷凍IQFフルーツ・野菜ラインの新製品写真を追加しました</span></div><div class="news-item"><span class="news-date">2026.09.14</span><span>沈香茶・アーティチョーク茶の新パッケージ画像を追加しました</span></div></div>
 </div></section>
 
 <section class="finance" id="finance"><div class="finance-inner">
-  <div class="section-heading"><h2 style="text-align:center">Financial reports (Share information)</h2></div>
-  <div class="finance-frame">For the latest financial statements and company documents, please contact us directly.<br>Our IR support responds in Japanese for investors and partners.</div>
+  <div class="section-heading"><h2 style="text-align:center">財務報告（株式情報）</h2></div>
+  <div class="finance-frame">最新の決算資料・有価証券報告書は、お問い合わせフォームより直接ご請求ください。<br>IR 担当スタッフが日本語で対応いたします。</div>
 </div></section>
 
-<section class="cta" id="contact"><h3>Consultations on food processing & export</h3>
-  <div class="cta-buttons"><a href="mailto:dam.nt@baclieu-vegetables.vn" class="btn-outline">Contact us ›</a><a href="catalog_en.html" class="btn-teal">Request catalog ›</a></div>
+<section class="cta" id="contact"><h3>食品加工・輸出に関するご相談はこちら</h3>
+  <div class="cta-buttons"><a href="mailto:dam.nt@baclieu-vegetables.vn" class="btn-outline">お問い合わせ ›</a><a href="catalog_ja.html" class="btn-teal">資料請求（カタログ） ›</a></div>
 </section>
 
 <footer class="site-footer"><div class="footer-inner">
   <div class="footer-brand">
     <a href="#" class="logo"><div class="logo-diamond"><span>BLF</span></div><div class="logo-text">Bac Lieu Fisheries<small>JSC</small></div></a>
-    <p>Bac Lieu Fisheries JSC — Vietnamese farm & sea produce to Japanese and world tables.</p>
+    <p>Bac Lieu Fisheries JSC — ベトナムの農水産物を日本・世界へ。</p>
   </div>
-  <div class="footer-col"><h4>Company</h4><ul><li>About us</li><li>Services</li><li>Products</li><li>News</li></ul></div>
-  <div class="footer-col"><h4>Contact</h4><ul><li>Address: 6 Duong 3/2, Thao Dien, Thu Duc City, Ho Chi Minh City<br>Tel: (84-8) 37446173<br>Email: dam.nt@baclieu-vegetables.vn</li></ul></div>
-  <div class="footer-col"><h4>Factories</h4><ul><li>Bac Lieu Factory<br>Tel: (84) 781.849567<br><br>Nha Trang Factory<br>Tel: (84) 58.743182</li></ul></div>
+  <div class="footer-col"><h4>会社情報</h4><ul><li>私たちについて</li><li>サービス</li><li>製品紹介</li><li>ニュース</li></ul></div>
+  <div class="footer-col"><h4>お問い合わせ窓口</h4><ul><li>住所: ベトナム ホーチミン市 ターディエン 6, Đường 3/2<br>Tel: (84-8) 37446173<br>Email: dam.nt@baclieu-vegetables.vn</li></ul></div>
+  <div class="footer-col"><h4>工場</h4><ul><li>バクリウ工場<br>Tel: (84) 781.849567<br><br>ニャチャン工場<br>Tel: (84) 58.743182</li></ul></div>
 </div>
-<div class="footer-bottom"><a href="#" style="color:rgba(255,255,255,.7)">Privacy policy</a><span>© 2026 Bac Lieu Fisheries JSC. All Rights Reserved.</span></div>
+<div class="footer-bottom"><a href="#" style="color:rgba(255,255,255,.7)">プライバシーポリシー</a><span>© 2026 Bac Lieu Fisheries JSC. All Rights Reserved.</span></div>
 </footer>
 </body>
 </html>
