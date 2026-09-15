@@ -68,14 +68,20 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <a href="vn.html" class="logo"><img src="images/logo.svg" alt="BLF Logo" height="40"></a>
-      <nav class="main-nav" aria-label="Main"><a href="about_vi.html">Giới thiệu</a><a href="services_vi.html">Dịch vụ</a><a href="products_vi.html">Sản phẩm</a><a href="faq_vi.html">Câu hỏi thường gặp</a><a href="contact_vi.html" class="active">Liên hệ</a></nav>
-      <div class="lang-switcher">
-        <a href="contact_ja.html" data-lang="JP">JP</a>
-        <a href="contact_vi.html" data-lang="VN" class="active">VN</a>
-        <a href="contact_en.html" data-lang="EN">EN</a>
+    <div class="header-inner">
+      <a href="vn.html" class="logo"><div class="logo-diamond"><span>BLF</span></div><div class="logo-text">Bac Lieu Fisheries<small>JSC</small></div></a>
+      <nav class="main-nav"><a href="vn.html">Trang chủ</a><a href="about_vi.html">Giới thiệu</a><a href="services_vi.html">Dịch vụ</a><a href="products_vi.html">Sản phẩm</a><a href="faq_vi.html">Câu hỏi thường gặp</a><a href="contact_vi.html" class="active">Liên hệ</a></nav>
+      <div class="header-right">
+        <a href="contact_vi.html" class="btn-contact">Liên hệ</a>
+        <div class="lang-switch"><a class="inactive" href="about_ja.html">JP</a><span class="sep">|</span><a href="about_vi.html" class="active">VN</a><span class="sep">|</span><a class="inactive" href="about_en.html">EN</a></div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="メニューを開く">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
       </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="vn.html">Trang chủ</a><a href="about_vi.html">Giới thiệu</a><a href="services_vi.html">Dịch vụ</a><a href="products_vi.html">Sản phẩm</a><a href="faq_vi.html">Câu hỏi thường gặp</a><a href="contact_vi.html" class="active">Liên hệ</a>
+      <div class="lang-mobile"><a class="inactive" href="about_ja.html">JP</a><span class="sep">|</span><a href="about_vi.html" class="active">VN</a><span class="sep">|</span><a class="inactive" href="about_en.html">EN</a></div>
     </div>
   </header>
 <main>
@@ -109,5 +115,6 @@
     </div>
   </footer>
   <script src="script.js"></script>
+<script src="mobile.js"></script>
 </body>
 </html>

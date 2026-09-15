@@ -13,72 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root { --navy:#0F2B48; --navy-dark:#0A2540; --teal:#15697A; --teal-hover:#0e5563; --bg-white:#FFFFFF; --bg-warm:#F6F5F0; --bg-cool:#F8F9FA; --text-main:#222222; --text-sub:#666666; --border:#E5E5E5; --font-serif:'Noto Serif JP',serif; --font-sans:'Noto Sans JP',sans-serif; --font-en:'Montserrat',sans-serif; }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--font-sans);color:var(--text-main);line-height:1.9;background:var(--bg-white);-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block;object-fit:cover}
-a{text-decoration:none;color:inherit;transition:all .3s ease}
-.container{max-width:1100px;margin:0 auto;padding:0 24px}
-.section-title{font-family:var(--font-serif);font-size:clamp(1.6rem,2.6vw,2.1rem);font-weight:700;color:var(--navy);text-align:center;margin-bottom:.75rem;letter-spacing:.04em;position:relative;padding-bottom:1.1rem}
-.section-title::after{content:'';display:block;width:50px;height:3px;background:var(--navy);margin:0 auto}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 32px;border-radius:9999px;font-weight:600;font-size:.88rem;cursor:pointer;transition:all .3s ease;border:2px solid transparent;letter-spacing:.03em}
-.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy)}
-.btn-navy:hover{background:var(--navy-dark);border-color:var(--navy-dark);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--navy);border-color:var(--navy)}
-.btn-outline:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
-.btn-teal{background:var(--teal);color:#fff;border-color:var(--teal)}
-.btn-teal:hover{background:var(--teal-hover)}
-.btn-arrow::after{content:'›';font-size:1.3em;line-height:1;margin-left:4px}
-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.98);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 32px}
-.logo{display:flex;align-items:center;gap:14px}
-.logo-mark{width:42px;height:42px;background:var(--navy);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0}
-.logo-mark span{transform:rotate(-45deg);color:#fff;font-family:var(--font-en);font-size:12px;font-weight:700;letter-spacing:1.5px}
-.logo-text{font-family:var(--font-en);font-size:.78rem;letter-spacing:.5px;line-height:1.3;color:var(--navy);font-weight:600}
-nav.mainnav{display:flex;align-items:center;gap:28px}
-nav.mainnav a{font-size:.82rem;font-weight:500;color:var(--text-main);position:relative}
-nav.mainnav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--teal);transition:width .3s}
-nav.mainnav a:hover{color:var(--teal)} nav.mainnav a:hover::after{width:100%}
-.header-right{display:flex;align-items:center;gap:18px}
-.lang-switch{font-family:var(--font-en);font-size:.78rem;color:var(--text-sub);display:flex;gap:10px;letter-spacing:.5px}
-.lang-switch .active{color:var(--navy);font-weight:700}
-.pagehero{background:linear-gradient(135deg,var(--navy) 0%,var(--teal) 100%);color:#fff;padding:150px 24px 70px;text-align:center}
-.pagehero h1{font-family:var(--font-serif);font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:.06em;margin-bottom:1rem}
-.pagehero p{opacity:.9;font-size:.98rem;max-width:640px;margin:0 auto;letter-spacing:.02em}
-.catnav{position:sticky;top:72px;z-index:900;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(15,43,72,.05)}
-.catnav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;gap:8px;overflow-x:auto}
-.catnav a{flex:0 0 auto;padding:16px 18px;font-size:.85rem;font-weight:600;color:var(--text-sub);border-bottom:3px solid transparent;white-space:nowrap}
-.catnav a:hover{color:var(--teal);border-bottom-color:var(--teal)}
-section.cat{padding:80px 0;border-bottom:1px solid var(--border)}
-section.cat:nth-of-type(even){background:var(--bg-warm)}
-.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:2.5rem}
-.cat-intro h3{font-family:var(--font-serif);font-size:1.15rem;color:var(--navy);margin-bottom:12px;letter-spacing:.03em}
-.cat-intro p{font-size:.9rem;color:var(--text-main);line-height:2;margin-bottom:1.25rem}
-.spec-list{list-style:none;font-size:.82rem;color:var(--text-sub)}
-.spec-list li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--border)}
-.spec-list li strong{color:var(--navy);min-width:120px;font-weight:600}
-.tilegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.tile{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:#fff;transition:all .3s ease}
-.tile:hover{box-shadow:0 10px 26px rgba(15,43,72,.1);transform:translateY(-3px)}
-.tile .ph{aspect-ratio:4/3;overflow:hidden;background:var(--bg-cool)}
-.tile.poster .ph{aspect-ratio:3/4;background:#f2efe9}
-.tile.poster .ph img{object-fit:contain}
-.tile .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.tile:hover .ph img{transform:scale(1.06)}
-.tile .cap{padding:12px 14px;font-size:.74rem;line-height:1.6;color:var(--text-main);font-weight:500}
-.tile .cap small{display:block;color:var(--text-sub);font-weight:400;font-size:.68rem;margin-top:2px;letter-spacing:.02em}
-.tile.wide{grid-column:span 3}
-.tile.wide .ph{aspect-ratio:16/7}
-.cat-cta{margin-top:2.5rem;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-.backtop{text-align:center;margin-top:1.6rem}
-.backtop a{font-size:.78rem;color:var(--text-sub)} .backtop a:hover{color:var(--teal)}
-footer{background:var(--navy-dark);color:rgba(255,255,255,.75);padding:56px 0 24px;font-size:.78rem}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;margin-top:24px;text-align:center;font-family:var(--font-en);font-size:.72rem;color:rgba(255,255,255,.4)}
-@media (max-width:860px){ .cat-grid{grid-template-columns:1fr;gap:28px} nav.mainnav{display:none} .catnav{top:72px} }
-@media (max-width:600px){ .tilegrid{grid-template-columns:1fr 1fr} }
-</style>
+
 <meta name="description" content="BLF product catalog: IQF frozen vegetables (eggplant, sweet potato, okra, bell pepper, zucchini, Italian mix), agarwood leaf tea, artichoke tea, matcha. Specifications, packaging, storage temp, MOQ for export."><meta name="keywords" content="BLF, Bac Lieu Fisheries, Vietnam frozen food, IQF vegetables, agarwood tea, matcha, OEM, Japan export, B2B Vietnam Japan, ベトナム 冷凍食品, 抹茶, 沈香茶, ハカルウ"><meta name="robots" content="index, follow"><meta name="author" content="Bac Lieu Fisheries Joint Stock Company"><link rel="canonical" href="https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html"><meta property="og:title" content="Product Catalog | IQF Frozen Vegetables & Tea Export | BLF"><meta property="og:description" content="BLF product catalog: IQF frozen vegetables (eggplant, sweet potato, okra, bell pepper, zucchini, Italian mix), agarwood leaf tea, artichoke tea, matcha. Specifications, packaging, storage temp, MOQ for export."><meta property="og:image" content="https://judomanmk19xx-bot.github.io/blf-site/images/og-cover.jpg"><meta property="og:url" content="https://judomanmk19xx-bot.github.io/blf-site/catalog_en.html"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="BLF - Bac Lieu Fisheries"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Product Catalog | IQF Frozen Vegetables & Tea Export | BLF"><meta name="twitter:description" content="BLF product catalog: IQF frozen vegetables (eggplant, sweet potato, okra, bell pepper, zucchini, Italian mix), agarwood leaf tea, artichoke tea, matcha. Specifications, packaging, storage temp, MOQ for export."><meta name="twitter:image" content="https://judomanmk19xx-bot.github.io/blf-site/images/og-cover.jpg"><link rel="alternate" hreflang="ja" href="https://judomanmk19xx-bot.github.io/blf-site/index.html"><link rel="alternate" hreflang="vi" href="https://judomanmk19xx-bot.github.io/blf-site/vn.html"><link rel="alternate" hreflang="en" href="https://judomanmk19xx-bot.github.io/blf-site/en.html"><link rel="alternate" hreflang="x-default" href="https://judomanmk19xx-bot.github.io/blf-site/index.html">
 <script type="application/ld+json">
 {
@@ -124,21 +59,26 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.75);padding:56px 0 24
     "https://www.baclieu-vegetables.vn/"
   ]
 }
-</script></head>
+</script><link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="en.html" class="logo">
-      <div class="logo-mark"><span>BLF</span></div>
-      <div class="logo-text">Bac Lieu Fisheries<small>Bac Lieu Fisheries JSC</small></div>
-    </a>
-    <nav class="mainnav"><a href="en.html">Home</a><a href="#frozen">IQF Veg & Fruit</a><a href="#agarwood">Agarwood Tea</a><a href="#artichoke">Artichoke Tea</a><a href="#matcha">Matcha</a><a href="contact_en.html">Contact</a></nav>
-    <div class="header-right">
-      <div class="lang-switch"><a href="catalog_vn.html">VN</a><a href="catalog_ja.html">JP</a><span class="active">EN</span></div>
-      <a href="contact_en.html" class="btn btn-navy" style="padding:9px 24px;font-size:.8rem">Get a quote</a>
+<header class="site-header">
+    <div class="header-inner">
+      <a href="en.html" class="logo"><div class="logo-diamond"><span>BLF</span></div><div class="logo-text">Bac Lieu Fisheries<small>JSC</small></div></a>
+      <nav class="catnav"><a href="en.html#products">Home</a><a href="en.html#products">IQF Veg & Fruit</a><a href="en.html#products">Agarwood Tea</a><a href="en.html#products">Artichoke Tea</a><a href="en.html#products">Matcha</a></nav>
+      <div class="header-right">
+        <a href="contact_en.html" class="btn-contact">Contact</a>
+        <div class="lang-switch"><a class="inactive" href="catalog_ja.html">JP</a><span class="sep">|</span><a class="inactive" href="catalog_vi.html">VN</a><span class="sep">|</span><a href="catalog_en.html" class="active">EN</a></div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="メニューを開く">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
+    <div class="mobile-menu">
+      <nav class="catnav"><a href="en.html#products">Home</a><a href="en.html#products">IQF Veg & Fruit</a><a href="en.html#products">Agarwood Tea</a><a href="en.html#products">Artichoke Tea</a><a href="en.html#products">Matcha</a></nav>
+      <div class="lang-mobile"><a class="inactive" href="catalog_ja.html">JP</a><span class="sep">|</span><a class="inactive" href="catalog_vi.html">VN</a><span class="sep">|</span><a href="catalog_en.html" class="active">EN</a></div>
+    </div>
+  </header>
 
 <div class="pagehero">
   <h1>Product Catalogue</h1>
@@ -243,5 +183,6 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,.75);padding:56px 0 24
 </section>
 
 <footer><div class="container"><div class="footer-bottom">© 2025 Bac Lieu Fisheries JSC. All Rights Reserved.</div></div></footer>
+<script src="mobile.js"></script>
 </body>
 </html>
