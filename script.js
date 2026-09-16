@@ -26,24 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  // Swap data-lang-link elements based on current lang
-  document.querySelectorAll('[data-lang-link]').forEach(link => {
-    const base = link.getAttribute('href').replace(/(_ja|_vi|_en)?\.html$/, '');
-    link.setAttribute('href', base + '_' + langCode + '.html');
-  });
-  
-  // Update CTA links to lang-specific
-  document.querySelectorAll('a[href*=".html"]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('?')) return;
-    if (href.includes('_ja.') || href.includes('_vi.') || href.includes('_en.')) return;
-    const m = href.match(/^([^?#]+\.html)(\?.*)?$/);
-    if (m && !m[1].startsWith('ctg_') && !m[1].startsWith('blf_report')) {
-      // Local HTML file - swap lang
-      const newHref = m[1].replace('.html', '_' + langCode + '.html') + (m[2] || '');
-      link.setAttribute('href', newHref);
-    }
-  });
+  // Lang files: vn.html + en.html (no _ja/_vi/_en suffix - file system uses .html directly)
+  // No URL rewriting needed
 });
 // Contact form handler
 document.addEventListener('DOMContentLoaded', () => {
