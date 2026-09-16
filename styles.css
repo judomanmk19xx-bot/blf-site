@@ -1517,3 +1517,26 @@ a:focus-visible, button:focus-visible {
   background: #15697a;
   color: #fff;
 }
+
+
+/* LANG SWITCH HOVER - more aggressive with !important */
+.lang-switch a {
+  position: relative !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
+  cursor: pointer !important;
+}
+.lang-switch a:hover {
+  background: rgba(21, 105, 122, 0.15) !important;
+  color: #0e5563 !important;
+  text-decoration: underline !important;
+}
+.lang-switch a.active {
+  background: #15697a !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+.lang-switch a.active:hover {
+  background: #0e5563 !important;
+}
