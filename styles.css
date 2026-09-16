@@ -1540,3 +1540,122 @@ a:focus-visible, button:focus-visible {
 .lang-switch a.active:hover {
   background: #0e5563 !important;
 }
+
+
+/* ========================================
+   PRODUCTS GRID - 9 products (2026-09-16)
+   Desktop: 3 cols | Tablet: 2 cols | Mobile: 2 cols (compact)
+   ======================================== */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #e8edf2;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.product-card .photo {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-card .body {
+  padding: 16px;
+}
+
+.product-card .name-en {
+  font-size: 11px;
+  font-weight: 700;
+  color: #15697a;
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+
+.product-card .name-loc {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0F2B48;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #5a6b7d;
+  margin: 0 0 12px;
+  min-height: 40px;
+}
+
+.product-card .btn-more {
+  display: inline-block;
+  color: #15697a;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 1px solid #15697a;
+  transition: all 0.2s;
+}
+
+.product-card .btn-more:hover {
+  color: #0e5563;
+  border-bottom-color: #0e5563;
+  padding-left: 4px;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .product-card .photo {
+    height: 160px;
+  }
+  .product-card .body {
+    padding: 12px;
+  }
+  .product-card .name-loc {
+    font-size: 16px;
+  }
+  .product-card p {
+    font-size: 12px;
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .product-card .photo {
+    height: 130px;
+  }
+  .product-card .body {
+    padding: 10px;
+  }
+  .product-card .name-en {
+    font-size: 10px;
+  }
+  .product-card .name-loc {
+    font-size: 14px;
+  }
+  .product-card p {
+    font-size: 11px;
+    line-height: 1.4;
+    min-height: 32px;
+  }
+  .product-card .btn-more {
+    font-size: 12px;
+  }
+}
