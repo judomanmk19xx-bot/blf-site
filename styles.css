@@ -1286,3 +1286,205 @@ section.faq { background: #fff; }
   .section-heading h2 { font-size: 22px !important; }
   section.blf-section, section.about, section.services, section.products, section.quality-section, section.faq, section.news { padding: 48px 20px !important; }
 }
+
+
+/* ========================================
+   NAV + LOGO HIGHLIGHTS (2026-09-16)
+   Underline animation + logo hover effect
+   ======================================== */
+
+/* Main nav - animated underline highlight */
+.main-nav a {
+  position: relative;
+  color: var(--navy, #0F2B48);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #15697a;
+  transition: width 0.25s ease;
+}
+.main-nav a:hover {
+  color: #15697a;
+}
+.main-nav a:hover::after {
+  width: 100%;
+}
+.main-nav a:focus-visible {
+  outline: none;
+  color: #15697a;
+}
+.main-nav a:focus-visible::after {
+  width: 100%;
+}
+.main-nav a.active {
+  color: #15697a;
+  font-weight: 600;
+}
+.main-nav a.active::after {
+  width: 100%;
+}
+
+/* Lang switch - hover highlight */
+.lang-switch a {
+  transition: all 0.2s;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.lang-switch a:hover {
+  background: rgba(21, 105, 122, 0.1);
+  color: #15697a;
+}
+.lang-switch a.active {
+  background: #15697a;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Logo hover highlight */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 4px 8px 4px 0;
+  border-radius: 6px;
+  transition: all 0.25s;
+}
+.logo:hover {
+  background: rgba(21, 105, 122, 0.06);
+  transform: translateY(-1px);
+}
+.logo:hover .logo-diamond {
+  background: #15697a;
+  transform: rotate(45deg) scale(1.08);
+  box-shadow: 0 4px 12px rgba(21, 105, 122, 0.35);
+}
+.logo:hover .logo-text { color: #15697a; }
+.logo-diamond {
+  width: 36px;
+  height: 36px;
+  background: #0F2B48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(15, 43, 72, 0.2);
+}
+.logo-diamond span {
+  transform: rotate(-45deg);
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.logo-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0F2B48;
+  line-height: 1.2;
+  transition: color 0.2s;
+}
+.logo-text small {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: #5a6b7d;
+  letter-spacing: 1.2px;
+  margin-top: 2px;
+}
+
+/* Features / category cards hover */
+.feature-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); }
+.feature-card .feature-icon { transition: all 0.25s; }
+.feature-card:hover .feature-icon {
+  background: #15697a;
+  color: #fff;
+}
+.feature-card:hover .feature-icon svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+/* Service card hover */
+.service-card { transition: all 0.25s; cursor: pointer; }
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.service-card:hover .photo {
+  transform: scale(1.05);
+  transition: transform 0.4s;
+}
+.service-card .photo { transition: transform 0.4s; }
+
+/* Product card hover */
+.product-card { transition: all 0.25s; cursor: pointer; }
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.product-card:hover .photo {
+  transform: scale(1.05);
+  transition: transform 0.4s;
+}
+.product-card .photo { transition: transform 0.4s; }
+
+/* Location card hover */
+.location-card { transition: all 0.2s; }
+.location-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #15697a;
+}
+
+/* FAQ accordion hover */
+.faq-item:hover { border-color: #15697a; }
+.faq-item summary:hover { background: rgba(21, 105, 122, 0.04); }
+
+/* Mobile menu link hover */
+.mobile-menu a:hover { background: #f0f4f8; color: #15697a; }
+
+/* Mobile menu touch feedback */
+.mobile-menu a:active { background: rgba(21, 105, 122, 0.15); }
+
+/* Skip focus visible accessibility */
+*:focus-visible {
+  outline: 2px solid #15697a;
+  outline-offset: 2px;
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #15697a;
+  outline-offset: 2px;
+}
+
+/* CTA button hover (already in styles.css) - enhance */
+.btn-primary:hover { background: #f0f4f8; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(15, 43, 72, 0.15); }
+.btn-secondary:hover { background: rgba(255, 255, 255, 0.18); transform: translateY(-1px); }
+.btn-navy:hover { background: #0e3a5a; transform: translateY(-1px); }
+
+/* News item hover */
+.news-item:hover { background: #f7f9fc; }
+
+/* Contact form input focus */
+.blf-contact-form input:focus,
+.blf-contact-form select:focus,
+.blf-contact-form textarea:focus {
+  outline: none;
+  border-color: #15697a;
+  box-shadow: 0 0 0 3px rgba(21, 105, 122, 0.1);
+}
+
+/* Mobile menu button toggle */
+.menu-toggle:hover .bar { background: #15697a; }
+.menu-toggle.active .bar { background: #15697a; }
