@@ -1659,3 +1659,33 @@ a:focus-visible, button:focus-visible {
     font-size: 12px;
   }
 }
+
+
+/* PRODUCTS - force 2-col mobile (override old rules) */
+.products-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+}
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+  .product-card .photo { height: 160px !important; }
+  .product-card .body { padding: 12px !important; }
+  .product-card .name-loc { font-size: 16px !important; }
+  .product-card p { font-size: 12px !important; min-height: 36px !important; }
+}
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .product-card .photo { height: 110px !important; }
+  .product-card .body { padding: 8px !important; }
+  .product-card .name-en { font-size: 9px !important; letter-spacing: 0.5px !important; }
+  .product-card .name-loc { font-size: 13px !important; line-height: 1.2 !important; }
+  .product-card p { font-size: 10px !important; line-height: 1.3 !important; min-height: 26px !important; margin-bottom: 8px !important; }
+  .product-card .btn-more { font-size: 11px !important; padding: 2px 0 !important; }
+}
