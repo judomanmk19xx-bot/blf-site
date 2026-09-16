@@ -1488,3 +1488,32 @@ a:focus-visible, button:focus-visible {
 /* Mobile menu button toggle */
 .menu-toggle:hover .bar { background: #15697a; }
 .menu-toggle.active .bar { background: #15697a; }
+
+
+/* Lang switcher hover - more visible (active feedback) */
+.lang-switch a {
+  position: relative;
+  transition: all 0.2s;
+}
+.lang-switch a:not(.active)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #15697a;
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+.lang-switch a:not(.active):hover {
+  color: #15697a;
+  background: rgba(21, 105, 122, 0.08);
+}
+.lang-switch a:not(.active):hover::after {
+  width: 80%;
+}
+.lang-switch a.active {
+  background: #15697a;
+  color: #fff;
+}
