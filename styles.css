@@ -2444,3 +2444,34 @@ a:focus-visible, button:focus-visible {
     gap: 10px !important;
   }
 }
+
+
+/* ============================================
+   V19 KILL LEGACY CARD-STYLE
+   ============================================ */
+.hero-text {
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  box-shadow: none !important;
+  text-align: left !important;
+  color: #fff !important;
+}
+.hero-text h1 {
+  color: #fff !important;
+  background: transparent !important;
+  -webkit-text-fill-color: #fff !important;
+}
+.hero-content {
+  display: none !important;
+}
+
+/* Stats numbers readable on mobile */
+@media (max-width: 600px) {
+  .stat-num { 
+    font-size: 24px !important;
+  }
+  .stat-num span { font-size: 12px !important; }
+  .stat-label { font-size: 11px !important; }
+}
