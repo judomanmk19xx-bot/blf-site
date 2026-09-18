@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#FAF8F3; --card:#FFFFFF; --ink:#141B26; --ink-soft:#3D4653; --muted:#8A8F98;
+    --paper:#FAF8F3; --card:#FFFFFF; --ink:#10151E; --ink-soft:#2A3140; --muted:#6B7280;
     --gold:#B08D3E; --gold-soft:#E7DCC3; --gold-faint:#F5F0E4;
-    --line:#E3DFD5; --line-strong:#C9C2B2;
+    --line:#D6D1C4; --line-strong:#C9C2B2;
     --ok:#1E6B4A; --bad:#9B2C2C;
     --serif:'Source Serif 4',Georgia,serif; --display:'Playfair Display',Georgia,serif; --mono:'JetBrains Mono',ui-monospace,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-weight:300;font-size:16px;line-height:1.6;padding:0 20px 64px}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.7;padding:0 20px 64px}
   .sheet{max-width:820px;margin:0 auto}
 
   .masthead{padding:44px 0 26px;border-bottom:2px solid var(--ink);position:relative}
@@ -99,14 +99,13 @@
   <header class="masthead">
     <div class="kicker">Thẩm Mục · Yêu cầu thẩm định</div>
     <h1>Đặt hồ sơ <em>Due Diligence</em></h1>
-    <p>Điền thông tin đối tượng cần thẩm định trước khi ký hợp đồng / góp vốn / hợp tác.
-       Agent sẽ tự chọn luồng kiểm tra phù hợp và trả báo cáo về cho bạn.</p>
+    <p>Gửi tên đối tượng + CCCD / giấy phép kinh doanh nếu có — agent tự tra cứu đa tầng nguồn công khai và trả báo cáo thẩm định.</p>
     <div class="seal">Intake<br>·<br>Form 01</div>
   </header>
 
   <form id="intake" novalidate>
     <div class="block">
-      <div class="block-head"><span class="no">I</span><h2>Đối tượng thẩm định</h2><span class="req-note">điền được gì gửi nấy — tối thiểu 1 liên hệ hoặc tên đối tượng</span></div>
+      <div class="block-head"><span class="no">I</span><h2>Đối tượng thẩm định</h2><span class="req-note">tối thiểu: tên đối tượng HOẶC liên hệ nhận kết quả</span></div>
       <div class="grid">
         <div class="f full">
           <label for="subject">Tên đối tượng — cá nhân hoặc công ty <span class="req">*</span></label>
@@ -121,44 +120,26 @@
             <label><input type="radio" name="kind" value="D"><span class="t">Cá nhân nước ngoài</span><span class="d">LANE D</span></label>
           </div>
         </div>
+        
         <div class="f">
-          <label for="jurisdiction">Quốc tịch / Nơi đăng ký <span class="hint">(nếu biết — giúp chọn nguồn registry)</span></label>
-          <input id="jurisdiction" name="jurisdiction" type="text" placeholder="VN / Nhật / Singapore …">
+          <label for="ids">CCCD / MST đối tượng <span class="hint">(nếu có — nguồn tra cứu chính)</span></label>
+          <input id="ids" name="ids" type="text" placeholder="Ví dụ: 091082004088">
         </div>
-        <div class="f">
-          <label for="ids">CCCD / MST / MRZ <span class="hint">(tuỳ chọn)</span></label>
-          <input id="ids" name="ids" type="text" placeholder="Số hồ sơ pháp lý nếu có">
-        </div>
-        <div class="f">
-          <label for="contact">Email / Điện thoại đối tượng <span class="hint">(tuỳ chọn)</span></label>
-          <input id="contact" name="contact" type="text">
-        </div>
-        <div class="f full">
-          <label for="address">Địa chỉ / Trụ sở <span class="hint">(tuỳ chọn)</span></label>
-          <input id="address" name="address" type="text">
-        </div>
+        
+        
       </div>
     </div>
 
     <div class="block">
-      <div class="block-head"><span class="no">II</span><h2>Bối cảnh deal</h2></div>
+      <div class="block-head"><span class="no">II</span><h2>Nội dung cần kiểm chứng</h2></div>
       <div class="grid">
-        <div class="f">
-          <label for="deal_value">Giá trị deal <span class="req">*</span></label>
-          <input id="deal_value" name="deal_value" type="text" placeholder="Ví dụ: 500 triệu VND / 20,000 USD">
-        </div>
-        <div class="f">
-          <label for="deal_type">Loại deal</label>
-          <input id="deal_type" name="deal_type" type="text" placeholder="Góp vốn / Mua bán / Hợp tác …">
-        </div>
+        
+        
         <div class="f full">
-          <label for="claim">Tuyên bố cần kiểm chứng <span class="req">*</span> <span class="hint">— đối tượng tự nói gì về mình?</span></label>
+          <label for="claim">Tuyên bố cần kiểm chứng <span class="hint">— đối tượng tự nói gì về mình? (tuỳ chọn)</span></label>
           <textarea id="claim" name="claim" placeholder='Ví dụ: "Ông A là CEO công ty X, 15 năm kinh nghiệm xuất khẩu sang Nhật"'></textarea>
         </div>
-        <div class="f full">
-          <label for="evidence">Bằng chứng bạn đã có <span class="hint">— hợp đồng, danh thiếp, link, ảnh (mô tả; gửi file sau)</span></label>
-          <textarea id="evidence" name="evidence" placeholder="Liệt kê những gì bạn đã nhận được từ đối tượng"></textarea>
-        </div>
+        
       </div>
     </div>
 
@@ -212,7 +193,7 @@
   </div>
 
   <footer class="colophon">
-    tham-muc v1.3.0 · Form 01 (intake) — dữ liệu gửi đi chỉ dùng cho run thẩm định này ·
+    tham-muc v1.5.0 · Form 01 (intake) — dữ liệu gửi đi chỉ dùng cho run thẩm định này ·
     lưu trữ nội bộ, không chia sẻ công khai.
   </footer>
 
