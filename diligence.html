@@ -106,16 +106,16 @@
 
   <form id="intake" novalidate>
     <div class="block">
-      <div class="block-head"><span class="no">I</span><h2>Đối tượng thẩm định</h2><span class="req-note">* = bắt buộc</span></div>
+      <div class="block-head"><span class="no">I</span><h2>Đối tượng thẩm định</h2><span class="req-note">điền được gì gửi nấy — tối thiểu 1 liên hệ hoặc tên đối tượng</span></div>
       <div class="grid">
         <div class="f full">
           <label for="subject">Tên đối tượng — cá nhân hoặc công ty <span class="req">*</span></label>
-          <input id="subject" name="subject" type="text" required placeholder="Ví dụ: Công ty TNHH ABC / Nguyễn Văn A">
+          <input id="subject" name="subject" type="text" placeholder="Ví dụ: Công ty TNHH ABC / Nguyễn Văn A">
         </div>
         <div class="f">
           <label for="kind">Loại đối tượng <span class="req">*</span></label>
           <div class="lane-pick" role="radiogroup" aria-label="Loại đối tượng">
-            <label><input type="radio" name="kind" value="A" required><span class="t">Cá nhân VN</span><span class="d">LANE A</span></label>
+            <label><input type="radio" name="kind" value="A"><span class="t">Cá nhân VN</span><span class="d">LANE A</span></label>
             <label><input type="radio" name="kind" value="B"><span class="t">Công ty VN</span><span class="d">LANE B</span></label>
             <label><input type="radio" name="kind" value="C"><span class="t">Cty nước ngoài</span><span class="d">LANE C</span></label>
             <label><input type="radio" name="kind" value="D"><span class="t">Cá nhân nước ngoài</span><span class="d">LANE D</span></label>
@@ -145,7 +145,7 @@
       <div class="grid">
         <div class="f">
           <label for="deal_value">Giá trị deal <span class="req">*</span></label>
-          <input id="deal_value" name="deal_value" type="text" required placeholder="Ví dụ: 500 triệu VND / 20,000 USD">
+          <input id="deal_value" name="deal_value" type="text" placeholder="Ví dụ: 500 triệu VND / 20,000 USD">
         </div>
         <div class="f">
           <label for="deal_type">Loại deal</label>
@@ -153,7 +153,7 @@
         </div>
         <div class="f full">
           <label for="claim">Tuyên bố cần kiểm chứng <span class="req">*</span> <span class="hint">— đối tượng tự nói gì về mình?</span></label>
-          <textarea id="claim" name="claim" required placeholder='Ví dụ: "Ông A là CEO công ty X, 15 năm kinh nghiệm xuất khẩu sang Nhật"'></textarea>
+          <textarea id="claim" name="claim" placeholder='Ví dụ: "Ông A là CEO công ty X, 15 năm kinh nghiệm xuất khẩu sang Nhật"'></textarea>
         </div>
         <div class="f full">
           <label for="evidence">Bằng chứng bạn đã có <span class="hint">— hợp đồng, danh thiếp, link, ảnh (mô tả; gửi file sau)</span></label>
@@ -182,7 +182,7 @@
         </div>
         <div class="f">
           <label for="contact_back">Email / SĐT nhận báo cáo <span class="req">*</span></label>
-          <input id="contact_back" name="contact_back" type="text" required placeholder="email@domain.com hoặc +84…">
+          <input id="contact_back" name="contact_back" type="text" placeholder="email@domain.com hoặc +84…">
         </div>
         <div class="f full">
           <label>Độ khẩn cấp</label>
@@ -193,7 +193,7 @@
         </div>
       </div>
       <div class="consent">
-        <input type="checkbox" id="consent" required>
+        <input type="checkbox" id="consent">
         <p>Tôi xác nhận yêu cầu thẩm định này phục vụ <b>quyết định kinh doanh</b> (đối tác/góp vốn/mua bán),
            hiểu rằng kết quả chỉ từ nguồn công khai, và mọi phát hiện nghiêm trọng (sanctions…) sẽ được báo ngay.</p>
       </div>
@@ -287,14 +287,24 @@ function addFiles(files){
   }
 }
 
-/* OCR xong → tự điền form nếu trống */
+/* OCR xong → tự điền form (ghi đè, highlight vàng 2s) */
 function autoFill(fields){
   if (!fields) return;
-  const setIfEmpty = (id, val) => { const el = document.getElementById(id); if (el && !el.value && val) el.value = val; };
-  setIfEmpty('subject', fields.ho_ten || fields.ten_cong_ty);
-  setIfEmpty('ids', fields.so_cccd || fields.ma_so_thue);
-  setIfEmpty('address', fields.thuong_tru || fields.dia_chi_tru_so);
-  setIfEmpty('claim', fields.nganh_nghe_chinh);
+  const fills = [
+    ['subject', fields.ho_ten || fields.ten_cong_ty],
+    ['ids', fields.so_cccd || fields.ma_so_thue],
+    ['address', fields.thuong_tru || fields.dia_chi_tru_so],
+    ['claim', fields.nganh_nghe_chinh || fields.nganh_nghe_kinh_doanh],
+  ];
+  for (const [id, val] of fills){
+    if (!val) continue;
+    const el = document.getElementById(id);
+    if (!el) continue;
+    el.value = String(val);
+    el.style.background = 'var(--gold-faint)';
+    el.style.borderColor = 'var(--gold)';
+    setTimeout(() => { el.style.background=''; el.style.borderColor=''; }, 2000);
+  }
 }
 </script>
 <script>
